@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>八字喜用判断 · 旺衰 + 子平格局 + 调候</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="wrap">
+    <header>
+      <h1>八字喜用判断</h1>
+      <p class="sub">旺衰 + 子平格局 + 调候三维度独立输出 · 确定性代码引擎（非大模型判断）</p>
+    </header>
+
+    <section class="card form">
+      <label class="field">
+        <span>生辰（自然语言）</span>
+        <input id="birth" type="text" placeholder="如：1990年五月初五辰时 / 1973.1.18 早上6点" />
+      </label>
+
+      <div class="row">
+        <label class="field">
+          <span>性别</span>
+          <select id="sex">
+            <option value="male">男</option>
+            <option value="female">女</option>
+          </select>
+        </label>
+        <label class="field">
+          <span>出生地经度（度）</span>
+          <input id="lon" type="number" step="0.1" placeholder="如 117.2" />
+        </label>
+      </div>
+
+      <label class="check">
+        <input id="truesun" type="checkbox" checked />
+        <span>启用真太阳时 + 夏令时回拨</span>
+      </label>
+
+      <details class="adv">
+        <summary>或：直接输入四柱 / 公历</summary>
+        <label class="field">
+          <span>直接四柱（跳过排盘）</span>
+          <input id="chart" type="text" placeholder="庚午 辛巳 癸巳 乙卯" />
+        </label>
+        <label class="field">
+          <span>节气后第几天（可选，司令参考 / 调候分段）</span>
+          <input id="solarTermDay" type="number" min="0" max="30" placeholder="留空仅影响司令参考与调候分段" />
+        </label>
+        <label class="field">
+          <span>调候节气分段（可选）</span>
+          <input id="tiaohouSegment" type="text" placeholder="如 段A / 段B / 上半月 / 下半月 / 清明后 / 谷雨后；留空自动推断" />
+        </label>
+        <p class="hint">优先用上方「生辰」自动排盘；若填了四柱则直接分析，忽略其它字段。节气天数仅用于司令参考与调候分段，不参与格局取格；乙·酉（白露／秋分）、乙·午（夏至）、癸·辰（清明／谷雨）按原书分节气取用，可在此显式指定。</p>
+      </details>
+
+      <button id="go">开始分析</button>
+      <p id="err" class="err"></p>
+    </section>
+
+    <section id="result" class="card result hidden"></section>
+
+    <footer>
+      <p>维度说明：旺衰、格局、调候各自独立输出（旺衰不参与定格）；格局喜用按李师傅笔记「有病治病为先，无病吉神顺用 / 凶神逆用」另作独立一层。调候依《穷通宝鉴》十干逐月取用，由日干＋月令定，含条件用与节气分段；调候 ≠ 全局用神，不覆盖旺衰／格局维度，V1 不做三维加权（格局喜用的「调候之病最优先」尚未合并）。本工具仅为传统民俗文化的逻辑复现，无科学预测效力。</p>
+    </footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,198 @@
+{
+  "schema_version": 1,
+  "review_status": "pending_user_or_expert",
+  "purpose": "按已定项目规则逐例写出预期，不从程序结果自动回填；供用户或命理审核者独立确认，不宣称已完成人工专家核验。",
+  "cases": [
+    {
+      "id": "soil_wu_lu",
+      "chart": "甲辰 甲丑 戊巳 甲辰",
+      "basis": "项目基础表戊禄在巳；巳藏戊处于中气。独立禄标记不提高根档或藏干能量。",
+      "expected": {
+        "root": {
+          "branch_index": 2,
+          "root_type": "中气根",
+          "base_energy": 30,
+          "phase_label": "禄"
+        }
+      },
+      "allowed_disagreement": "可讨论禄是否应提高资格，但本次已授权口径只补标记，不改能量。"
+    },
+    {
+      "id": "soil_wu_blade",
+      "chart": "甲辰 甲丑 戊午 甲辰",
+      "basis": "项目基础表戊刃在午；午中己土为30档，同五行根仍按中气计。",
+      "expected": {
+        "root": {
+          "branch_index": 2,
+          "root_type": "中气根",
+          "base_energy": 30,
+          "phase_label": "阳刃"
+        }
+      },
+      "allowed_disagreement": "同前，不把阳刃标记自动变为强根。"
+    },
+    {
+      "id": "soil_ji_lu",
+      "chart": "甲辰 甲丑 己午 甲辰",
+      "basis": "项目基础表己禄在午；午中己土30，标记与能量分列。",
+      "expected": {
+        "root": {
+          "branch_index": 2,
+          "root_type": "中气根",
+          "base_energy": 30,
+          "phase_label": "禄"
+        }
+      },
+      "allowed_disagreement": "完整盘标签不作为此例审核对象。"
+    },
+    {
+      "id": "soil_ji_diwang",
+      "chart": "甲辰 甲丑 己巳 甲辰",
+      "basis": "项目基础表己帝旺在巳，巳中戊土是同五行中气，不是己阳刃。",
+      "expected": {
+        "root": {
+          "branch_index": 2,
+          "root_type": "中气根",
+          "base_energy": 30,
+          "phase_label": "帝旺"
+        }
+      },
+      "allowed_disagreement": "不输出阴干阳刃，不升级能量。"
+    },
+    {
+      "id": "yang_changsheng",
+      "chart": "甲酉 甲辰 甲亥 甲午",
+      "basis": "甲在亥为项目十干长生且亥实际藏甲，故该根资格为长生，能量仍为30。",
+      "expected": {
+        "root": {
+          "branch_index": 2,
+          "root_type": "长生",
+          "base_energy": 30
+        },
+        "effective_root_level": 2
+      },
+      "allowed_disagreement": "只核对长生资格及能量，不要求对其他规则达成一致。"
+    },
+    {
+      "id": "yin_middle",
+      "chart": "甲酉 甲辰 乙亥 甲午",
+      "basis": "亥藏甲给乙同五行中气，乙不能借甲在亥的长生升级；其他木根亦至多中气。",
+      "expected": {
+        "root": {
+          "branch_index": 2,
+          "root_type": "中气根",
+          "base_energy": 30
+        },
+        "effective_root_level": 3
+      },
+      "allowed_disagreement": "若另选阴阳长生体系，应更改项目口径并独立迁移。"
+    },
+    {
+      "id": "no_phantom_yin_root",
+      "chart": "甲酉 甲辰 乙午 甲午",
+      "basis": "午不藏木，不因基础长生表记乙在午就创造木根。",
+      "expected": {
+        "no_root_at": 2
+      },
+      "allowed_disagreement": "本项目坚持实际藏干前置。"
+    },
+    {
+      "id": "multiple_chonged_roots",
+      "chart": "庚卯 庚酉 甲卯 庚酉",
+      "basis": "有两处卯木根，虽均被冲，但不满足唯一有效根条件；各按100×0.5×距离计能量。",
+      "expected": {
+        "effective_root_level": 2,
+        "effective_count": 2,
+        "effective_energy": 90,
+        "pull_triggered": false
+      },
+      "allowed_disagreement": "是否多根可全部拔除是另一套规则，本项目只允许唯一根质变拔根。"
+    },
+    {
+      "id": "yin_dominates_micro_day",
+      "chart": "丙亥 乙寅 丙卯 乙戌",
+      "basis": "印旺不自动等于日主实根承扶；丙只有戌中微火根，不足以进入从强。",
+      "expected": {
+        "tag": "身旺",
+        "effective_root_level": 1,
+        "forbidden_tags": [
+          "从强",
+          "假从强"
+        ]
+      },
+      "allowed_disagreement": "可讨论从印体系，但当前从强承扶门槛不能跳过。"
+    },
+    {
+      "id": "micro_fake_weak",
+      "chart": "丙未 戊酉 甲未 己酉",
+      "basis": "两处未中乙木微根，其他支酉不藏木；克泄耗达到项目门槛，残余根只能假从、不能真从。",
+      "expected": {
+        "tag": "假从弱",
+        "effective_root_level": 1,
+        "effective_count": 2
+      },
+      "allowed_disagreement": "真假从属于项目定稿口径；本例交由审核者确认是否接受。"
+    },
+    {
+      "id": "intact_close_root_blocks",
+      "chart": "庚戌 丙酉 乙寅 己巳",
+      "basis": "乙日主寅中本气木根贴身，无申冲、无寅亥合绊，不能仅因K占比大就假从。",
+      "expected": {
+        "tag": "身弱",
+        "forbidden_tags": [
+          "从弱",
+          "假从弱"
+        ],
+        "root": {
+          "branch_index": 2,
+          "is_broken": false
+        }
+      },
+      "allowed_disagreement": "只约束完整无损根阻止从弱，不以本例证明普遍命理准确性。"
+    },
+    {
+      "id": "store_same_account",
+      "chart": "辛未 乙辰 庚丑 辛丑",
+      "basis": "未冲丑，两个丑中金库余气10升级30；根能量分别30×0.5×1与30×0.5×0.9，总和28.5。",
+      "expected": {
+        "effective_root_level": 3,
+        "effective_count": 2,
+        "effective_energy": 28.5,
+        "root": {
+          "branch_index": 2,
+          "root_type": "次强根",
+          "base_energy": 30
+        }
+      },
+      "allowed_disagreement": "库冲开库属于本项目明确约定；本例独立核算能量，不以输出反推期望。"
+    },
+    {
+      "id": "transformed_root",
+      "chart": "庚亥 乙卯 乙午 壬未",
+      "basis": "亥卯未化木，亥旧水根失效，新木整支100×1.6×0.8=128；同五行天干应借化后根。",
+      "expected": {
+        "effective_root_level": 2,
+        "effective_count": 3,
+        "root": {
+          "branch_index": 0,
+          "root_type": "本气根",
+          "base_energy": 100,
+          "eff_energy": 128,
+          "phase_label": null
+        }
+      },
+      "allowed_disagreement": "本项目月令中神及恋根条件满足；此例只核对成功置换后的账。"
+    },
+    {
+      "id": "middle_and_micro_fake",
+      "chart": "丙未 戊酉 甲未 己辰",
+      "basis": "两未余气木之外，时支辰还藏乙中气，不能把本例当作纯微根盘；中气位于时支，按项目远位证据允许假从。",
+      "expected": {
+        "tag": "假从弱",
+        "effective_root_level": 3,
+        "effective_count": 3
+      },
+      "allowed_disagreement": "普通中气远位能否支持假从仍可交由审核者评议，自动测试只守护当前已定口径。"
+    }
+  ]
+}

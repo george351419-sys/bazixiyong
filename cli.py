@@ -1,0 +1,202 @@
+# -*- coding: utf-8 -*-
+"""八字喜用判断 · 命令行入口（旺衰 + 子平格局 + 调候维度）。
+
+用法：
+  # 自然语言生辰（公历/农历自动识别），真太阳时 + 经度
+  python cli.py --birth "1990年五月初五辰时" --sex male --lon 117.2 --truesun
+  # 显式公历
+  python cli.py --y 1990 --m 5 --d 5 --h 8 --minute 0 --sex male --lon 117.2 --truesun
+  # 直接给四柱（跳过排盘）
+  python cli.py --chart "庚午 甲申 庚子 壬午" --solar-term-day 5 --trace
+  # 输出纯 JSON
+  python cli.py --birth "..." --json
+
+输出：旺衰判定 + 旺衰维度喜用 + 独立格局维度 + 格局维度喜用 + 调候维度
+      （《穷通宝鉴》十干逐月取用；调候已上线，作为独立维度输出，V1 不做三维加权）。
+  分段格（乙·酉 白露／秋分、乙·午 夏至、癸·辰 清明／谷雨）可用
+  --tiaohou-segment 指定，如 --tiaohou-segment 段B；排盘模式会自动按节气推断。
+排盘模式仍自动推算「节气后第几天」，但新口径下人元司令不参与取格，
+仅作 siling_gan 参考字段；取格按「唯一透出 / 多透按本气>中气>余气 / 都不透取本气标暗格」。
+"""
+from __future__ import annotations
+
+import argparse
+import json
+import os
+import sys
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+
+from bazi_core.paipan import analyze_birth
+from bazi_core.engine import analyze
+from bazi_core.tiaohou import format_tiaohou
+
+
+def _parse_chart(s):
+    parts = s.split()
+    if len(parts) != 4:
+        raise ValueError("--chart 需形如 '庚午 辛巳 癸巳 乙卯'（四柱干支，空格分隔）")
+    order = ["year", "month", "day", "hour"]
+    chart = {}
+    for i, p in enumerate(parts):
+        if len(p) != 2:
+            raise ValueError("干支格式应为 2 字：%s" % p)
+        chart[order[i]] = {"gan": p[0], "zhi": p[1]}
+    return chart
+
+
+def _pretty(out, show_trace=False):
+    if not out.get("ok"):
+        return "分析失败：%s（阶段：%s）" % (out.get("error"), out.get("stage"))
+    meta = out.get("paipan_meta", {})
+    ws = out["wangshuai"]
+    xy = out["xiyong_wangshuai"]
+    lines = []
+    if meta.get("八字"):
+        lines.append("八字：%s  日主：%s（%s）" % (meta["八字"], meta["日主"], out["day_wuxing"]))
+        if meta.get("公历"):
+            lines.append("公历：%s   农历：%s   生肖：%s" % (meta["公历"], meta.get("农历"), meta.get("生肖")))
+        sti = out.get("solar_term_info")
+        if sti and sti.get("jie_name"):
+            lines.append("节气：%s %s 后第 %s 天（%.2f 天，来源：%s）"
+                         % (sti["jie_name"], sti.get("jie_time"), sti["day"],
+                            sti.get("exact_days") or 0, out.get("solar_term_source")))
+        elif sti:
+            lines.append("节气：手工指定第 %s 天（来源：manual）" % sti["day"])
+        elif out.get("solar_term_source") == "unavailable":
+            lines.append("节气：自动推算不可用，司令表按兜底口径取格")
+        if meta.get("真太阳时校正分钟") is not None:
+            lines.append("真太阳时校正：%s 分钟%s" % (meta["真太阳时校正分钟"],
+                      "（夏令时回拨）" if meta.get("夏令时回拨") else ""))
+    lines.append("-" * 40)
+    lines.append("旺衰判定：%s   置信度：%s" % (out["tag"], out["confidence"]))
+    lines.append("根状态：%s   F(生扶)=%s   K(克泄耗)=%s%s"
+                 % (ws.get("root_status"), ws.get("F"), ws.get("K"),
+                    ("   ratio=%.2f" % ws["ratio"]) if ws.get("ratio") is not None else ""))
+    if ws.get("warning"):
+        lines.append("备注：" + "；".join(ws["warning"]))
+    lines.append("-" * 40)
+    lines.append("喜用维度（旺衰）：%s" % xy["category"])
+    lines.append("  喜用五行：%s" % " ".join(xy["favored"]))
+    lines.append("  忌神五行：%s" % " ".join(xy["disliked"]))
+    if xy.get("neutral"):
+        lines.append("  中性/慎用：%s" % " ".join(xy["neutral"]))
+    lines.append("  取用原则：%s" % xy["principle"])
+    if xy.get("note"):
+        lines.append("  说明：%s" % xy["note"])
+    lines.append("-" * 40)
+
+    gj = out.get("geju")
+    if gj:
+        lines.append("子平格局：%s（%s）   状态：%s   清浊：%s"
+                     % (gj["main_ge_name"], gj["ge_category"],
+                        gj["ge_status"], gj["clean_level"]))
+        lines.append("  格神：%s" % gj["ge_shen"])
+        if gj.get("an_ge_flag"):
+            lines.append("  ※ 暗格：月令无有效透出，取本气为格（依据：%s）"
+                         % gj.get("quge_basis", ""))
+        if gj.get("bijiao_tou"):
+            lines.append("  ※ 月令透出比劫%s：该字不取格神" % "、".join(gj["bijiao_tou"]))
+        lines.append("  相神：%s" % ("、".join(gj["xiang_shen_list"]) or "不显"))
+        lines.append("  忌神：%s" % ("、".join(gj["ji_shen_list"]) or "无"))
+        if gj.get("lu_ren_flag"):
+            lines.append("  ※ 禄刃月令，非八格；透干只作相神，不升格")
+        if gj.get("special_ge"):
+            lines.append("  外格：%s" % gj["special_ge"])
+        lines.append("  司令：%s（仅供参考，不参与取格）   旺衰（附加）：%s / %.2f"
+                     % (gj.get("siling_gan"), gj.get("wangshuai_tag"),
+                        gj.get("wangshuai_confidence") or 0))
+        lines.append("  备注：%s" % gj["note"])
+        # Step8 格局维度喜用（李师傅笔记口径，独立层、不与旺衰加权）
+        xyj = gj.get("xiyong_geju")
+        if xyj:
+            lines.append("  格局喜用：%s（%s）"
+                         % (xyj["mode"], "有病·治病为先" if xyj["has_bing"]
+                            else "无病·顺逆取用"))
+            for b in xyj["bing_list"]:
+                lines.append("    病：%s【%s】→ 药：%s"
+                             % (b["name"], b["severity"],
+                                "；".join(b["yao"][:2]) or "待运"))
+            lines.append("    用神：%s" % ("；".join(xyj["yong_shen_list"]) or "不显"))
+            if xyj["xi_shen_list"]:
+                lines.append("    辅佐：%s" % "；".join(xyj["xi_shen_list"]))
+            lines.append("    原则：%s" % xyj["principle"])
+            if xyj.get("fuyi_hint"):
+                lines.append("    扶抑（附加）：%s" % xyj["fuyi_hint"])
+            if xyj.get("tiaohou_pending"):
+                lines.append("    ※ 调候维度已独立上线（见下方），但本层格局喜用尚未把「调候之病」并入病清单；笔记以调候之病最优先")
+        lines.append("-" * 40)
+        if show_trace:
+            lines.append("格局判定链路：")
+            for i, t in enumerate(gj["trace_log"], 1):
+                lines.append("  %2d. %s" % (i, t))
+            lines.append("-" * 40)
+
+    th = out.get("tiaohou")
+    if th and th.get("ok"):
+        lines.append(format_tiaohou(th, verbose=True))
+    elif th:
+        lines.append("调候维度：计算失败（%s）" % th.get("error"))
+
+    mods = out.get("modules", {})
+    lines.append("-" * 40)
+    lines.append("三维框架：旺衰=%s，格局=%s，调候=%s（V1 不加权合并）"
+                 % (mods.get("wangshuai"), mods.get("geju"), mods.get("tiaohou")))
+    lines.append("旺衰有效权重 effective_ws = 25 × %.2f = %.2f"
+                 % (out["confidence"], out["score_wangshuai"]["effective_ws"]))
+    return "\n".join(lines)
+
+
+def main():
+    ap = argparse.ArgumentParser(description="八字喜用判断（旺衰 + 子平格局，代码确定性引擎）")
+    ap.add_argument("--birth", help="自然语言生辰，如 '1990年五月初五辰时'")
+    ap.add_argument("--y", type=int, help="公历/农历年")
+    ap.add_argument("--m", type=int, help="月")
+    ap.add_argument("--d", type=int, help="日")
+    ap.add_argument("--h", type=int, help="时（24 小时制）")
+    ap.add_argument("--minute", type=int, default=0, help="分钟")
+    ap.add_argument("--sex", default="male", choices=["male", "female"], help="性别")
+    ap.add_argument("--lon", type=float, default=None, help="出生地经度（度），配合 --truesun")
+    ap.add_argument("--truesun", action="store_true", help="启用真太阳时 + 夏令时回拨")
+    ap.add_argument("--lunar", action="store_true", help="--y/--m/--d/--h 为农历")
+    ap.add_argument("--leap", action="store_true", help="农历闰月")
+    ap.add_argument("--chart", help="直接给四柱，如 '庚午 辛巳 癸巳 乙卯'（跳过排盘）")
+    ap.add_argument("--solar-term-day", type=int, default=None,
+                    help="节气后第几天（人元司令取格用；不指定则排盘模式自动推算）")
+    ap.add_argument("--trace", action="store_true", help="打印格局判定链路日志")
+    ap.add_argument("--no-special-ge", action="store_true", help="关闭真破格时的外格兜底筛查")
+    ap.add_argument("--tiaohou-segment", default=None,
+                    help="调候节气分段，如 段A/段B/上半月/下半月/清明后/谷雨后；不传自动推断")
+    ap.add_argument("--json", action="store_true", help="输出原始 JSON")
+    args = ap.parse_args()
+
+    config = {"enable_special_ge": not args.no_special_ge} if args.no_special_ge else None
+
+    if args.chart:
+        try:
+            chart = _parse_chart(args.chart)
+        except ValueError as e:
+            print("参数错误：%s" % e); sys.exit(2)
+        if args.solar_term_day is not None:
+            chart["solar_term_day"] = args.solar_term_day
+        out = analyze(chart, config=config, tiaohou_segment=args.tiaohou_segment)
+        out["input"] = chart
+    elif args.birth or (None not in (args.y, args.m, args.d, args.h)):
+        out = analyze_birth(birth=args.birth, y=args.y, m=args.m, d=args.d, h=args.h,
+                            minute=args.minute, sex=args.sex, lon=args.lon,
+                            truesun=args.truesun, lunar=args.lunar, leap=args.leap,
+                            config=config, solar_term_day=args.solar_term_day,
+                            tiaohou_segment=args.tiaohou_segment)
+    else:
+        ap.print_help()
+        print("\n需提供 --birth / --y --m --d --h / --chart 之一。")
+        sys.exit(2)
+
+    if args.json:
+        print(json.dumps(out, ensure_ascii=False, indent=2))
+    else:
+        print(_pretty(out, show_trace=args.trace))
+
+
+if __name__ == "__main__":
+    main()

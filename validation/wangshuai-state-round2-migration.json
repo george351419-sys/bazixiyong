@@ -1,0 +1,2657 @@
+{
+  "real_dates": 360,
+  "tag_changes": 75,
+  "energy_or_tag_changes": 75,
+  "changes": [
+    {
+      "date": "2017-06-21 21:00:00",
+      "pillars": [
+        "丁酉",
+        "丙午",
+        "己卯",
+        "乙亥"
+      ],
+      "before": {
+        "tag": "身弱无根",
+        "F": 210.0,
+        "K": 240.0
+      },
+      "after": {
+        "tag": "中和偏弱",
+        "F": 210.0,
+        "K": 240.0
+      },
+      "trace": [
+        {
+          "rule": "cong_weak",
+          "passed": false,
+          "reason": "克泄耗占比未达门槛"
+        },
+        {
+          "rule": "balance",
+          "passed": true,
+          "reason": "中和偏弱"
+        }
+      ]
+    },
+    {
+      "date": "1934-03-10 17:00:00",
+      "pillars": [
+        "甲戌",
+        "丁卯",
+        "庚辰",
+        "乙酉"
+      ],
+      "before": {
+        "tag": "身弱无根",
+        "F": 155.4,
+        "K": 283.8
+      },
+      "after": {
+        "tag": "身弱",
+        "F": 155.4,
+        "K": 283.8
+      },
+      "trace": [
+        {
+          "rule": "cong_weak",
+          "passed": false,
+          "reason": "克泄耗占比未达门槛"
+        },
+        {
+          "rule": "balance",
+          "passed": true,
+          "reason": "身弱"
+        }
+      ]
+    },
+    {
+      "date": "1936-01-26 01:00:00",
+      "pillars": [
+        "乙亥",
+        "己丑",
+        "丁未",
+        "辛丑"
+      ],
+      "before": {
+        "tag": "身弱无根",
+        "F": 102.0,
+        "K": 314.0
+      },
+      "after": {
+        "tag": "身弱",
+        "F": 102.0,
+        "K": 314.0
+      },
+      "trace": [
+        {
+          "rule": "cong_weak",
+          "passed": false,
+          "reason": "克泄耗占比未达门槛"
+        },
+        {
+          "rule": "balance",
+          "passed": true,
+          "reason": "身弱"
+        }
+      ]
+    },
+    {
+      "date": "1908-02-02 13:00:00",
+      "pillars": [
+        "丁未",
+        "癸丑",
+        "丁亥",
+        "丁未"
+      ],
+      "before": {
+        "tag": "身弱无根",
+        "F": 177.0,
+        "K": 235.0
+      },
+      "after": {
+        "tag": "身弱",
+        "F": 177.0,
+        "K": 235.0
+      },
+      "trace": [
+        {
+          "rule": "cong_weak",
+          "passed": false,
+          "reason": "克泄耗占比未达门槛"
+        },
+        {
+          "rule": "balance",
+          "passed": true,
+          "reason": "身弱"
+        }
+      ]
+    },
+    {
+      "date": "2020-11-18 22:00:00",
+      "pillars": [
+        "庚子",
+        "丁亥",
+        "乙丑",
+        "丁亥"
+      ],
+      "before": {
+        "tag": "身弱无根",
+        "F": 576.0,
+        "K": 180.0
+      },
+      "after": {
+        "tag": "身旺",
+        "F": 576.0,
+        "K": 180.0
+      },
+      "trace": [
+        {
+          "rule": "cong_weak",
+          "passed": false,
+          "reason": "克泄耗占比未达门槛"
+        },
+        {
+          "rule": "balance",
+          "passed": true,
+          "reason": "身旺"
+        }
+      ]
+    },
+    {
+      "date": "2001-09-17 15:00:00",
+      "pillars": [
+        "辛巳",
+        "丁酉",
+        "癸未",
+        "庚申"
+      ],
+      "before": {
+        "tag": "身弱无根",
+        "F": 272.3,
+        "K": 216.7
+      },
+      "after": {
+        "tag": "身旺",
+        "F": 272.3,
+        "K": 216.7
+      },
+      "trace": [
+        {
+          "rule": "cong_weak",
+          "passed": false,
+          "reason": "克泄耗占比未达门槛"
+        },
+        {
+          "rule": "balance",
+          "passed": true,
+          "reason": "身旺"
+        }
+      ]
+    },
+    {
+      "date": "1944-02-03 02:00:00",
+      "pillars": [
+        "癸未",
+        "乙丑",
+        "丁酉",
+        "辛丑"
+      ],
+      "before": {
+        "tag": "身弱无根",
+        "F": 72.0,
+        "K": 352.0
+      },
+      "after": {
+        "tag": "身弱",
+        "F": 72.0,
+        "K": 352.0
+      },
+      "trace": [
+        {
+          "rule": "cong_weak",
+          "passed": false,
+          "reason": "克泄耗占比未达门槛"
+        },
+        {
+          "rule": "balance",
+          "passed": true,
+          "reason": "身弱"
+        }
+      ]
+    },
+    {
+      "date": "1936-12-02 15:00:00",
+      "pillars": [
+        "丙子",
+        "己亥",
+        "戊午",
+        "庚申"
+      ],
+      "before": {
+        "tag": "身弱无根",
+        "F": 167.0,
+        "K": 271.0
+      },
+      "after": {
+        "tag": "身弱",
+        "F": 167.0,
+        "K": 271.0
+      },
+      "trace": [
+        {
+          "rule": "cong_weak",
+          "passed": false,
+          "reason": "克泄耗占比未达门槛"
+        },
+        {
+          "rule": "balance",
+          "passed": true,
+          "reason": "身弱"
+        }
+      ]
+    },
+    {
+      "date": "1957-07-14 08:00:00",
+      "pillars": [
+        "丁酉",
+        "丁未",
+        "丁亥",
+        "甲辰"
+      ],
+      "before": {
+        "tag": "虚旺",
+        "F": 240.9,
+        "K": 224.1
+      },
+      "after": {
+        "tag": "中和偏弱",
+        "F": 240.9,
+        "K": 224.1
+      },
+      "trace": [
+        {
+          "rule": "cong_weak",
+          "passed": false,
+          "reason": "克泄耗占比未达门槛"
+        },
+        {
+          "rule": "balance",
+          "passed": true,
+          "reason": "中和偏弱"
+        }
+      ]
+    },
+    {
+      "date": "1966-12-18 09:00:00",
+      "pillars": [
+        "丙午",
+        "庚子",
+        "辛亥",
+        "癸巳"
+      ],
+      "before": {
+        "tag": "身弱无根",
+        "F": 90.0,
+        "K": 270.0
+      },
+      "after": {
+        "tag": "身弱",
+        "F": 90.0,
+        "K": 270.0
+      },
+      "trace": [
+        {
+          "rule": "cong_weak",
+          "passed": false,
+          "reason": "克泄耗占比未达门槛"
+        },
+        {
+          "rule": "balance",
+          "passed": true,
+          "reason": "身弱"
+        }
+      ]
+    },
+    {
+      "date": "1980-05-20 04:00:00",
+      "pillars": [
+        "庚申",
+        "辛巳",
+        "癸巳",
+        "甲寅"
+      ],
+      "before": {
+        "tag": "身弱无根",
+        "F": 186.7,
+        "K": 257.3
+      },
+      "after": {
+        "tag": "身弱",
+        "F": 186.7,
+        "K": 257.3
+      },
+      "trace": [
+        {
+          "rule": "cong_weak",
+          "passed": false,
+          "reason": "克泄耗占比未达门槛"
+        },
+        {
+          "rule": "balance",
+          "passed": true,
+          "reason": "身弱"
+        }
+      ]
+    },
+    {
+      "date": "1980-04-22 04:00:00",
+      "pillars": [
+        "庚申",
+        "庚辰",
+        "乙丑",
+        "戊寅"
+      ],
+      "before": {
+        "tag": "身弱无根",
+        "F": 105.0,
+        "K": 332.0
+      },
+      "after": {
+        "tag": "身弱",
+        "F": 105.0,
+        "K": 332.0
+      },
+      "trace": [
+        {
+          "rule": "cong_weak",
+          "passed": false,
+          "reason": "克泄耗占比未达门槛"
+        },
+        {
+          "rule": "balance",
+          "passed": true,
+          "reason": "身弱"
+        }
+      ]
+    },
+    {
+      "date": "1989-10-06 12:00:00",
+      "pillars": [
+        "己巳",
+        "癸酉",
+        "己亥",
+        "庚午"
+      ],
+      "before": {
+        "tag": "身弱无根",
+        "F": 174.0,
+        "K": 264.0
+      },
+      "after": {
+        "tag": "身弱",
+        "F": 174.0,
+        "K": 264.0
+      },
+      "trace": [
+        {
+          "rule": "cong_weak",
+          "passed": false,
+          "reason": "克泄耗占比未达门槛"
+        },
+        {
+          "rule": "balance",
+          "passed": true,
+          "reason": "身弱"
+        }
+      ]
+    },
+    {
+      "date": "2001-12-11 15:00:00",
+      "pillars": [
+        "辛巳",
+        "庚子",
+        "戊申",
+        "庚申"
+      ],
+      "before": {
+        "tag": "身弱无根",
+        "F": 66.4,
+        "K": 419.6
+      },
+      "after": {
+        "tag": "假从弱",
+        "F": 66.4,
+        "K": 419.6
+      },
+      "trace": [
+        {
+          "rule": "cong_weak",
+          "passed": true,
+          "reason": "日主残根微弱或逐根通过弱化证据检查；印星有强根（表从实不从）"
+        }
+      ]
+    },
+    {
+      "date": "1948-12-18 04:00:00",
+      "pillars": [
+        "戊子",
+        "甲子",
+        "丁丑",
+        "壬寅"
+      ],
+      "before": {
+        "tag": "身弱无根",
+        "F": 141.0,
+        "K": 327.0
+      },
+      "after": {
+        "tag": "身弱",
+        "F": 141.0,
+        "K": 327.0
+      },
+      "trace": [
+        {
+          "rule": "cong_weak",
+          "passed": false,
+          "reason": "克泄耗占比未达门槛"
+        },
+        {
+          "rule": "balance",
+          "passed": true,
+          "reason": "身弱"
+        }
+      ]
+    },
+    {
+      "date": "1944-01-04 21:00:00",
+      "pillars": [
+        "癸未",
+        "甲子",
+        "丁卯",
+        "辛亥"
+      ],
+      "before": {
+        "tag": "身弱无根",
+        "F": 155.4,
+        "K": 276.6
+      },
+      "after": {
+        "tag": "身弱",
+        "F": 155.4,
+        "K": 276.6
+      },
+      "trace": [
+        {
+          "rule": "cong_weak",
+          "passed": false,
+          "reason": "克泄耗占比未达门槛"
+        },
+        {
+          "rule": "balance",
+          "passed": true,
+          "reason": "身弱"
+        }
+      ]
+    },
+    {
+      "date": "1993-04-23 11:00:00",
+      "pillars": [
+        "癸酉",
+        "丙辰",
+        "甲戌",
+        "庚午"
+      ],
+      "before": {
+        "tag": "身弱无根",
+        "F": 85.8,
+        "K": 363.8
+      },
+      "after": {
+        "tag": "身弱",
+        "F": 85.8,
+        "K": 363.8
+      },
+      "trace": [
+        {
+          "rule": "cong_weak",
+          "passed": false,
+          "reason": "克泄耗占比未达门槛"
+        },
+        {
+          "rule": "balance",
+          "passed": true,
+          "reason": "身弱"
+        }
+      ]
+    },
+    {
+      "date": "2028-11-05 07:00:00",
+      "pillars": [
+        "戊申",
+        "壬戌",
+        "甲午",
+        "戊辰"
+      ],
+      "before": {
+        "tag": "身弱无根",
+        "F": 111.0,
+        "K": 357.0
+      },
+      "after": {
+        "tag": "身弱",
+        "F": 111.0,
+        "K": 357.0
+      },
+      "trace": [
+        {
+          "rule": "cong_weak",
+          "passed": false,
+          "reason": "克泄耗占比未达门槛"
+        },
+        {
+          "rule": "balance",
+          "passed": true,
+          "reason": "身弱"
+        }
+      ]
+    },
+    {
+      "date": "2025-04-05 15:00:00",
+      "pillars": [
+        "乙巳",
+        "庚辰",
+        "甲辰",
+        "壬申"
+      ],
+      "before": {
+        "tag": "身弱无根",
+        "F": 188.5,
+        "K": 256.1
+      },
+      "after": {
+        "tag": "身弱",
+        "F": 188.5,
+        "K": 256.1
+      },
+      "trace": [
+        {
+          "rule": "cong_weak",
+          "passed": false,
+          "reason": "克泄耗占比未达门槛"
+        },
+        {
+          "rule": "balance",
+          "passed": true,
+          "reason": "身弱"
+        }
+      ]
+    },
+    {
+      "date": "1966-08-18 22:00:00",
+      "pillars": [
+        "丙午",
+        "丙申",
+        "己酉",
+        "乙亥"
+      ],
+      "before": {
+        "tag": "身弱无根",
+        "F": 209.0,
+        "K": 331.0
+      },
+      "after": {
+        "tag": "身弱",
+        "F": 209.0,
+        "K": 331.0
+      },
+      "trace": [
+        {
+          "rule": "cong_weak",
+          "passed": false,
+          "reason": "克泄耗占比未达门槛"
+        },
+        {
+          "rule": "balance",
+          "passed": true,
+          "reason": "身弱"
+        }
+      ]
+    },
+    {
+      "date": "2019-06-13 08:00:00",
+      "pillars": [
+        "己亥",
+        "庚午",
+        "辛巳",
+        "壬辰"
+      ],
+      "before": {
+        "tag": "身弱无根",
+        "F": 221.0,
+        "K": 229.0
+      },
+      "after": {
+        "tag": "中和偏弱",
+        "F": 221.0,
+        "K": 229.0
+      },
+      "trace": [
+        {
+          "rule": "cong_weak",
+          "passed": false,
+          "reason": "克泄耗占比未达门槛"
+        },
+        {
+          "rule": "balance",
+          "passed": true,
+          "reason": "中和偏弱"
+        }
+      ]
+    },
+    {
+      "date": "1919-11-11 04:00:00",
+      "pillars": [
+        "己未",
+        "乙亥",
+        "丁卯",
+        "壬寅"
+      ],
+      "before": {
+        "tag": "身弱无根",
+        "F": 236.4,
+        "K": 177.6
+      },
+      "after": {
+        "tag": "中和偏旺",
+        "F": 236.4,
+        "K": 177.6
+      },
+      "trace": [
+        {
+          "rule": "cong_weak",
+          "passed": false,
+          "reason": "克泄耗占比未达门槛"
+        },
+        {
+          "rule": "balance",
+          "passed": true,
+          "reason": "中和偏旺"
+        }
+      ]
+    },
+    {
+      "date": "1942-12-17 12:00:00",
+      "pillars": [
+        "壬午",
+        "壬子",
+        "甲辰",
+        "庚午"
+      ],
+      "before": {
+        "tag": "身弱无根",
+        "F": 205.0,
+        "K": 205.0
+      },
+      "after": {
+        "tag": "中和偏旺",
+        "F": 205.0,
+        "K": 205.0
+      },
+      "trace": [
+        {
+          "rule": "cong_weak",
+          "passed": false,
+          "reason": "克泄耗占比未达门槛"
+        },
+        {
+          "rule": "balance",
+          "passed": true,
+          "reason": "中和偏旺"
+        }
+      ]
+    },
+    {
+      "date": "1925-06-20 23:00:00",
+      "pillars": [
+        "乙丑",
+        "壬午",
+        "乙亥",
+        "戊子"
+      ],
+      "before": {
+        "tag": "身弱无根",
+        "F": 236.4,
+        "K": 138.6
+      },
+      "after": {
+        "tag": "身旺",
+        "F": 236.4,
+        "K": 138.6
+      },
+      "trace": [
+        {
+          "rule": "cong_weak",
+          "passed": false,
+          "reason": "克泄耗占比未达门槛"
+        },
+        {
+          "rule": "balance",
+          "passed": true,
+          "reason": "身旺"
+        }
+      ]
+    },
+    {
+      "date": "1942-10-11 19:00:00",
+      "pillars": [
+        "壬午",
+        "庚戌",
+        "丁酉",
+        "庚戌"
+      ],
+      "before": {
+        "tag": "假从弱",
+        "F": 74.0,
+        "K": 466.0
+      },
+      "after": {
+        "tag": "身弱",
+        "F": 74.0,
+        "K": 466.0
+      },
+      "trace": [
+        {
+          "rule": "cong_weak",
+          "passed": false,
+          "reason": "残存实根缺少受冲绊或中气远位证据"
+        },
+        {
+          "rule": "balance",
+          "passed": true,
+          "reason": "身弱"
+        }
+      ]
+    },
+    {
+      "date": "1947-05-20 03:00:00",
+      "pillars": [
+        "丁亥",
+        "乙巳",
+        "己亥",
+        "丙寅"
+      ],
+      "before": {
+        "tag": "身弱无根",
+        "F": 185.7,
+        "K": 208.3
+      },
+      "after": {
+        "tag": "中和偏弱",
+        "F": 185.7,
+        "K": 208.3
+      },
+      "trace": [
+        {
+          "rule": "cong_weak",
+          "passed": false,
+          "reason": "克泄耗占比未达门槛"
+        },
+        {
+          "rule": "balance",
+          "passed": true,
+          "reason": "中和偏弱"
+        }
+      ]
+    },
+    {
+      "date": "2011-10-15 01:00:00",
+      "pillars": [
+        "辛卯",
+        "戊戌",
+        "癸卯",
+        "癸丑"
+      ],
+      "before": {
+        "tag": "身弱无根",
+        "F": 150.9,
+        "K": 296.1
+      },
+      "after": {
+        "tag": "身弱",
+        "F": 150.9,
+        "K": 296.1
+      },
+      "trace": [
+        {
+          "rule": "cong_weak",
+          "passed": false,
+          "reason": "克泄耗占比未达门槛"
+        },
+        {
+          "rule": "balance",
+          "passed": true,
+          "reason": "身弱"
+        }
+      ]
+    },
+    {
+      "date": "1953-11-23 16:00:00",
+      "pillars": [
+        "癸巳",
+        "癸亥",
+        "戊寅",
+        "庚申"
+      ],
+      "before": {
+        "tag": "身弱无根",
+        "F": 84.7,
+        "K": 329.3
+      },
+      "after": {
+        "tag": "身弱",
+        "F": 84.7,
+        "K": 329.3
+      },
+      "trace": [
+        {
+          "rule": "cong_weak",
+          "passed": false,
+          "reason": "克泄耗占比未达门槛"
+        },
+        {
+          "rule": "balance",
+          "passed": true,
+          "reason": "身弱"
+        }
+      ]
+    },
+    {
+      "date": "2008-04-15 07:00:00",
+      "pillars": [
+        "戊子",
+        "丙辰",
+        "乙酉",
+        "庚辰"
+      ],
+      "before": {
+        "tag": "身弱无根",
+        "F": 141.2,
+        "K": 323.8
+      },
+      "after": {
+        "tag": "身弱",
+        "F": 141.2,
+        "K": 323.8
+      },
+      "trace": [
+        {
+          "rule": "cong_weak",
+          "passed": false,
+          "reason": "克泄耗占比未达门槛"
+        },
+        {
+          "rule": "balance",
+          "passed": true,
+          "reason": "身弱"
+        }
+      ]
+    },
+    {
+      "date": "2018-10-26 12:00:00",
+      "pillars": [
+        "戊戌",
+        "壬戌",
+        "辛卯",
+        "甲午"
+      ],
+      "before": {
+        "tag": "身弱无根",
+        "F": 218.4,
+        "K": 267.6
+      },
+      "after": {
+        "tag": "中和偏弱",
+        "F": 218.4,
+        "K": 267.6
+      },
+      "trace": [
+        {
+          "rule": "cong_weak",
+          "passed": false,
+          "reason": "克泄耗占比未达门槛"
+        },
+        {
+          "rule": "balance",
+          "passed": true,
+          "reason": "中和偏弱"
+        }
+      ]
+    },
+    {
+      "date": "2004-02-26 20:00:00",
+      "pillars": [
+        "甲申",
+        "丙寅",
+        "乙亥",
+        "丙戌"
+      ],
+      "before": {
+        "tag": "身弱无根",
+        "F": 179.8,
+        "K": 263.2
+      },
+      "after": {
+        "tag": "身弱",
+        "F": 179.8,
+        "K": 263.2
+      },
+      "trace": [
+        {
+          "rule": "cong_weak",
+          "passed": false,
+          "reason": "克泄耗占比未达门槛"
+        },
+        {
+          "rule": "balance",
+          "passed": true,
+          "reason": "身弱"
+        }
+      ]
+    },
+    {
+      "date": "1921-04-14 21:00:00",
+      "pillars": [
+        "辛酉",
+        "壬辰",
+        "丁未",
+        "辛亥"
+      ],
+      "before": {
+        "tag": "身弱无根",
+        "F": 85.9,
+        "K": 385.1
+      },
+      "after": {
+        "tag": "身弱",
+        "F": 85.9,
+        "K": 385.1
+      },
+      "trace": [
+        {
+          "rule": "cong_weak",
+          "passed": false,
+          "reason": "克泄耗占比未达门槛"
+        },
+        {
+          "rule": "balance",
+          "passed": true,
+          "reason": "身弱"
+        }
+      ]
+    },
+    {
+      "date": "1924-04-01 13:00:00",
+      "pillars": [
+        "甲子",
+        "丁卯",
+        "庚戌",
+        "癸未"
+      ],
+      "before": {
+        "tag": "身弱无根",
+        "F": 117.0,
+        "K": 366.0
+      },
+      "after": {
+        "tag": "身弱",
+        "F": 117.0,
+        "K": 366.0
+      },
+      "trace": [
+        {
+          "rule": "cong_weak",
+          "passed": false,
+          "reason": "克泄耗占比未达门槛"
+        },
+        {
+          "rule": "balance",
+          "passed": true,
+          "reason": "身弱"
+        }
+      ]
+    },
+    {
+      "date": "1905-05-05 02:00:00",
+      "pillars": [
+        "乙巳",
+        "庚辰",
+        "甲辰",
+        "乙丑"
+      ],
+      "before": {
+        "tag": "身弱无根",
+        "F": 184.6,
+        "K": 299.0
+      },
+      "after": {
+        "tag": "身弱",
+        "F": 184.6,
+        "K": 299.0
+      },
+      "trace": [
+        {
+          "rule": "cong_weak",
+          "passed": false,
+          "reason": "克泄耗占比未达门槛"
+        },
+        {
+          "rule": "balance",
+          "passed": true,
+          "reason": "身弱"
+        }
+      ]
+    },
+    {
+      "date": "2027-08-15 08:00:00",
+      "pillars": [
+        "丁未",
+        "戊申",
+        "丙寅",
+        "壬辰"
+      ],
+      "before": {
+        "tag": "身弱无根",
+        "F": 152.0,
+        "K": 281.0
+      },
+      "after": {
+        "tag": "身弱",
+        "F": 152.0,
+        "K": 281.0
+      },
+      "trace": [
+        {
+          "rule": "cong_weak",
+          "passed": false,
+          "reason": "克泄耗占比未达门槛"
+        },
+        {
+          "rule": "balance",
+          "passed": true,
+          "reason": "身弱"
+        }
+      ]
+    },
+    {
+      "date": "1921-02-24 15:00:00",
+      "pillars": [
+        "辛酉",
+        "庚寅",
+        "戊午",
+        "庚申"
+      ],
+      "before": {
+        "tag": "身弱无根",
+        "F": 122.5,
+        "K": 327.5
+      },
+      "after": {
+        "tag": "身弱",
+        "F": 122.5,
+        "K": 327.5
+      },
+      "trace": [
+        {
+          "rule": "cong_weak",
+          "passed": false,
+          "reason": "克泄耗占比未达门槛"
+        },
+        {
+          "rule": "balance",
+          "passed": true,
+          "reason": "身弱"
+        }
+      ]
+    },
+    {
+      "date": "1913-09-19 20:00:00",
+      "pillars": [
+        "癸丑",
+        "辛酉",
+        "癸卯",
+        "壬戌"
+      ],
+      "before": {
+        "tag": "虚旺",
+        "F": 251.9,
+        "K": 162.1
+      },
+      "after": {
+        "tag": "身旺",
+        "F": 251.9,
+        "K": 162.1
+      },
+      "trace": [
+        {
+          "rule": "cong_weak",
+          "passed": false,
+          "reason": "克泄耗占比未达门槛"
+        },
+        {
+          "rule": "balance",
+          "passed": true,
+          "reason": "身旺"
+        }
+      ]
+    },
+    {
+      "date": "1932-02-02 17:00:00",
+      "pillars": [
+        "辛未",
+        "辛丑",
+        "癸巳",
+        "辛酉"
+      ],
+      "before": {
+        "tag": "虚旺",
+        "F": 272.4,
+        "K": 134.4
+      },
+      "after": {
+        "tag": "身旺",
+        "F": 272.4,
+        "K": 134.4
+      },
+      "trace": [
+        {
+          "rule": "cong_weak",
+          "passed": false,
+          "reason": "克泄耗占比未达门槛"
+        },
+        {
+          "rule": "balance",
+          "passed": true,
+          "reason": "身旺"
+        }
+      ]
+    },
+    {
+      "date": "1933-10-06 22:00:00",
+      "pillars": [
+        "癸酉",
+        "辛酉",
+        "乙巳",
+        "丁亥"
+      ],
+      "before": {
+        "tag": "身弱无根",
+        "F": 105.0,
+        "K": 340.0
+      },
+      "after": {
+        "tag": "身弱",
+        "F": 105.0,
+        "K": 340.0
+      },
+      "trace": [
+        {
+          "rule": "cong_weak",
+          "passed": false,
+          "reason": "克泄耗占比未达门槛"
+        },
+        {
+          "rule": "balance",
+          "passed": true,
+          "reason": "身弱"
+        }
+      ]
+    },
+    {
+      "date": "1959-02-24 16:00:00",
+      "pillars": [
+        "己亥",
+        "丙寅",
+        "丁丑",
+        "戊申"
+      ],
+      "before": {
+        "tag": "身弱无根",
+        "F": 133.5,
+        "K": 310.5
+      },
+      "after": {
+        "tag": "身弱",
+        "F": 133.5,
+        "K": 310.5
+      },
+      "trace": [
+        {
+          "rule": "cong_weak",
+          "passed": false,
+          "reason": "克泄耗占比未达门槛"
+        },
+        {
+          "rule": "balance",
+          "passed": true,
+          "reason": "身弱"
+        }
+      ]
+    },
+    {
+      "date": "1997-01-02 00:00:00",
+      "pillars": [
+        "丙子",
+        "庚子",
+        "甲辰",
+        "甲子"
+      ],
+      "before": {
+        "tag": "身弱无根",
+        "F": 348.0,
+        "K": 180.0
+      },
+      "after": {
+        "tag": "身旺",
+        "F": 348.0,
+        "K": 180.0
+      },
+      "trace": [
+        {
+          "rule": "cong_weak",
+          "passed": false,
+          "reason": "克泄耗占比未达门槛"
+        },
+        {
+          "rule": "balance",
+          "passed": true,
+          "reason": "身旺"
+        }
+      ]
+    },
+    {
+      "date": "1931-07-21 22:00:00",
+      "pillars": [
+        "辛未",
+        "乙未",
+        "丁丑",
+        "辛亥"
+      ],
+      "before": {
+        "tag": "身弱无根",
+        "F": 126.0,
+        "K": 294.0
+      },
+      "after": {
+        "tag": "身弱",
+        "F": 126.0,
+        "K": 294.0
+      },
+      "trace": [
+        {
+          "rule": "cong_weak",
+          "passed": false,
+          "reason": "克泄耗占比未达门槛"
+        },
+        {
+          "rule": "balance",
+          "passed": true,
+          "reason": "身弱"
+        }
+      ]
+    },
+    {
+      "date": "2025-05-19 15:00:00",
+      "pillars": [
+        "乙巳",
+        "辛巳",
+        "戊子",
+        "庚申"
+      ],
+      "before": {
+        "tag": "身弱无根",
+        "F": 137.7,
+        "K": 351.3
+      },
+      "after": {
+        "tag": "身弱",
+        "F": 137.7,
+        "K": 351.3
+      },
+      "trace": [
+        {
+          "rule": "cong_weak",
+          "passed": false,
+          "reason": "克泄耗占比未达门槛"
+        },
+        {
+          "rule": "balance",
+          "passed": true,
+          "reason": "身弱"
+        }
+      ]
+    },
+    {
+      "date": "1905-06-05 00:00:00",
+      "pillars": [
+        "乙巳",
+        "辛巳",
+        "乙亥",
+        "丙子"
+      ],
+      "before": {
+        "tag": "身弱无根",
+        "F": 188.0,
+        "K": 205.0
+      },
+      "after": {
+        "tag": "中和偏弱",
+        "F": 188.0,
+        "K": 205.0
+      },
+      "trace": [
+        {
+          "rule": "cong_weak",
+          "passed": false,
+          "reason": "克泄耗占比未达门槛"
+        },
+        {
+          "rule": "balance",
+          "passed": true,
+          "reason": "中和偏弱"
+        }
+      ]
+    },
+    {
+      "date": "1941-09-07 18:00:00",
+      "pillars": [
+        "辛巳",
+        "丙申",
+        "戊午",
+        "辛酉"
+      ],
+      "before": {
+        "tag": "身弱无根",
+        "F": 198.7,
+        "K": 254.3
+      },
+      "after": {
+        "tag": "身弱",
+        "F": 198.7,
+        "K": 254.3
+      },
+      "trace": [
+        {
+          "rule": "cong_weak",
+          "passed": false,
+          "reason": "克泄耗占比未达门槛"
+        },
+        {
+          "rule": "balance",
+          "passed": true,
+          "reason": "身弱"
+        }
+      ]
+    },
+    {
+      "date": "2003-11-04 23:00:00",
+      "pillars": [
+        "癸未",
+        "壬戌",
+        "辛巳",
+        "庚子"
+      ],
+      "before": {
+        "tag": "身弱无根",
+        "F": 229.0,
+        "K": 311.0
+      },
+      "after": {
+        "tag": "中和偏弱",
+        "F": 229.0,
+        "K": 311.0
+      },
+      "trace": [
+        {
+          "rule": "cong_weak",
+          "passed": false,
+          "reason": "克泄耗占比未达门槛"
+        },
+        {
+          "rule": "balance",
+          "passed": true,
+          "reason": "中和偏弱"
+        }
+      ]
+    },
+    {
+      "date": "2000-03-08 17:00:00",
+      "pillars": [
+        "庚辰",
+        "己卯",
+        "乙丑",
+        "乙酉"
+      ],
+      "before": {
+        "tag": "身弱无根",
+        "F": 145.4,
+        "K": 286.6
+      },
+      "after": {
+        "tag": "身弱",
+        "F": 145.4,
+        "K": 286.6
+      },
+      "trace": [
+        {
+          "rule": "cong_weak",
+          "passed": false,
+          "reason": "克泄耗占比未达门槛"
+        },
+        {
+          "rule": "balance",
+          "passed": true,
+          "reason": "身弱"
+        }
+      ]
+    },
+    {
+      "date": "2027-07-01 13:00:00",
+      "pillars": [
+        "丁未",
+        "丙午",
+        "辛巳",
+        "乙未"
+      ],
+      "before": {
+        "tag": "身弱无根",
+        "F": 123.0,
+        "K": 291.0
+      },
+      "after": {
+        "tag": "身弱",
+        "F": 123.0,
+        "K": 291.0
+      },
+      "trace": [
+        {
+          "rule": "cong_weak",
+          "passed": false,
+          "reason": "克泄耗占比未达门槛"
+        },
+        {
+          "rule": "balance",
+          "passed": true,
+          "reason": "身弱"
+        }
+      ]
+    },
+    {
+      "date": "1944-03-10 16:00:00",
+      "pillars": [
+        "甲申",
+        "丁卯",
+        "癸酉",
+        "庚申"
+      ],
+      "before": {
+        "tag": "身弱无根",
+        "F": 263.0,
+        "K": 182.0
+      },
+      "after": {
+        "tag": "身旺",
+        "F": 263.0,
+        "K": 182.0
+      },
+      "trace": [
+        {
+          "rule": "cong_weak",
+          "passed": false,
+          "reason": "克泄耗占比未达门槛"
+        },
+        {
+          "rule": "balance",
+          "passed": true,
+          "reason": "身旺"
+        }
+      ]
+    },
+    {
+      "date": "1917-03-18 22:00:00",
+      "pillars": [
+        "丁巳",
+        "癸卯",
+        "己未",
+        "乙亥"
+      ],
+      "before": {
+        "tag": "身弱无根",
+        "F": 132.0,
+        "K": 576.0
+      },
+      "after": {
+        "tag": "身弱",
+        "F": 132.0,
+        "K": 576.0
+      },
+      "trace": [
+        {
+          "rule": "cong_weak",
+          "passed": false,
+          "reason": "克泄耗占比未达门槛"
+        },
+        {
+          "rule": "balance",
+          "passed": true,
+          "reason": "身弱"
+        }
+      ]
+    },
+    {
+      "date": "1991-07-25 13:00:00",
+      "pillars": [
+        "辛未",
+        "乙未",
+        "丙申",
+        "乙未"
+      ],
+      "before": {
+        "tag": "身弱无根",
+        "F": 176.0,
+        "K": 316.0
+      },
+      "after": {
+        "tag": "身弱",
+        "F": 176.0,
+        "K": 316.0
+      },
+      "trace": [
+        {
+          "rule": "cong_weak",
+          "passed": false,
+          "reason": "克泄耗占比未达门槛"
+        },
+        {
+          "rule": "balance",
+          "passed": true,
+          "reason": "身弱"
+        }
+      ]
+    },
+    {
+      "date": "2017-06-21 22:00:00",
+      "pillars": [
+        "丁酉",
+        "丙午",
+        "己卯",
+        "乙亥"
+      ],
+      "before": {
+        "tag": "身弱无根",
+        "F": 210.0,
+        "K": 240.0
+      },
+      "after": {
+        "tag": "中和偏弱",
+        "F": 210.0,
+        "K": 240.0
+      },
+      "trace": [
+        {
+          "rule": "cong_weak",
+          "passed": false,
+          "reason": "克泄耗占比未达门槛"
+        },
+        {
+          "rule": "balance",
+          "passed": true,
+          "reason": "中和偏弱"
+        }
+      ]
+    },
+    {
+      "date": "1930-04-25 16:00:00",
+      "pillars": [
+        "庚午",
+        "庚辰",
+        "乙巳",
+        "甲申"
+      ],
+      "before": {
+        "tag": "身弱无根",
+        "F": 102.9,
+        "K": 350.1
+      },
+      "after": {
+        "tag": "身弱",
+        "F": 102.9,
+        "K": 350.1
+      },
+      "trace": [
+        {
+          "rule": "cong_weak",
+          "passed": false,
+          "reason": "克泄耗占比未达门槛"
+        },
+        {
+          "rule": "balance",
+          "passed": true,
+          "reason": "身弱"
+        }
+      ]
+    },
+    {
+      "date": "1939-03-06 02:00:00",
+      "pillars": [
+        "己卯",
+        "丙寅",
+        "壬寅",
+        "辛丑"
+      ],
+      "before": {
+        "tag": "身弱无根",
+        "F": 72.0,
+        "K": 444.0
+      },
+      "after": {
+        "tag": "假从弱",
+        "F": 72.0,
+        "K": 444.0
+      },
+      "trace": [
+        {
+          "rule": "cong_weak",
+          "passed": true,
+          "reason": "日主残根微弱或逐根通过弱化证据检查"
+        }
+      ]
+    },
+    {
+      "date": "1991-12-06 11:00:00",
+      "pillars": [
+        "辛未",
+        "己亥",
+        "庚戌",
+        "壬午"
+      ],
+      "before": {
+        "tag": "身弱无根",
+        "F": 250.5,
+        "K": 226.5
+      },
+      "after": {
+        "tag": "中和偏旺",
+        "F": 250.5,
+        "K": 226.5
+      },
+      "trace": [
+        {
+          "rule": "cong_weak",
+          "passed": false,
+          "reason": "克泄耗占比未达门槛"
+        },
+        {
+          "rule": "balance",
+          "passed": true,
+          "reason": "中和偏旺"
+        }
+      ]
+    },
+    {
+      "date": "1947-03-07 07:00:00",
+      "pillars": [
+        "丁亥",
+        "癸卯",
+        "乙酉",
+        "庚辰"
+      ],
+      "before": {
+        "tag": "身弱无根",
+        "F": 210.2,
+        "K": 209.8
+      },
+      "after": {
+        "tag": "中和偏旺",
+        "F": 210.2,
+        "K": 209.8
+      },
+      "trace": [
+        {
+          "rule": "cong_weak",
+          "passed": false,
+          "reason": "克泄耗占比未达门槛"
+        },
+        {
+          "rule": "balance",
+          "passed": true,
+          "reason": "中和偏旺"
+        }
+      ]
+    },
+    {
+      "date": "1953-11-14 04:00:00",
+      "pillars": [
+        "癸巳",
+        "癸亥",
+        "己巳",
+        "丙寅"
+      ],
+      "before": {
+        "tag": "身弱无根",
+        "F": 166.2,
+        "K": 229.8
+      },
+      "after": {
+        "tag": "身弱",
+        "F": 166.2,
+        "K": 229.8
+      },
+      "trace": [
+        {
+          "rule": "cong_weak",
+          "passed": false,
+          "reason": "克泄耗占比未达门槛"
+        },
+        {
+          "rule": "balance",
+          "passed": true,
+          "reason": "身弱"
+        }
+      ]
+    },
+    {
+      "date": "2006-03-23 11:00:00",
+      "pillars": [
+        "丙戌",
+        "辛卯",
+        "辛亥",
+        "甲午"
+      ],
+      "before": {
+        "tag": "身弱无根",
+        "F": 111.0,
+        "K": 333.6
+      },
+      "after": {
+        "tag": "身弱",
+        "F": 111.0,
+        "K": 333.6
+      },
+      "trace": [
+        {
+          "rule": "cong_weak",
+          "passed": false,
+          "reason": "克泄耗占比未达门槛"
+        },
+        {
+          "rule": "balance",
+          "passed": true,
+          "reason": "身弱"
+        }
+      ]
+    },
+    {
+      "date": "2009-01-20 22:00:00",
+      "pillars": [
+        "戊子",
+        "乙丑",
+        "乙丑",
+        "丁亥"
+      ],
+      "before": {
+        "tag": "身弱无根",
+        "F": 196.2,
+        "K": 227.8
+      },
+      "after": {
+        "tag": "中和偏弱",
+        "F": 196.2,
+        "K": 227.8
+      },
+      "trace": [
+        {
+          "rule": "cong_weak",
+          "passed": false,
+          "reason": "克泄耗占比未达门槛"
+        },
+        {
+          "rule": "balance",
+          "passed": true,
+          "reason": "中和偏弱"
+        }
+      ]
+    },
+    {
+      "date": "1964-02-15 16:00:00",
+      "pillars": [
+        "甲辰",
+        "丙寅",
+        "甲午",
+        "壬申"
+      ],
+      "before": {
+        "tag": "身弱无根",
+        "F": 180.5,
+        "K": 257.5
+      },
+      "after": {
+        "tag": "中和偏弱",
+        "F": 180.5,
+        "K": 257.5
+      },
+      "trace": [
+        {
+          "rule": "cong_weak",
+          "passed": false,
+          "reason": "克泄耗占比未达门槛"
+        },
+        {
+          "rule": "balance",
+          "passed": true,
+          "reason": "中和偏弱"
+        }
+      ]
+    },
+    {
+      "date": "1931-12-18 02:00:00",
+      "pillars": [
+        "辛未",
+        "庚子",
+        "丁未",
+        "辛丑"
+      ],
+      "before": {
+        "tag": "身弱无根",
+        "F": 54.0,
+        "K": 372.6
+      },
+      "after": {
+        "tag": "假从弱",
+        "F": 54.0,
+        "K": 372.6
+      },
+      "trace": [
+        {
+          "rule": "cong_weak",
+          "passed": true,
+          "reason": "日主残根微弱或逐根通过弱化证据检查；印星有强根（表从实不从）"
+        }
+      ]
+    },
+    {
+      "date": "2011-11-26 08:00:00",
+      "pillars": [
+        "辛卯",
+        "己亥",
+        "乙酉",
+        "庚辰"
+      ],
+      "before": {
+        "tag": "身弱无根",
+        "F": 155.2,
+        "K": 269.8
+      },
+      "after": {
+        "tag": "身弱",
+        "F": 155.2,
+        "K": 269.8
+      },
+      "trace": [
+        {
+          "rule": "cong_weak",
+          "passed": false,
+          "reason": "克泄耗占比未达门槛"
+        },
+        {
+          "rule": "balance",
+          "passed": true,
+          "reason": "身弱"
+        }
+      ]
+    },
+    {
+      "date": "1915-05-20 22:00:00",
+      "pillars": [
+        "乙卯",
+        "辛巳",
+        "辛亥",
+        "己亥"
+      ],
+      "before": {
+        "tag": "身弱无根",
+        "F": 102.0,
+        "K": 262.0
+      },
+      "after": {
+        "tag": "身弱",
+        "F": 102.0,
+        "K": 262.0
+      },
+      "trace": [
+        {
+          "rule": "cong_weak",
+          "passed": false,
+          "reason": "克泄耗占比未达门槛"
+        },
+        {
+          "rule": "balance",
+          "passed": true,
+          "reason": "身弱"
+        }
+      ]
+    },
+    {
+      "date": "1962-08-13 17:00:00",
+      "pillars": [
+        "壬寅",
+        "戊申",
+        "癸未",
+        "辛酉"
+      ],
+      "before": {
+        "tag": "身弱无根",
+        "F": 250.5,
+        "K": 186.5
+      },
+      "after": {
+        "tag": "身旺",
+        "F": 250.5,
+        "K": 186.5
+      },
+      "trace": [
+        {
+          "rule": "cong_weak",
+          "passed": false,
+          "reason": "克泄耗占比未达门槛"
+        },
+        {
+          "rule": "balance",
+          "passed": true,
+          "reason": "身旺"
+        }
+      ]
+    },
+    {
+      "date": "2010-06-12 15:00:00",
+      "pillars": [
+        "庚寅",
+        "壬午",
+        "癸巳",
+        "庚申"
+      ],
+      "before": {
+        "tag": "虚旺",
+        "F": 243.7,
+        "K": 199.3
+      },
+      "after": {
+        "tag": "中和偏旺",
+        "F": 243.7,
+        "K": 199.3
+      },
+      "trace": [
+        {
+          "rule": "cong_weak",
+          "passed": false,
+          "reason": "克泄耗占比未达门槛"
+        },
+        {
+          "rule": "balance",
+          "passed": true,
+          "reason": "中和偏旺"
+        }
+      ]
+    },
+    {
+      "date": "2014-08-04 03:00:00",
+      "pillars": [
+        "甲午",
+        "辛未",
+        "丁未",
+        "壬寅"
+      ],
+      "before": {
+        "tag": "身弱无根",
+        "F": 181.0,
+        "K": 392.0
+      },
+      "after": {
+        "tag": "身弱",
+        "F": 181.0,
+        "K": 392.0
+      },
+      "trace": [
+        {
+          "rule": "cong_weak",
+          "passed": false,
+          "reason": "克泄耗占比未达门槛"
+        },
+        {
+          "rule": "balance",
+          "passed": true,
+          "reason": "身弱"
+        }
+      ]
+    },
+    {
+      "date": "1951-02-06 08:00:00",
+      "pillars": [
+        "辛卯",
+        "庚寅",
+        "丁丑",
+        "甲辰"
+      ],
+      "before": {
+        "tag": "身弱无根",
+        "F": 172.8,
+        "K": 263.2
+      },
+      "after": {
+        "tag": "身弱",
+        "F": 172.8,
+        "K": 263.2
+      },
+      "trace": [
+        {
+          "rule": "cong_weak",
+          "passed": false,
+          "reason": "克泄耗占比未达门槛"
+        },
+        {
+          "rule": "balance",
+          "passed": true,
+          "reason": "身弱"
+        }
+      ]
+    },
+    {
+      "date": "1965-06-20 07:00:00",
+      "pillars": [
+        "乙巳",
+        "壬午",
+        "乙巳",
+        "庚辰"
+      ],
+      "before": {
+        "tag": "身弱无根",
+        "F": 120.0,
+        "K": 366.0
+      },
+      "after": {
+        "tag": "身弱",
+        "F": 120.0,
+        "K": 366.0
+      },
+      "trace": [
+        {
+          "rule": "cong_weak",
+          "passed": false,
+          "reason": "克泄耗占比未达门槛"
+        },
+        {
+          "rule": "balance",
+          "passed": true,
+          "reason": "身弱"
+        }
+      ]
+    },
+    {
+      "date": "1984-05-05 18:00:00",
+      "pillars": [
+        "甲子",
+        "己巳",
+        "己亥",
+        "癸酉"
+      ],
+      "before": {
+        "tag": "身弱无根",
+        "F": 74.1,
+        "K": 326.5
+      },
+      "after": {
+        "tag": "身弱",
+        "F": 74.1,
+        "K": 326.5
+      },
+      "trace": [
+        {
+          "rule": "cong_weak",
+          "passed": false,
+          "reason": "克泄耗占比未达门槛"
+        },
+        {
+          "rule": "balance",
+          "passed": true,
+          "reason": "身弱"
+        }
+      ]
+    },
+    {
+      "date": "2016-05-27 15:00:00",
+      "pillars": [
+        "丙申",
+        "癸巳",
+        "己酉",
+        "壬申"
+      ],
+      "before": {
+        "tag": "身弱无根",
+        "F": 131.3,
+        "K": 357.7
+      },
+      "after": {
+        "tag": "身弱",
+        "F": 131.3,
+        "K": 357.7
+      },
+      "trace": [
+        {
+          "rule": "cong_weak",
+          "passed": false,
+          "reason": "克泄耗占比未达门槛"
+        },
+        {
+          "rule": "balance",
+          "passed": true,
+          "reason": "身弱"
+        }
+      ]
+    },
+    {
+      "date": "1966-02-13 02:00:00",
+      "pillars": [
+        "丙午",
+        "庚寅",
+        "癸卯",
+        "癸丑"
+      ],
+      "before": {
+        "tag": "身弱无根",
+        "F": 120.0,
+        "K": 384.0
+      },
+      "after": {
+        "tag": "身弱",
+        "F": 120.0,
+        "K": 384.0
+      },
+      "trace": [
+        {
+          "rule": "cong_weak",
+          "passed": false,
+          "reason": "克泄耗占比未达门槛"
+        },
+        {
+          "rule": "balance",
+          "passed": true,
+          "reason": "身弱"
+        }
+      ]
+    },
+    {
+      "date": "2013-03-06 03:00:00",
+      "pillars": [
+        "癸巳",
+        "乙卯",
+        "辛未",
+        "庚寅"
+      ],
+      "before": {
+        "tag": "身弱无根",
+        "F": 161.0,
+        "K": 379.0
+      },
+      "after": {
+        "tag": "身弱",
+        "F": 161.0,
+        "K": 379.0
+      },
+      "trace": [
+        {
+          "rule": "cong_weak",
+          "passed": false,
+          "reason": "克泄耗占比未达门槛"
+        },
+        {
+          "rule": "balance",
+          "passed": true,
+          "reason": "身弱"
+        }
+      ]
+    },
+    {
+      "date": "1915-05-27 11:00:00",
+      "pillars": [
+        "乙卯",
+        "辛巳",
+        "戊午",
+        "戊午"
+      ],
+      "before": {
+        "tag": "身弱无根",
+        "F": 319.0,
+        "K": 209.0
+      },
+      "after": {
+        "tag": "身旺",
+        "F": 319.0,
+        "K": 209.0
+      },
+      "trace": [
+        {
+          "rule": "cong_weak",
+          "passed": false,
+          "reason": "克泄耗占比未达门槛"
+        },
+        {
+          "rule": "balance",
+          "passed": true,
+          "reason": "身旺"
+        }
+      ]
+    },
+    {
+      "date": "2012-09-20 06:00:00",
+      "pillars": [
+        "壬辰",
+        "己酉",
+        "甲申",
+        "丁卯"
+      ],
+      "before": {
+        "tag": "身弱无根",
+        "F": 157.4,
+        "K": 268.6
+      },
+      "after": {
+        "tag": "身弱",
+        "F": 157.4,
+        "K": 268.6
+      },
+      "trace": [
+        {
+          "rule": "cong_weak",
+          "passed": false,
+          "reason": "克泄耗占比未达门槛"
+        },
+        {
+          "rule": "balance",
+          "passed": true,
+          "reason": "身弱"
+        }
+      ]
+    },
+    {
+      "date": "2014-02-02 20:00:00",
+      "pillars": [
+        "癸巳",
+        "乙丑",
+        "甲辰",
+        "甲戌"
+      ],
+      "before": {
+        "tag": "身弱无根",
+        "F": 201.0,
+        "K": 227.0
+      },
+      "after": {
+        "tag": "中和偏弱",
+        "F": 201.0,
+        "K": 227.0
+      },
+      "trace": [
+        {
+          "rule": "cong_weak",
+          "passed": false,
+          "reason": "克泄耗占比未达门槛"
+        },
+        {
+          "rule": "balance",
+          "passed": true,
+          "reason": "中和偏弱"
+        }
+      ]
+    }
+  ],
+  "old_geju_baseline_differences": [
+    {
+      "date": "1936-01-26 01:00:00",
+      "before": {
+        "main_ge_name": "食神格",
+        "ge_category": "八格",
+        "ge_status": "成中有败",
+        "clean_level": "浊而无去",
+        "ge_variant": "明格"
+      },
+      "after": {
+        "main_ge_name": "食神格",
+        "ge_category": "八格",
+        "ge_status": "真破格",
+        "clean_level": "浊而无去",
+        "ge_variant": "明格"
+      }
+    },
+    {
+      "date": "1982-07-09 00:00:00",
+      "before": {
+        "main_ge_name": "偏财格",
+        "ge_category": "八格",
+        "ge_status": "真破格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "after": {
+        "main_ge_name": "偏财格",
+        "ge_category": "八格",
+        "ge_status": "成中有败",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      }
+    },
+    {
+      "date": "1964-07-24 00:00:00",
+      "before": {
+        "main_ge_name": "正财格",
+        "ge_category": "八格",
+        "ge_status": "真破格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "after": {
+        "main_ge_name": "正财格",
+        "ge_category": "八格",
+        "ge_status": "成中有败",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      }
+    },
+    {
+      "date": "1957-07-07 08:00:00",
+      "before": {
+        "main_ge_name": "正官格",
+        "ge_category": "八格",
+        "ge_status": "真破格",
+        "clean_level": "浊而无去",
+        "ge_variant": "明格"
+      },
+      "after": {
+        "main_ge_name": "正官格",
+        "ge_category": "八格",
+        "ge_status": "成中有败",
+        "clean_level": "浊而无去",
+        "ge_variant": "明格"
+      }
+    },
+    {
+      "date": "1944-01-04 21:00:00",
+      "before": {
+        "main_ge_name": "七杀格",
+        "ge_category": "八格",
+        "ge_status": "真破格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "after": {
+        "main_ge_name": "七杀格",
+        "ge_category": "八格",
+        "ge_status": "成中有败",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      }
+    },
+    {
+      "date": "1954-07-18 06:00:00",
+      "before": {
+        "main_ge_name": "偏财格",
+        "ge_category": "八格",
+        "ge_status": "败中有救",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "after": {
+        "main_ge_name": "偏财格",
+        "ge_category": "八格",
+        "ge_status": "真破格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      }
+    },
+    {
+      "date": "2009-04-01 23:00:00",
+      "before": {
+        "main_ge_name": "正印格",
+        "ge_category": "八格",
+        "ge_status": "真破格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "after": {
+        "main_ge_name": "正印格",
+        "ge_category": "八格",
+        "ge_status": "成中有败",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      }
+    },
+    {
+      "date": "1977-12-26 22:00:00",
+      "before": {
+        "main_ge_name": "七杀格",
+        "ge_category": "八格",
+        "ge_status": "真破格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "after": {
+        "main_ge_name": "七杀格",
+        "ge_category": "八格",
+        "ge_status": "成中有败",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      }
+    },
+    {
+      "date": "2018-10-26 12:00:00",
+      "before": {
+        "main_ge_name": "正印格",
+        "ge_category": "八格",
+        "ge_status": "真破格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "after": {
+        "main_ge_name": "正印格",
+        "ge_category": "八格",
+        "ge_status": "成中有败",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      }
+    },
+    {
+      "date": "1930-01-04 11:00:00",
+      "before": {
+        "main_ge_name": "正印格",
+        "ge_category": "八格",
+        "ge_status": "成中有败",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "after": {
+        "main_ge_name": "正印格",
+        "ge_category": "八格",
+        "ge_status": "真破格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      }
+    },
+    {
+      "date": "1910-02-01 09:00:00",
+      "before": {
+        "main_ge_name": "食神格",
+        "ge_category": "八格",
+        "ge_status": "败中有救",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "after": {
+        "main_ge_name": "食神格",
+        "ge_category": "八格",
+        "ge_status": "成中有败",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      }
+    },
+    {
+      "date": "1996-01-14 08:00:00",
+      "before": {
+        "main_ge_name": "正印格",
+        "ge_category": "八格",
+        "ge_status": "成中有败",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "after": {
+        "main_ge_name": "正印格",
+        "ge_category": "八格",
+        "ge_status": "真破格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      }
+    },
+    {
+      "date": "1970-02-17 20:00:00",
+      "before": {
+        "main_ge_name": "七杀格",
+        "ge_category": "八格",
+        "ge_status": "真破格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "after": {
+        "main_ge_name": "七杀格",
+        "ge_category": "八格",
+        "ge_status": "成中有败",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      }
+    },
+    {
+      "date": "1996-11-14 23:00:00",
+      "before": {
+        "main_ge_name": "正印格",
+        "ge_category": "八格",
+        "ge_status": "真破格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "after": {
+        "main_ge_name": "正印格",
+        "ge_category": "八格",
+        "ge_status": "成中有败",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      }
+    },
+    {
+      "date": "1955-12-13 09:00:00",
+      "before": {
+        "main_ge_name": "正财格",
+        "ge_category": "八格",
+        "ge_status": "败中有救",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "after": {
+        "main_ge_name": "正财格",
+        "ge_category": "八格",
+        "ge_status": "成中有败",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      }
+    },
+    {
+      "date": "2004-10-19 19:00:00",
+      "before": {
+        "main_ge_name": "正印格",
+        "ge_category": "八格",
+        "ge_status": "真破格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "after": {
+        "main_ge_name": "正印格",
+        "ge_category": "八格",
+        "ge_status": "成中有败",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      }
+    },
+    {
+      "date": "2009-01-20 22:00:00",
+      "before": {
+        "main_ge_name": "偏财格",
+        "ge_category": "八格",
+        "ge_status": "真破格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "after": {
+        "main_ge_name": "偏财格",
+        "ge_category": "八格",
+        "ge_status": "成中有败",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      }
+    },
+    {
+      "date": "2011-11-26 08:00:00",
+      "before": {
+        "main_ge_name": "正印格",
+        "ge_category": "八格",
+        "ge_status": "真破格",
+        "clean_level": "浊而无去",
+        "ge_variant": "暗格"
+      },
+      "after": {
+        "main_ge_name": "正印格",
+        "ge_category": "八格",
+        "ge_status": "成中有败",
+        "clean_level": "浊而无去",
+        "ge_variant": "暗格"
+      }
+    },
+    {
+      "date": "1990-12-10 01:00:00",
+      "before": {
+        "main_ge_name": "偏财格",
+        "ge_category": "八格",
+        "ge_status": "真破格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "after": {
+        "main_ge_name": "偏财格",
+        "ge_category": "八格",
+        "ge_status": "成中有败",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      }
+    }
+  ],
+  "random_seed": 20261107,
+  "random_invariants": 10000,
+  "random_tag_counts": {
+    "身弱": 4211,
+    "身旺": 1873,
+    "身弱无根": 1008,
+    "中和偏弱": 1130,
+    "中和偏旺": 718,
+    "从弱": 292,
+    "假从弱": 653,
+    "从强": 17,
+    "假从强": 35,
+    "虚旺": 63
+  },
+  "baseline_overwritten": false
+}

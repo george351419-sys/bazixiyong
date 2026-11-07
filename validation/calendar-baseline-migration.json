@@ -1,0 +1,125 @@
+{
+  "reason": "基线生成后旺衰模块从格专项更新；保留五例前后差异，不修改旺衰实现",
+  "changes": [
+    {
+      "date": "1931-06-08 09:00:00",
+      "pillars": [
+        "辛未",
+        "甲午",
+        "甲午",
+        "己巳"
+      ],
+      "before": {
+        "main_ge_name": "食神格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "after": {
+        "main_ge_name": "从儿格",
+        "ge_category": "外格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_tag": "从弱"
+    },
+    {
+      "date": "1949-04-16 15:00:00",
+      "pillars": [
+        "己丑",
+        "戊辰",
+        "丙子",
+        "丙申"
+      ],
+      "before": {
+        "main_ge_name": "食神格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "浊而无去",
+        "ge_variant": "明格"
+      },
+      "after": {
+        "main_ge_name": "从儿格",
+        "ge_category": "外格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_tag": "从弱"
+    },
+    {
+      "date": "1948-10-18 22:00:00",
+      "pillars": [
+        "戊子",
+        "壬戌",
+        "丙子",
+        "己亥"
+      ],
+      "before": {
+        "main_ge_name": "从杀格",
+        "ge_category": "外格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "after": {
+        "main_ge_name": "食神格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "浊而无去",
+        "ge_variant": "明格"
+      },
+      "wangshuai_tag": "假从弱"
+    },
+    {
+      "date": "2010-06-01 14:00:00",
+      "pillars": [
+        "庚寅",
+        "辛巳",
+        "壬午",
+        "丁未"
+      ],
+      "before": {
+        "main_ge_name": "正财格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "浊而无去",
+        "ge_variant": "暗格"
+      },
+      "after": {
+        "main_ge_name": "从财格",
+        "ge_category": "外格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_tag": "从弱"
+    },
+    {
+      "date": "2030-06-19 10:00:00",
+      "pillars": [
+        "庚戌",
+        "壬午",
+        "乙酉",
+        "辛巳"
+      ],
+      "before": {
+        "main_ge_name": "食神格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "浊而无去",
+        "ge_variant": "暗格"
+      },
+      "after": {
+        "main_ge_name": "从杀格",
+        "ge_category": "外格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_tag": "从弱"
+    }
+  ]
+}

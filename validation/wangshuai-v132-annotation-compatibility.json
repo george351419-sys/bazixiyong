@@ -1,0 +1,18 @@
+{
+  "seed": 20261107,
+  "samples": 5000,
+  "compared_fields": [
+    "tag",
+    "F",
+    "K",
+    "effective_root_level",
+    "confidence",
+    "root_energy",
+    "root_status",
+    "ratio_share_f",
+    "ratio_share_k"
+  ],
+  "differences": 0,
+  "boundary_hints": 798,
+  "review_case_status": "pending_user_or_expert"
+}

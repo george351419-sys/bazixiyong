@@ -1,0 +1,8314 @@
+{
+  "seed": 1606,
+  "timezone": "Asia/Shanghai",
+  "sect": 2,
+  "note": "当前版本行为基线，不作为命理正确性的独立金标准",
+  "cases": [
+    {
+      "date": "2012-02-07 16:00:00",
+      "pillars": [
+        "壬辰",
+        "壬寅",
+        "戊戌",
+        "庚申"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "七杀格",
+        "ge_category": "八格",
+        "ge_status": "真破格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 91.5,
+        "K": 286.5,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1920-11-08 19:00:00",
+      "pillars": [
+        "庚申",
+        "丁亥",
+        "庚午",
+        "丙戌"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "食神格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "浊而无去",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 227.0,
+        "K": 313.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1910-08-20 11:00:00",
+      "pillars": [
+        "庚戌",
+        "甲申",
+        "丁巳",
+        "丙午"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "正财格",
+        "ge_category": "八格",
+        "ge_status": "真破格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 185.0,
+        "K": 250.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1984-04-23 15:00:00",
+      "pillars": [
+        "甲子",
+        "戊辰",
+        "丁亥",
+        "戊申"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "伤官格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱无根",
+        "F": 106.2,
+        "K": 329.8,
+        "effective_root_level": 0
+      }
+    },
+    {
+      "date": "1921-10-13 10:00:00",
+      "pillars": [
+        "辛酉",
+        "戊戌",
+        "己酉",
+        "己巳"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "食神格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "中和偏旺",
+        "F": 264.0,
+        "K": 276.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1977-02-09 05:00:00",
+      "pillars": [
+        "丁巳",
+        "壬寅",
+        "丁酉",
+        "癸卯"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "正印格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "浊而无去",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身旺",
+        "F": 216.0,
+        "K": 193.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1933-03-27 23:00:00",
+      "pillars": [
+        "癸酉",
+        "乙卯",
+        "壬辰",
+        "壬子"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "伤官格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身旺",
+        "F": 273.0,
+        "K": 168.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "2017-06-21 21:00:00",
+      "pillars": [
+        "丁酉",
+        "丙午",
+        "己卯",
+        "乙亥"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "建禄格",
+        "ge_category": "禄刃",
+        "ge_status": "成格",
+        "clean_level": "浊而无去",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "中和偏弱",
+        "F": 210.0,
+        "K": 240.0,
+        "effective_root_level": 3
+      }
+    },
+    {
+      "date": "2003-05-01 17:00:00",
+      "pillars": [
+        "癸未",
+        "丙辰",
+        "甲戌",
+        "癸酉"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "正印格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 141.8,
+        "K": 292.8,
+        "effective_root_level": 3
+      }
+    },
+    {
+      "date": "1934-03-10 17:00:00",
+      "pillars": [
+        "甲戌",
+        "丁卯",
+        "庚辰",
+        "乙酉"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "正财格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 155.4,
+        "K": 283.8,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1965-12-04 10:00:00",
+      "pillars": [
+        "乙巳",
+        "丁亥",
+        "壬辰",
+        "乙巳"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "建禄格",
+        "ge_category": "禄刃",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "假从弱",
+        "F": 50.0,
+        "K": 342.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1942-08-15 17:00:00",
+      "pillars": [
+        "壬午",
+        "戊申",
+        "庚子",
+        "乙酉"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "建禄格",
+        "ge_category": "禄刃",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身旺",
+        "F": 297.0,
+        "K": 165.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "2005-11-13 18:00:00",
+      "pillars": [
+        "乙酉",
+        "丁亥",
+        "辛丑",
+        "丁酉"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "伤官格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "中和偏弱",
+        "F": 240.0,
+        "K": 300.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1908-05-26 01:00:00",
+      "pillars": [
+        "戊申",
+        "丁巳",
+        "辛巳",
+        "己丑"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "正印格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "浊而无去",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身旺",
+        "F": 287.4,
+        "K": 201.6,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1936-01-26 01:00:00",
+      "pillars": [
+        "乙亥",
+        "己丑",
+        "丁未",
+        "辛丑"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "食神格",
+        "ge_category": "八格",
+        "ge_status": "真破格",
+        "clean_level": "浊而无去",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱无根",
+        "F": 102.0,
+        "K": 314.0,
+        "effective_root_level": 0
+      }
+    },
+    {
+      "date": "1982-07-09 00:00:00",
+      "pillars": [
+        "壬戌",
+        "丁未",
+        "癸巳",
+        "壬子"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "偏财格",
+        "ge_category": "八格",
+        "ge_status": "成中有败",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "中和偏弱",
+        "F": 226.0,
+        "K": 278.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1908-02-02 13:00:00",
+      "pillars": [
+        "丁未",
+        "癸丑",
+        "丁亥",
+        "丁未"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "七杀格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 177.0,
+        "K": 235.0,
+        "effective_root_level": 3
+      }
+    },
+    {
+      "date": "1917-03-26 13:00:00",
+      "pillars": [
+        "丁巳",
+        "癸卯",
+        "丁卯",
+        "丁未"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "偏印格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身旺",
+        "F": 394.0,
+        "K": 146.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1964-07-24 00:00:00",
+      "pillars": [
+        "甲辰",
+        "辛未",
+        "甲戌",
+        "甲子"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "正财格",
+        "ge_category": "八格",
+        "ge_status": "成中有败",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "中和偏弱",
+        "F": 219.0,
+        "K": 225.0,
+        "effective_root_level": 3
+      }
+    },
+    {
+      "date": "2020-11-18 22:00:00",
+      "pillars": [
+        "庚子",
+        "丁亥",
+        "乙丑",
+        "丁亥"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "正印格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身旺",
+        "F": 576.0,
+        "K": 180.0,
+        "effective_root_level": 3
+      }
+    },
+    {
+      "date": "1908-01-13 11:00:00",
+      "pillars": [
+        "丁未",
+        "癸丑",
+        "丁卯",
+        "丙午"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "七杀格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身旺",
+        "F": 297.7,
+        "K": 166.5,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "2000-05-04 08:00:00",
+      "pillars": [
+        "庚辰",
+        "庚辰",
+        "壬戌",
+        "甲辰"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "七杀格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 150.0,
+        "K": 222.0,
+        "effective_root_level": 3
+      }
+    },
+    {
+      "date": "2001-09-17 15:00:00",
+      "pillars": [
+        "辛巳",
+        "丁酉",
+        "癸未",
+        "庚申"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "偏印格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "浊而无去",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身旺",
+        "F": 272.3,
+        "K": 216.7,
+        "effective_root_level": 3
+      }
+    },
+    {
+      "date": "1906-01-01 18:00:00",
+      "pillars": [
+        "乙巳",
+        "戊子",
+        "乙巳",
+        "乙酉"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "偏印格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱无根",
+        "F": 114.0,
+        "K": 330.0,
+        "effective_root_level": 0
+      }
+    },
+    {
+      "date": "1944-02-03 02:00:00",
+      "pillars": [
+        "癸未",
+        "乙丑",
+        "丁酉",
+        "辛丑"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "七杀格",
+        "ge_category": "八格",
+        "ge_status": "真破格",
+        "clean_level": "浊而无去",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱无根",
+        "F": 72.0,
+        "K": 352.0,
+        "effective_root_level": 0
+      }
+    },
+    {
+      "date": "2029-10-10 22:00:00",
+      "pillars": [
+        "己酉",
+        "甲戌",
+        "癸酉",
+        "癸亥"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "正官格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身旺",
+        "F": 330.0,
+        "K": 174.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1992-09-18 16:00:00",
+      "pillars": [
+        "壬申",
+        "己酉",
+        "丁酉",
+        "戊申"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "偏财格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "浊而无去",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "从弱",
+        "F": 0.0,
+        "K": 540.0,
+        "effective_root_level": 0
+      }
+    },
+    {
+      "date": "1954-01-09 00:00:00",
+      "pillars": [
+        "癸巳",
+        "乙丑",
+        "乙丑",
+        "丙子"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "偏印格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱无根",
+        "F": 90.0,
+        "K": 444.0,
+        "effective_root_level": 0
+      }
+    },
+    {
+      "date": "1976-05-02 12:00:00",
+      "pillars": [
+        "丙辰",
+        "壬辰",
+        "甲寅",
+        "庚午"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "偏财格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 164.0,
+        "K": 352.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1909-11-10 04:00:00",
+      "pillars": [
+        "己酉",
+        "乙亥",
+        "甲戌",
+        "丙寅"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "偏印格",
+        "ge_category": "八格",
+        "ge_status": "真破格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 160.8,
+        "K": 325.2,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1936-12-02 15:00:00",
+      "pillars": [
+        "丙子",
+        "己亥",
+        "戊午",
+        "庚申"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "偏财格",
+        "ge_category": "八格",
+        "ge_status": "真破格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 167.0,
+        "K": 271.0,
+        "effective_root_level": 3
+      }
+    },
+    {
+      "date": "1949-01-18 18:00:00",
+      "pillars": [
+        "戊子",
+        "乙丑",
+        "戊申",
+        "辛酉"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "伤官格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "中和偏旺",
+        "F": 291.0,
+        "K": 300.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "2021-07-19 01:00:00",
+      "pillars": [
+        "辛丑",
+        "乙未",
+        "戊辰",
+        "癸丑"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "正官格",
+        "ge_category": "八格",
+        "ge_status": "真破格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 151.5,
+        "K": 266.5,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1902-06-07 23:00:00",
+      "pillars": [
+        "壬寅",
+        "丙午",
+        "辛酉",
+        "庚子"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "七杀格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 181.5,
+        "K": 250.5,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "2006-05-17 09:00:00",
+      "pillars": [
+        "丙戌",
+        "癸巳",
+        "丙午",
+        "癸巳"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "建禄格",
+        "ge_category": "禄刃",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "中和偏弱",
+        "F": 246.0,
+        "K": 294.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1951-06-19 07:00:00",
+      "pillars": [
+        "辛卯",
+        "甲午",
+        "庚寅",
+        "庚辰"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "正官格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱无根",
+        "F": 89.4,
+        "K": 246.6,
+        "effective_root_level": 0
+      }
+    },
+    {
+      "date": "2014-01-27 16:00:00",
+      "pillars": [
+        "癸巳",
+        "乙丑",
+        "戊戌",
+        "庚申"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "正财格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 180.7,
+        "K": 308.3,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1905-03-25 23:00:00",
+      "pillars": [
+        "乙巳",
+        "己卯",
+        "癸亥",
+        "甲子"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "食神格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "浊而无去",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 129.0,
+        "K": 321.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1974-10-06 00:00:00",
+      "pillars": [
+        "甲寅",
+        "癸酉",
+        "庚辰",
+        "丙子"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "阳刃格",
+        "ge_category": "禄刃",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "中和偏弱",
+        "F": 255.0,
+        "K": 342.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1936-01-24 13:00:00",
+      "pillars": [
+        "乙亥",
+        "己丑",
+        "乙巳",
+        "癸未"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "偏财格",
+        "ge_category": "八格",
+        "ge_status": "真破格",
+        "clean_level": "浊而无去",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "中和偏弱",
+        "F": 175.0,
+        "K": 191.0,
+        "effective_root_level": 3
+      }
+    },
+    {
+      "date": "1913-07-22 07:00:00",
+      "pillars": [
+        "癸丑",
+        "己未",
+        "甲辰",
+        "戊辰"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "正财格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 149.5,
+        "K": 334.5,
+        "effective_root_level": 3
+      }
+    },
+    {
+      "date": "1975-04-04 14:00:00",
+      "pillars": [
+        "乙卯",
+        "己卯",
+        "庚辰",
+        "癸未"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "正财格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱无根",
+        "F": 174.0,
+        "K": 366.0,
+        "effective_root_level": 0
+      }
+    },
+    {
+      "date": "1913-11-06 16:00:00",
+      "pillars": [
+        "癸丑",
+        "壬戌",
+        "辛卯",
+        "丙申"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "正印格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "浊而无去",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 175.7,
+        "K": 289.3,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1957-07-14 08:00:00",
+      "pillars": [
+        "丁酉",
+        "丁未",
+        "丁亥",
+        "甲辰"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "食神格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "中和偏弱",
+        "F": 240.9,
+        "K": 224.1,
+        "effective_root_level": 3
+      }
+    },
+    {
+      "date": "1913-05-01 05:00:00",
+      "pillars": [
+        "癸丑",
+        "丙辰",
+        "壬午",
+        "癸卯"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "七杀格",
+        "ge_category": "八格",
+        "ge_status": "成中有败",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 137.0,
+        "K": 379.0,
+        "effective_root_level": 3
+      }
+    },
+    {
+      "date": "1971-04-11 14:00:00",
+      "pillars": [
+        "辛亥",
+        "壬辰",
+        "丙寅",
+        "乙未"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "正印格",
+        "ge_category": "八格",
+        "ge_status": "成中有败",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 202.8,
+        "K": 283.2,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1929-06-21 14:00:00",
+      "pillars": [
+        "己巳",
+        "庚午",
+        "丁酉",
+        "丁未"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "建禄格",
+        "ge_category": "禄刃",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身旺",
+        "F": 528.0,
+        "K": 220.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1966-12-18 09:00:00",
+      "pillars": [
+        "丙午",
+        "庚子",
+        "辛亥",
+        "癸巳"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "从弱格",
+        "ge_category": "外格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "从弱",
+        "F": 42.0,
+        "K": 270.0,
+        "effective_root_level": 0
+      }
+    },
+    {
+      "date": "1927-04-15 20:00:00",
+      "pillars": [
+        "丁卯",
+        "甲辰",
+        "己卯",
+        "甲戌"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "建禄格",
+        "ge_category": "禄刃",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 131.7,
+        "K": 303.9,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1971-10-02 07:00:00",
+      "pillars": [
+        "辛亥",
+        "丁酉",
+        "庚申",
+        "庚辰"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "阳刃格",
+        "ge_category": "禄刃",
+        "ge_status": "真破格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身旺",
+        "F": 424.0,
+        "K": 170.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1980-05-20 04:00:00",
+      "pillars": [
+        "庚申",
+        "辛巳",
+        "癸巳",
+        "甲寅"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "正印格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "浊而无去",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱无根",
+        "F": 186.7,
+        "K": 257.3,
+        "effective_root_level": 0
+      }
+    },
+    {
+      "date": "1973-01-13 20:00:00",
+      "pillars": [
+        "壬子",
+        "癸丑",
+        "己酉",
+        "甲戌"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "偏财格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身旺",
+        "F": 368.0,
+        "K": 247.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1928-04-03 07:00:00",
+      "pillars": [
+        "戊辰",
+        "乙卯",
+        "癸酉",
+        "丙辰"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "食神格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 84.6,
+        "K": 356.4,
+        "effective_root_level": 1
+      }
+    },
+    {
+      "date": "1921-02-14 05:00:00",
+      "pillars": [
+        "辛酉",
+        "庚寅",
+        "戊申",
+        "乙卯"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "七杀格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "浊而无去",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "假从弱",
+        "F": 23.0,
+        "K": 337.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1936-09-17 04:00:00",
+      "pillars": [
+        "丙子",
+        "丁酉",
+        "壬寅",
+        "壬寅"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "正印格",
+        "ge_category": "八格",
+        "ge_status": "真破格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "中和偏弱",
+        "F": 230.0,
+        "K": 292.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1940-11-02 20:00:00",
+      "pillars": [
+        "庚辰",
+        "丙戌",
+        "己酉",
+        "甲戌"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "建禄格",
+        "ge_category": "禄刃",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身旺",
+        "F": 246.6,
+        "K": 190.6,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1998-08-07 22:00:00",
+      "pillars": [
+        "戊寅",
+        "己未",
+        "丙戌",
+        "己亥"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "伤官格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "浊而无去",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 115.3,
+        "K": 373.7,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1960-01-27 15:00:00",
+      "pillars": [
+        "己亥",
+        "丁丑",
+        "甲寅",
+        "壬申"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "正财格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "中和偏弱",
+        "F": 198.5,
+        "K": 242.5,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1980-04-22 04:00:00",
+      "pillars": [
+        "庚申",
+        "庚辰",
+        "乙丑",
+        "戊寅"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "正财格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 105.0,
+        "K": 332.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1948-02-16 23:00:00",
+      "pillars": [
+        "戊子",
+        "甲寅",
+        "辛未",
+        "庚子"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "正财格",
+        "ge_category": "八格",
+        "ge_status": "成中有败",
+        "clean_level": "浊而无去",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱无根",
+        "F": 141.0,
+        "K": 351.0,
+        "effective_root_level": 0
+      }
+    },
+    {
+      "date": "2028-08-14 06:00:00",
+      "pillars": [
+        "戊申",
+        "庚申",
+        "辛未",
+        "辛卯"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "月劫格",
+        "ge_category": "禄刃",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身旺",
+        "F": 359.0,
+        "K": 181.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1987-03-12 19:00:00",
+      "pillars": [
+        "丁卯",
+        "癸卯",
+        "庚申",
+        "丙戌"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "正财格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "浊而无去",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 126.7,
+        "K": 362.3,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1957-07-07 08:00:00",
+      "pillars": [
+        "丁酉",
+        "丙午",
+        "庚辰",
+        "庚辰"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "正官格",
+        "ge_category": "八格",
+        "ge_status": "成中有败",
+        "clean_level": "浊而无去",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "中和偏弱",
+        "F": 239.0,
+        "K": 247.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1930-07-08 07:00:00",
+      "pillars": [
+        "庚午",
+        "癸未",
+        "己未",
+        "戊辰"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "建禄格",
+        "ge_category": "禄刃",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身旺",
+        "F": 425.0,
+        "K": 166.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1972-12-07 22:00:00",
+      "pillars": [
+        "壬子",
+        "壬子",
+        "壬申",
+        "辛亥"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "阳刃格",
+        "ge_category": "禄刃",
+        "ge_status": "真破格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "假从强",
+        "F": 503.0,
+        "K": 37.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1902-09-10 03:00:00",
+      "pillars": [
+        "壬寅",
+        "己酉",
+        "丙申",
+        "庚寅"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "正财格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 76.5,
+        "K": 328.5,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1926-10-02 15:00:00",
+      "pillars": [
+        "丙寅",
+        "丁酉",
+        "甲子",
+        "壬申"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "正官格",
+        "ge_category": "八格",
+        "ge_status": "成中有败",
+        "clean_level": "浊而无去",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱无根",
+        "F": 197.5,
+        "K": 257.5,
+        "effective_root_level": 0
+      }
+    },
+    {
+      "date": "1989-10-06 12:00:00",
+      "pillars": [
+        "己巳",
+        "癸酉",
+        "己亥",
+        "庚午"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "食神格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 174.0,
+        "K": 264.0,
+        "effective_root_level": 3
+      }
+    },
+    {
+      "date": "2001-12-11 15:00:00",
+      "pillars": [
+        "辛巳",
+        "庚子",
+        "戊申",
+        "庚申"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "正财格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "浊而无去",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "假从弱",
+        "F": 66.4,
+        "K": 419.6,
+        "effective_root_level": 3
+      }
+    },
+    {
+      "date": "1976-09-12 19:00:00",
+      "pillars": [
+        "丙辰",
+        "丁酉",
+        "丁卯",
+        "庚戌"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "偏财格",
+        "ge_category": "八格",
+        "ge_status": "真破格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "中和偏弱",
+        "F": 201.7,
+        "K": 230.1,
+        "effective_root_level": 3
+      }
+    },
+    {
+      "date": "1947-11-21 05:00:00",
+      "pillars": [
+        "丁亥",
+        "辛亥",
+        "甲辰",
+        "丁卯"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "偏印格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身旺",
+        "F": 300.0,
+        "K": 240.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1949-06-19 01:00:00",
+      "pillars": [
+        "己丑",
+        "庚午",
+        "庚辰",
+        "丁丑"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "正官格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "浊而无去",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身旺",
+        "F": 302.0,
+        "K": 214.0,
+        "effective_root_level": 1
+      }
+    },
+    {
+      "date": "1948-12-18 04:00:00",
+      "pillars": [
+        "戊子",
+        "甲子",
+        "丁丑",
+        "壬寅"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "七杀格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 141.0,
+        "K": 327.0,
+        "effective_root_level": 3
+      }
+    },
+    {
+      "date": "1983-07-11 01:00:00",
+      "pillars": [
+        "癸亥",
+        "己未",
+        "庚子",
+        "丁丑"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "正印格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "浊而无去",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 135.6,
+        "K": 271.2,
+        "effective_root_level": 3
+      }
+    },
+    {
+      "date": "1947-09-04 05:00:00",
+      "pillars": [
+        "丁亥",
+        "戊申",
+        "丙戌",
+        "辛卯"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "食神格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 130.0,
+        "K": 311.0,
+        "effective_root_level": 1
+      }
+    },
+    {
+      "date": "1925-08-22 21:00:00",
+      "pillars": [
+        "乙丑",
+        "甲申",
+        "戊寅",
+        "癸亥"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "食神格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "浊而无去",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 80.5,
+        "K": 339.5,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1983-07-11 21:00:00",
+      "pillars": [
+        "癸亥",
+        "己未",
+        "庚子",
+        "丁亥"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "正印格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "浊而无去",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱无根",
+        "F": 114.0,
+        "K": 426.0,
+        "effective_root_level": 0
+      }
+    },
+    {
+      "date": "1944-01-04 21:00:00",
+      "pillars": [
+        "癸未",
+        "甲子",
+        "丁卯",
+        "辛亥"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "七杀格",
+        "ge_category": "八格",
+        "ge_status": "成中有败",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 155.4,
+        "K": 276.6,
+        "effective_root_level": 3
+      }
+    },
+    {
+      "date": "1974-10-27 04:00:00",
+      "pillars": [
+        "甲寅",
+        "甲戌",
+        "辛丑",
+        "庚寅"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "正印格",
+        "ge_category": "八格",
+        "ge_status": "真破格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 216.0,
+        "K": 312.0,
+        "effective_root_level": 3
+      }
+    },
+    {
+      "date": "1980-07-10 22:00:00",
+      "pillars": [
+        "庚申",
+        "癸未",
+        "甲申",
+        "乙亥"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "正财格",
+        "ge_category": "八格",
+        "ge_status": "真破格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "中和偏弱",
+        "F": 261.0,
+        "K": 267.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "2027-10-06 04:00:00",
+      "pillars": [
+        "丁未",
+        "己酉",
+        "戊午",
+        "甲寅"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "伤官格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "中和偏旺",
+        "F": 276.4,
+        "K": 209.6,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "2019-12-06 17:00:00",
+      "pillars": [
+        "己亥",
+        "乙亥",
+        "丁丑",
+        "己酉"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "正官格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱无根",
+        "F": 99.0,
+        "K": 429.0,
+        "effective_root_level": 0
+      }
+    },
+    {
+      "date": "2016-06-23 15:00:00",
+      "pillars": [
+        "丙申",
+        "甲午",
+        "丙子",
+        "丙申"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "阳刃格",
+        "ge_category": "禄刃",
+        "ge_status": "真破格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱无根",
+        "F": 67.5,
+        "K": 233.5,
+        "effective_root_level": 0
+      }
+    },
+    {
+      "date": "1983-08-10 19:00:00",
+      "pillars": [
+        "癸亥",
+        "庚申",
+        "庚午",
+        "丙戌"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "建禄格",
+        "ge_category": "禄刃",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "中和偏弱",
+        "F": 234.0,
+        "K": 306.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1955-03-18 06:00:00",
+      "pillars": [
+        "乙未",
+        "己卯",
+        "戊寅",
+        "乙卯"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "正官格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 172.0,
+        "K": 368.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1993-04-23 11:00:00",
+      "pillars": [
+        "癸酉",
+        "丙辰",
+        "甲戌",
+        "庚午"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "正印格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱无根",
+        "F": 85.8,
+        "K": 363.8,
+        "effective_root_level": 0
+      }
+    },
+    {
+      "date": "1941-03-26 18:00:00",
+      "pillars": [
+        "辛巳",
+        "辛卯",
+        "癸酉",
+        "辛酉"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "食神格",
+        "ge_category": "八格",
+        "ge_status": "真破格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "虚旺",
+        "F": 283.0,
+        "K": 117.0,
+        "effective_root_level": 0
+      }
+    },
+    {
+      "date": "1967-01-22 10:00:00",
+      "pillars": [
+        "丙午",
+        "辛丑",
+        "丙戌",
+        "癸巳"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "正官格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "浊而能清",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 162.0,
+        "K": 342.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1979-09-23 05:00:00",
+      "pillars": [
+        "己未",
+        "癸酉",
+        "癸巳",
+        "乙卯"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "偏印格",
+        "ge_category": "八格",
+        "ge_status": "真破格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱无根",
+        "F": 67.0,
+        "K": 335.0,
+        "effective_root_level": 0
+      }
+    },
+    {
+      "date": "1947-11-19 21:00:00",
+      "pillars": [
+        "丁亥",
+        "辛亥",
+        "壬寅",
+        "辛亥"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "建禄格",
+        "ge_category": "禄刃",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "中和偏旺",
+        "F": 189.2,
+        "K": 200.8,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1984-03-21 22:00:00",
+      "pillars": [
+        "甲子",
+        "丁卯",
+        "甲寅",
+        "乙亥"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "阳刃格",
+        "ge_category": "禄刃",
+        "ge_status": "真破格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身旺",
+        "F": 395.0,
+        "K": 88.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "2028-11-05 07:00:00",
+      "pillars": [
+        "戊申",
+        "壬戌",
+        "甲午",
+        "戊辰"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "偏财格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱无根",
+        "F": 111.0,
+        "K": 357.0,
+        "effective_root_level": 0
+      }
+    },
+    {
+      "date": "2020-12-14 00:00:00",
+      "pillars": [
+        "庚子",
+        "戊子",
+        "辛卯",
+        "戊子"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "食神格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "从弱",
+        "F": 36.0,
+        "K": 360.0,
+        "effective_root_level": 0
+      }
+    },
+    {
+      "date": "2014-12-12 00:00:00",
+      "pillars": [
+        "甲午",
+        "丙子",
+        "丁巳",
+        "庚子"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "七杀格",
+        "ge_category": "八格",
+        "ge_status": "真破格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 160.0,
+        "K": 202.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1954-07-18 06:00:00",
+      "pillars": [
+        "甲午",
+        "辛未",
+        "乙亥",
+        "己卯"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "偏财格",
+        "ge_category": "八格",
+        "ge_status": "真破格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 179.4,
+        "K": 248.6,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1997-02-07 01:00:00",
+      "pillars": [
+        "丁丑",
+        "壬寅",
+        "庚辰",
+        "丁丑"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "偏财格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 188.0,
+        "K": 400.0,
+        "effective_root_level": 1
+      }
+    },
+    {
+      "date": "1958-05-24 15:00:00",
+      "pillars": [
+        "戊戌",
+        "丁巳",
+        "辛丑",
+        "丙申"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "正官格",
+        "ge_category": "八格",
+        "ge_status": "真破格",
+        "clean_level": "浊而无去",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "中和偏旺",
+        "F": 271.3,
+        "K": 196.7,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "2025-04-05 15:00:00",
+      "pillars": [
+        "乙巳",
+        "庚辰",
+        "甲辰",
+        "壬申"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "偏财格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 188.5,
+        "K": 256.1,
+        "effective_root_level": 3
+      }
+    },
+    {
+      "date": "1931-09-26 09:00:00",
+      "pillars": [
+        "辛未",
+        "丁酉",
+        "甲申",
+        "己巳"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "正官格",
+        "ge_category": "八格",
+        "ge_status": "真破格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "假从弱",
+        "F": 29.0,
+        "K": 436.0,
+        "effective_root_level": 1
+      }
+    },
+    {
+      "date": "1988-04-06 00:00:00",
+      "pillars": [
+        "戊辰",
+        "丙辰",
+        "辛卯",
+        "戊子"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "正印格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱无根",
+        "F": 222.0,
+        "K": 300.0,
+        "effective_root_level": 0
+      }
+    },
+    {
+      "date": "1950-06-25 06:00:00",
+      "pillars": [
+        "庚寅",
+        "壬午",
+        "辛卯",
+        "辛卯"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "七杀格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "假从弱",
+        "F": 59.0,
+        "K": 385.0,
+        "effective_root_level": 0
+      }
+    },
+    {
+      "date": "1904-01-27 05:00:00",
+      "pillars": [
+        "癸卯",
+        "乙丑",
+        "庚申",
+        "己卯"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "正印格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "浊而无去",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 193.0,
+        "K": 329.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "2026-10-06 21:00:00",
+      "pillars": [
+        "丙午",
+        "丁酉",
+        "癸丑",
+        "癸亥"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "偏印格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "中和偏弱",
+        "F": 253.0,
+        "K": 287.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1966-08-18 22:00:00",
+      "pillars": [
+        "丙午",
+        "丙申",
+        "己酉",
+        "乙亥"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "伤官格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 209.0,
+        "K": 331.0,
+        "effective_root_level": 3
+      }
+    },
+    {
+      "date": "2016-03-05 00:00:00",
+      "pillars": [
+        "丙申",
+        "庚寅",
+        "丙戌",
+        "戊子"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "食神格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 110.5,
+        "K": 344.5,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1935-12-18 03:00:00",
+      "pillars": [
+        "乙亥",
+        "戊子",
+        "戊辰",
+        "甲寅"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "正财格",
+        "ge_category": "八格",
+        "ge_status": "真破格",
+        "clean_level": "浊而无去",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 145.2,
+        "K": 343.8,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "2007-05-08 03:00:00",
+      "pillars": [
+        "丁亥",
+        "乙巳",
+        "壬寅",
+        "壬寅"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "偏财格",
+        "ge_category": "八格",
+        "ge_status": "真破格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "假从弱",
+        "F": 55.7,
+        "K": 337.3,
+        "effective_root_level": 0
+      }
+    },
+    {
+      "date": "2019-06-13 08:00:00",
+      "pillars": [
+        "己亥",
+        "庚午",
+        "辛巳",
+        "壬辰"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "偏印格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱无根",
+        "F": 173.0,
+        "K": 229.0,
+        "effective_root_level": 0
+      }
+    },
+    {
+      "date": "2000-11-04 22:00:00",
+      "pillars": [
+        "庚辰",
+        "丙戌",
+        "丙寅",
+        "己亥"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "食神格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 167.4,
+        "K": 247.6,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1978-06-17 02:00:00",
+      "pillars": [
+        "戊午",
+        "戊午",
+        "庚戌",
+        "丁丑"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "正官格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身旺",
+        "F": 324.0,
+        "K": 216.0,
+        "effective_root_level": 3
+      }
+    },
+    {
+      "date": "1919-11-11 04:00:00",
+      "pillars": [
+        "己未",
+        "乙亥",
+        "丁卯",
+        "壬寅"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "正官格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "中和偏旺",
+        "F": 236.4,
+        "K": 177.6,
+        "effective_root_level": 3
+      }
+    },
+    {
+      "date": "1946-07-13 14:00:00",
+      "pillars": [
+        "丙戌",
+        "乙未",
+        "戊子",
+        "己未"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "正官格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身旺",
+        "F": 326.0,
+        "K": 202.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "2008-01-04 09:00:00",
+      "pillars": [
+        "丁亥",
+        "壬子",
+        "癸卯",
+        "丁巳"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "建禄格",
+        "ge_category": "禄刃",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 164.5,
+        "K": 254.5,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1942-12-17 12:00:00",
+      "pillars": [
+        "壬午",
+        "壬子",
+        "甲辰",
+        "庚午"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "正印格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "中和偏旺",
+        "F": 205.0,
+        "K": 205.0,
+        "effective_root_level": 3
+      }
+    },
+    {
+      "date": "1914-02-18 03:00:00",
+      "pillars": [
+        "甲寅",
+        "丙寅",
+        "乙亥",
+        "戊寅"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "月劫格",
+        "ge_category": "禄刃",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身旺",
+        "F": 402.0,
+        "K": 192.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1925-06-20 23:00:00",
+      "pillars": [
+        "乙丑",
+        "壬午",
+        "乙亥",
+        "戊子"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "食神格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身旺",
+        "F": 236.4,
+        "K": 138.6,
+        "effective_root_level": 3
+      }
+    },
+    {
+      "date": "1917-12-07 12:00:00",
+      "pillars": [
+        "丁巳",
+        "辛亥",
+        "癸未",
+        "戊午"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "月劫格",
+        "ge_category": "禄刃",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱无根",
+        "F": 72.3,
+        "K": 272.7,
+        "effective_root_level": 0
+      }
+    },
+    {
+      "date": "1942-10-11 19:00:00",
+      "pillars": [
+        "壬午",
+        "庚戌",
+        "丁酉",
+        "庚戌"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "伤官格",
+        "ge_category": "八格",
+        "ge_status": "成中有败",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 74.0,
+        "K": 466.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "2009-04-01 23:00:00",
+      "pillars": [
+        "己丑",
+        "丁卯",
+        "丙子",
+        "庚子"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "正印格",
+        "ge_category": "八格",
+        "ge_status": "成中有败",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱无根",
+        "F": 102.0,
+        "K": 336.0,
+        "effective_root_level": 0
+      }
+    },
+    {
+      "date": "2021-07-12 21:00:00",
+      "pillars": [
+        "辛丑",
+        "乙未",
+        "辛酉",
+        "己亥"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "偏印格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "浊而无去",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身旺",
+        "F": 283.0,
+        "K": 189.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1983-01-11 03:00:00",
+      "pillars": [
+        "壬戌",
+        "癸丑",
+        "己亥",
+        "丙寅"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "偏财格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 195.2,
+        "K": 287.8,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1947-05-20 03:00:00",
+      "pillars": [
+        "丁亥",
+        "乙巳",
+        "己亥",
+        "丙寅"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "月劫格",
+        "ge_category": "禄刃",
+        "ge_status": "成格",
+        "clean_level": "浊而无去",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "中和偏弱",
+        "F": 185.7,
+        "K": 208.3,
+        "effective_root_level": 3
+      }
+    },
+    {
+      "date": "1954-12-21 10:00:00",
+      "pillars": [
+        "甲午",
+        "丙子",
+        "辛亥",
+        "癸巳"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "食神格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "从弱",
+        "F": 30.0,
+        "K": 312.0,
+        "effective_root_level": 0
+      }
+    },
+    {
+      "date": "2002-10-25 15:00:00",
+      "pillars": [
+        "壬午",
+        "庚戌",
+        "丙寅",
+        "丙申"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "食神格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 153.0,
+        "K": 234.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1935-05-13 06:00:00",
+      "pillars": [
+        "乙亥",
+        "辛巳",
+        "己丑",
+        "丁卯"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "月劫格",
+        "ge_category": "禄刃",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 160.5,
+        "K": 294.5,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "2012-12-08 22:00:00",
+      "pillars": [
+        "壬辰",
+        "壬子",
+        "癸卯",
+        "癸亥"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "建禄格",
+        "ge_category": "禄刃",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身旺",
+        "F": 341.0,
+        "K": 199.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1949-08-06 15:00:00",
+      "pillars": [
+        "己丑",
+        "辛未",
+        "戊辰",
+        "庚申"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "建禄格",
+        "ge_category": "禄刃",
+        "ge_status": "成格",
+        "clean_level": "浊而无去",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 193.5,
+        "K": 278.5,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1929-04-26 02:00:00",
+      "pillars": [
+        "己巳",
+        "戊辰",
+        "辛丑",
+        "己丑"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "正印格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "浊而无去",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身旺",
+        "F": 399.0,
+        "K": 141.0,
+        "effective_root_level": 1
+      }
+    },
+    {
+      "date": "1914-10-17 15:00:00",
+      "pillars": [
+        "甲寅",
+        "甲戌",
+        "丙子",
+        "丙申"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "食神格",
+        "ge_category": "八格",
+        "ge_status": "真破格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "中和偏弱",
+        "F": 225.0,
+        "K": 230.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "2007-11-13 15:00:00",
+      "pillars": [
+        "丁亥",
+        "辛亥",
+        "辛亥",
+        "丙申"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "伤官格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "浊而无去",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 123.0,
+        "K": 399.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1986-03-11 06:00:00",
+      "pillars": [
+        "丙寅",
+        "辛卯",
+        "甲寅",
+        "丁卯"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "阳刃格",
+        "ge_category": "禄刃",
+        "ge_status": "真破格",
+        "clean_level": "浊而能清",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身旺",
+        "F": 288.0,
+        "K": 216.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1920-04-02 10:00:00",
+      "pillars": [
+        "庚申",
+        "己卯",
+        "庚寅",
+        "辛巳"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "正财格",
+        "ge_category": "八格",
+        "ge_status": "真破格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "中和偏旺",
+        "F": 237.4,
+        "K": 189.6,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1959-07-10 21:00:00",
+      "pillars": [
+        "己亥",
+        "辛未",
+        "癸巳",
+        "癸亥"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "七杀格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 160.5,
+        "K": 220.5,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1977-12-26 22:00:00",
+      "pillars": [
+        "丁巳",
+        "壬子",
+        "丁巳",
+        "辛亥"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "七杀格",
+        "ge_category": "八格",
+        "ge_status": "成中有败",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 109.5,
+        "K": 259.5,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1963-02-27 07:00:00",
+      "pillars": [
+        "癸卯",
+        "甲寅",
+        "辛丑",
+        "壬辰"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "正财格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "浊而无去",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 107.8,
+        "K": 328.2,
+        "effective_root_level": 1
+      }
+    },
+    {
+      "date": "2011-10-15 01:00:00",
+      "pillars": [
+        "辛卯",
+        "戊戌",
+        "癸卯",
+        "癸丑"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "正官格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "浊而无去",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 150.9,
+        "K": 296.1,
+        "effective_root_level": 3
+      }
+    },
+    {
+      "date": "1953-11-23 16:00:00",
+      "pillars": [
+        "癸巳",
+        "癸亥",
+        "戊寅",
+        "庚申"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "偏财格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 84.7,
+        "K": 329.3,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1904-06-02 11:00:00",
+      "pillars": [
+        "甲辰",
+        "己巳",
+        "丁卯",
+        "丙午"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "月劫格",
+        "ge_category": "禄刃",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身旺",
+        "F": 343.0,
+        "K": 161.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "2023-03-15 16:00:00",
+      "pillars": [
+        "癸卯",
+        "乙卯",
+        "壬申",
+        "戊申"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "伤官格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 219.0,
+        "K": 309.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1952-02-20 03:00:00",
+      "pillars": [
+        "壬辰",
+        "壬寅",
+        "丙申",
+        "庚寅"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "偏印格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 105.0,
+        "K": 295.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "2008-04-15 07:00:00",
+      "pillars": [
+        "戊子",
+        "丙辰",
+        "乙酉",
+        "庚辰"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "正财格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 141.2,
+        "K": 323.8,
+        "effective_root_level": 3
+      }
+    },
+    {
+      "date": "2018-10-26 12:00:00",
+      "pillars": [
+        "戊戌",
+        "壬戌",
+        "辛卯",
+        "甲午"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "正印格",
+        "ge_category": "八格",
+        "ge_status": "成中有败",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "中和偏弱",
+        "F": 218.4,
+        "K": 267.6,
+        "effective_root_level": 3
+      }
+    },
+    {
+      "date": "1926-05-06 18:00:00",
+      "pillars": [
+        "丙寅",
+        "癸巳",
+        "乙未",
+        "乙酉"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "伤官格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 130.0,
+        "K": 362.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "2002-02-22 21:00:00",
+      "pillars": [
+        "壬午",
+        "壬寅",
+        "辛酉",
+        "己亥"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "正财格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 172.0,
+        "K": 410.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1980-04-27 12:00:00",
+      "pillars": [
+        "庚申",
+        "庚辰",
+        "庚午",
+        "壬午"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "偏印格",
+        "ge_category": "八格",
+        "ge_status": "真破格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身旺",
+        "F": 287.0,
+        "K": 253.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1930-01-04 11:00:00",
+      "pillars": [
+        "己巳",
+        "丙子",
+        "甲寅",
+        "庚午"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "正印格",
+        "ge_category": "八格",
+        "ge_status": "真破格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 105.0,
+        "K": 345.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "2014-05-19 02:00:00",
+      "pillars": [
+        "甲午",
+        "己巳",
+        "庚寅",
+        "丁丑"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "七杀格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 175.0,
+        "K": 329.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "2004-02-26 20:00:00",
+      "pillars": [
+        "甲申",
+        "丙寅",
+        "乙亥",
+        "丙戌"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "月劫格",
+        "ge_category": "禄刃",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 179.8,
+        "K": 263.2,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1988-04-03 06:00:00",
+      "pillars": [
+        "戊辰",
+        "乙卯",
+        "戊子",
+        "乙卯"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "正官格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 108.0,
+        "K": 432.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1952-07-08 06:00:00",
+      "pillars": [
+        "壬辰",
+        "丁未",
+        "乙卯",
+        "己卯"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "偏财格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "浊而能清",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "中和偏旺",
+        "F": 256.2,
+        "K": 231.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1916-10-12 19:00:00",
+      "pillars": [
+        "丙辰",
+        "戊戌",
+        "壬午",
+        "庚戌"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "七杀格",
+        "ge_category": "八格",
+        "ge_status": "成中有败",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 87.0,
+        "K": 337.0,
+        "effective_root_level": 3
+      }
+    },
+    {
+      "date": "1931-06-08 09:00:00",
+      "pillars": [
+        "辛未",
+        "甲午",
+        "甲午",
+        "己巳"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "从儿格",
+        "ge_category": "外格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "从弱",
+        "F": 12.0,
+        "K": 670.0,
+        "effective_root_level": 0
+      }
+    },
+    {
+      "date": "1998-09-13 14:00:00",
+      "pillars": [
+        "戊寅",
+        "辛酉",
+        "癸亥",
+        "己未"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "偏印格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "浊而无去",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 199.0,
+        "K": 287.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1973-10-22 04:00:00",
+      "pillars": [
+        "癸丑",
+        "壬戌",
+        "辛卯",
+        "庚寅"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "正印格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "浊而无去",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 169.7,
+        "K": 301.3,
+        "effective_root_level": 3
+      }
+    },
+    {
+      "date": "1908-11-06 23:00:00",
+      "pillars": [
+        "戊申",
+        "壬戌",
+        "乙丑",
+        "戊子"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "正财格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "假从弱",
+        "F": 84.0,
+        "K": 513.0,
+        "effective_root_level": 0
+      }
+    },
+    {
+      "date": "1944-05-25 14:00:00",
+      "pillars": [
+        "甲申",
+        "己巳",
+        "己丑",
+        "辛未"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "月劫格",
+        "ge_category": "禄刃",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "中和偏弱",
+        "F": 174.8,
+        "K": 202.2,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1921-04-14 21:00:00",
+      "pillars": [
+        "辛酉",
+        "壬辰",
+        "丁未",
+        "辛亥"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "伤官格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 85.9,
+        "K": 385.1,
+        "effective_root_level": 3
+      }
+    },
+    {
+      "date": "1982-07-14 10:00:00",
+      "pillars": [
+        "壬戌",
+        "丁未",
+        "戊戌",
+        "丁巳"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "正印格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身旺",
+        "F": 390.0,
+        "K": 114.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1951-03-18 08:00:00",
+      "pillars": [
+        "辛卯",
+        "辛卯",
+        "丁巳",
+        "甲辰"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "偏印格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身旺",
+        "F": 317.0,
+        "K": 223.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1910-02-01 09:00:00",
+      "pillars": [
+        "己酉",
+        "丁丑",
+        "丁酉",
+        "乙巳"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "食神格",
+        "ge_category": "八格",
+        "ge_status": "成中有败",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 104.4,
+        "K": 275.6,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1998-12-14 21:00:00",
+      "pillars": [
+        "戊寅",
+        "甲子",
+        "乙未",
+        "丁亥"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "偏印格",
+        "ge_category": "八格",
+        "ge_status": "真破格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身旺",
+        "F": 256.6,
+        "K": 232.4,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "2009-07-09 14:00:00",
+      "pillars": [
+        "己丑",
+        "辛未",
+        "乙卯",
+        "癸未"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "偏财格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 187.0,
+        "K": 237.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "2017-10-13 10:00:00",
+      "pillars": [
+        "丁酉",
+        "庚戌",
+        "癸酉",
+        "丁巳"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "偏财格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱无根",
+        "F": 276.0,
+        "K": 264.0,
+        "effective_root_level": 0
+      }
+    },
+    {
+      "date": "2000-01-02 11:00:00",
+      "pillars": [
+        "己卯",
+        "丙子",
+        "己未",
+        "庚午"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "偏财格",
+        "ge_category": "八格",
+        "ge_status": "真破格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "中和偏旺",
+        "F": 246.0,
+        "K": 192.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1924-04-01 13:00:00",
+      "pillars": [
+        "甲子",
+        "丁卯",
+        "庚戌",
+        "癸未"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "正财格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 117.0,
+        "K": 366.0,
+        "effective_root_level": 3
+      }
+    },
+    {
+      "date": "1925-11-20 08:00:00",
+      "pillars": [
+        "乙丑",
+        "丁亥",
+        "戊申",
+        "丙辰"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "偏财格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "浊而无去",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 136.0,
+        "K": 308.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1957-04-04 17:00:00",
+      "pillars": [
+        "丁酉",
+        "癸卯",
+        "丙午",
+        "丁酉"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "正印格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身旺",
+        "F": 235.0,
+        "K": 175.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1905-05-05 02:00:00",
+      "pillars": [
+        "乙巳",
+        "庚辰",
+        "甲辰",
+        "乙丑"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "偏财格",
+        "ge_category": "八格",
+        "ge_status": "真破格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 184.6,
+        "K": 299.0,
+        "effective_root_level": 3
+      }
+    },
+    {
+      "date": "1939-12-14 05:00:00",
+      "pillars": [
+        "己卯",
+        "丙子",
+        "乙酉",
+        "己卯"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "偏印格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "中和偏弱",
+        "F": 175.0,
+        "K": 230.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "2027-08-15 08:00:00",
+      "pillars": [
+        "丁未",
+        "戊申",
+        "丙寅",
+        "壬辰"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "七杀格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "浊而无去",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 152.0,
+        "K": 281.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "2012-07-26 23:00:00",
+      "pillars": [
+        "壬辰",
+        "丁未",
+        "戊子",
+        "甲子"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "正印格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 162.6,
+        "K": 333.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1921-02-24 15:00:00",
+      "pillars": [
+        "辛酉",
+        "庚寅",
+        "戊午",
+        "庚申"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "七杀格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "浊而无去",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 122.5,
+        "K": 327.5,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1996-01-14 08:00:00",
+      "pillars": [
+        "乙亥",
+        "己丑",
+        "庚戌",
+        "庚辰"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "正印格",
+        "ge_category": "八格",
+        "ge_status": "真破格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身旺",
+        "F": 243.0,
+        "K": 209.0,
+        "effective_root_level": 3
+      }
+    },
+    {
+      "date": "1912-09-13 16:00:00",
+      "pillars": [
+        "壬子",
+        "己酉",
+        "壬辰",
+        "戊申"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "正印格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "浊而无去",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身旺",
+        "F": 252.6,
+        "K": 179.4,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1949-12-02 04:00:00",
+      "pillars": [
+        "己丑",
+        "乙亥",
+        "丙寅",
+        "庚寅"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "七杀格",
+        "ge_category": "八格",
+        "ge_status": "成中有败",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "中和偏弱",
+        "F": 222.9,
+        "K": 260.1,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1913-09-19 20:00:00",
+      "pillars": [
+        "癸丑",
+        "辛酉",
+        "癸卯",
+        "壬戌"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "偏印格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身旺",
+        "F": 251.9,
+        "K": 162.1,
+        "effective_root_level": 3
+      }
+    },
+    {
+      "date": "1932-02-02 17:00:00",
+      "pillars": [
+        "辛未",
+        "辛丑",
+        "癸巳",
+        "辛酉"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "偏印格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "虚旺",
+        "F": 272.4,
+        "K": 134.4,
+        "effective_root_level": 0
+      }
+    },
+    {
+      "date": "1933-10-06 22:00:00",
+      "pillars": [
+        "癸酉",
+        "辛酉",
+        "乙巳",
+        "丁亥"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "七杀格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱无根",
+        "F": 105.0,
+        "K": 340.0,
+        "effective_root_level": 0
+      }
+    },
+    {
+      "date": "2024-05-24 08:00:00",
+      "pillars": [
+        "甲辰",
+        "己巳",
+        "戊子",
+        "丙辰"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "建禄格",
+        "ge_category": "禄刃",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身旺",
+        "F": 285.0,
+        "K": 219.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1976-12-23 16:00:00",
+      "pillars": [
+        "丙辰",
+        "庚子",
+        "己酉",
+        "壬申"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "偏财格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "假从弱",
+        "F": 46.2,
+        "K": 341.8,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1973-03-09 04:00:00",
+      "pillars": [
+        "癸丑",
+        "乙卯",
+        "甲辰",
+        "丙寅"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "阳刃格",
+        "ge_category": "禄刃",
+        "ge_status": "真破格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身旺",
+        "F": 242.4,
+        "K": 173.6,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1949-04-16 15:00:00",
+      "pillars": [
+        "己丑",
+        "戊辰",
+        "丙子",
+        "丙申"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "从儿格",
+        "ge_category": "外格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "从弱",
+        "F": 28.2,
+        "K": 351.8,
+        "effective_root_level": 0
+      }
+    },
+    {
+      "date": "1947-11-01 12:00:00",
+      "pillars": [
+        "丁亥",
+        "庚戌",
+        "甲申",
+        "庚午"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "伤官格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 110.0,
+        "K": 430.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1959-02-24 16:00:00",
+      "pillars": [
+        "己亥",
+        "丙寅",
+        "丁丑",
+        "戊申"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "伤官格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "浊而无去",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱无根",
+        "F": 85.5,
+        "K": 310.5,
+        "effective_root_level": 0
+      }
+    },
+    {
+      "date": "1939-09-26 10:00:00",
+      "pillars": [
+        "己卯",
+        "癸酉",
+        "丙寅",
+        "癸巳"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "正财格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 184.0,
+        "K": 271.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1934-08-23 05:00:00",
+      "pillars": [
+        "甲戌",
+        "壬申",
+        "丙寅",
+        "辛卯"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "七杀格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "中和偏弱",
+        "F": 173.6,
+        "K": 202.4,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1997-01-02 00:00:00",
+      "pillars": [
+        "丙子",
+        "庚子",
+        "甲辰",
+        "甲子"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "正印格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身旺",
+        "F": 348.0,
+        "K": 180.0,
+        "effective_root_level": 3
+      }
+    },
+    {
+      "date": "1931-07-21 22:00:00",
+      "pillars": [
+        "辛未",
+        "乙未",
+        "丁丑",
+        "辛亥"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "偏印格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 126.0,
+        "K": 294.0,
+        "effective_root_level": 3
+      }
+    },
+    {
+      "date": "1970-02-17 20:00:00",
+      "pillars": [
+        "庚戌",
+        "戊寅",
+        "戊辰",
+        "壬戌"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "七杀格",
+        "ge_category": "八格",
+        "ge_status": "成中有败",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "中和偏弱",
+        "F": 202.5,
+        "K": 229.5,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1920-11-14 16:00:00",
+      "pillars": [
+        "庚申",
+        "丁亥",
+        "丙子",
+        "丙申"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "七杀格",
+        "ge_category": "八格",
+        "ge_status": "真破格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "假从弱",
+        "F": 51.0,
+        "K": 393.0,
+        "effective_root_level": 0
+      }
+    },
+    {
+      "date": "1926-06-07 02:00:00",
+      "pillars": [
+        "丙寅",
+        "甲午",
+        "丁卯",
+        "辛丑"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "建禄格",
+        "ge_category": "禄刃",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身旺",
+        "F": 355.0,
+        "K": 185.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1931-07-24 00:00:00",
+      "pillars": [
+        "辛未",
+        "乙未",
+        "庚辰",
+        "丙子"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "正财格",
+        "ge_category": "八格",
+        "ge_status": "成中有败",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱无根",
+        "F": 174.0,
+        "K": 300.0,
+        "effective_root_level": 0
+      }
+    },
+    {
+      "date": "1995-12-19 12:00:00",
+      "pillars": [
+        "乙亥",
+        "戊子",
+        "甲申",
+        "庚午"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "正印格",
+        "ge_category": "八格",
+        "ge_status": "真破格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "中和偏弱",
+        "F": 203.0,
+        "K": 235.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1920-02-21 01:00:00",
+      "pillars": [
+        "庚申",
+        "戊寅",
+        "己酉",
+        "乙丑"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "正官格",
+        "ge_category": "八格",
+        "ge_status": "真破格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 136.0,
+        "K": 319.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1946-03-02 08:00:00",
+      "pillars": [
+        "丙戌",
+        "庚寅",
+        "乙亥",
+        "庚辰"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "月劫格",
+        "ge_category": "禄刃",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身旺",
+        "F": 274.0,
+        "K": 237.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1938-07-25 09:00:00",
+      "pillars": [
+        "戊寅",
+        "己未",
+        "戊午",
+        "丁巳"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "正印格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "假从强",
+        "F": 369.2,
+        "K": 58.8,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1975-05-05 00:00:00",
+      "pillars": [
+        "乙卯",
+        "庚辰",
+        "辛亥",
+        "戊子"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "正印格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "浊而能清",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱无根",
+        "F": 122.4,
+        "K": 348.0,
+        "effective_root_level": 0
+      }
+    },
+    {
+      "date": "1940-06-12 04:00:00",
+      "pillars": [
+        "庚辰",
+        "壬午",
+        "丙戌",
+        "庚寅"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "阳刃格",
+        "ge_category": "禄刃",
+        "ge_status": "真破格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 116.4,
+        "K": 291.6,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1980-08-03 23:00:00",
+      "pillars": [
+        "庚申",
+        "癸未",
+        "戊申",
+        "甲子"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "建禄格",
+        "ge_category": "禄刃",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 99.0,
+        "K": 423.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "2025-05-19 15:00:00",
+      "pillars": [
+        "乙巳",
+        "辛巳",
+        "戊子",
+        "庚申"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "建禄格",
+        "ge_category": "禄刃",
+        "ge_status": "成格",
+        "clean_level": "浊而无去",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 137.7,
+        "K": 351.3,
+        "effective_root_level": 3
+      }
+    },
+    {
+      "date": "2011-04-15 21:00:00",
+      "pillars": [
+        "辛卯",
+        "壬辰",
+        "庚子",
+        "丁亥"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "偏印格",
+        "ge_category": "八格",
+        "ge_status": "真破格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "假从弱",
+        "F": 66.0,
+        "K": 426.0,
+        "effective_root_level": 0
+      }
+    },
+    {
+      "date": "2021-01-13 16:00:00",
+      "pillars": [
+        "庚子",
+        "己丑",
+        "辛酉",
+        "丙申"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "偏印格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "假从强",
+        "F": 504.0,
+        "K": 69.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1905-06-05 00:00:00",
+      "pillars": [
+        "乙巳",
+        "辛巳",
+        "乙亥",
+        "丙子"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "伤官格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱无根",
+        "F": 152.0,
+        "K": 205.0,
+        "effective_root_level": 0
+      }
+    },
+    {
+      "date": "1966-03-08 09:00:00",
+      "pillars": [
+        "丙午",
+        "辛卯",
+        "丙寅",
+        "癸巳"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "正印格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身旺",
+        "F": 332.0,
+        "K": 172.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1999-12-11 12:00:00",
+      "pillars": [
+        "己卯",
+        "丙子",
+        "丁酉",
+        "丙午"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "七杀格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱无根",
+        "F": 95.5,
+        "K": 168.5,
+        "effective_root_level": 0
+      }
+    },
+    {
+      "date": "2002-02-12 00:00:00",
+      "pillars": [
+        "壬午",
+        "壬寅",
+        "辛亥",
+        "戊子"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "正印格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱无根",
+        "F": 78.3,
+        "K": 319.7,
+        "effective_root_level": 0
+      }
+    },
+    {
+      "date": "1922-05-10 08:00:00",
+      "pillars": [
+        "壬戌",
+        "乙巳",
+        "戊寅",
+        "丙辰"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "建禄格",
+        "ge_category": "禄刃",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "中和偏旺",
+        "F": 244.0,
+        "K": 228.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1996-11-14 23:00:00",
+      "pillars": [
+        "丙子",
+        "己亥",
+        "乙卯",
+        "戊子"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "正印格",
+        "ge_category": "八格",
+        "ge_status": "成中有败",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身旺",
+        "F": 360.0,
+        "K": 180.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1941-06-25 13:00:00",
+      "pillars": [
+        "辛巳",
+        "甲午",
+        "甲辰",
+        "辛未"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "伤官格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 93.4,
+        "K": 330.6,
+        "effective_root_level": 3
+      }
+    },
+    {
+      "date": "1976-08-04 15:00:00",
+      "pillars": [
+        "丙辰",
+        "乙未",
+        "戊子",
+        "庚申"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "正官格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 163.2,
+        "K": 256.8,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1979-03-26 12:00:00",
+      "pillars": [
+        "己未",
+        "丁卯",
+        "壬辰",
+        "丙午"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "伤官格",
+        "ge_category": "八格",
+        "ge_status": "真破格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "假从弱",
+        "F": 10.0,
+        "K": 461.0,
+        "effective_root_level": 1
+      }
+    },
+    {
+      "date": "1941-09-07 18:00:00",
+      "pillars": [
+        "辛巳",
+        "丙申",
+        "戊午",
+        "辛酉"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "食神格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 198.7,
+        "K": 254.3,
+        "effective_root_level": 3
+      }
+    },
+    {
+      "date": "2003-11-04 23:00:00",
+      "pillars": [
+        "癸未",
+        "壬戌",
+        "辛巳",
+        "庚子"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "正印格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "浊而无去",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "中和偏弱",
+        "F": 229.0,
+        "K": 311.0,
+        "effective_root_level": 3
+      }
+    },
+    {
+      "date": "2000-03-08 17:00:00",
+      "pillars": [
+        "庚辰",
+        "己卯",
+        "乙丑",
+        "乙酉"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "建禄格",
+        "ge_category": "禄刃",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 157.4,
+        "K": 286.6,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "2027-07-01 13:00:00",
+      "pillars": [
+        "丁未",
+        "丙午",
+        "辛巳",
+        "乙未"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "七杀格",
+        "ge_category": "八格",
+        "ge_status": "真破格",
+        "clean_level": "浊而能清",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 123.0,
+        "K": 291.0,
+        "effective_root_level": 1
+      }
+    },
+    {
+      "date": "1905-08-14 02:00:00",
+      "pillars": [
+        "乙巳",
+        "甲申",
+        "乙酉",
+        "丁丑"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "正官格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱无根",
+        "F": 67.2,
+        "K": 268.8,
+        "effective_root_level": 0
+      }
+    },
+    {
+      "date": "1970-04-19 04:00:00",
+      "pillars": [
+        "庚戌",
+        "庚辰",
+        "己巳",
+        "丙寅"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "建禄格",
+        "ge_category": "禄刃",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身旺",
+        "F": 249.0,
+        "K": 223.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1964-02-12 18:00:00",
+      "pillars": [
+        "甲辰",
+        "丙寅",
+        "辛卯",
+        "丁酉"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "正财格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "浊而能清",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱无根",
+        "F": 79.2,
+        "K": 289.8,
+        "effective_root_level": 0
+      }
+    },
+    {
+      "date": "1944-03-10 16:00:00",
+      "pillars": [
+        "甲申",
+        "丁卯",
+        "癸酉",
+        "庚申"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "食神格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身旺",
+        "F": 263.0,
+        "K": 182.0,
+        "effective_root_level": 3
+      }
+    },
+    {
+      "date": "2024-08-21 14:00:00",
+      "pillars": [
+        "甲辰",
+        "壬申",
+        "丁巳",
+        "丁未"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "正官格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "中和偏弱",
+        "F": 210.0,
+        "K": 243.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1923-11-10 01:00:00",
+      "pillars": [
+        "癸亥",
+        "癸亥",
+        "丁亥",
+        "辛丑"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "正官格",
+        "ge_category": "八格",
+        "ge_status": "真破格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "假从弱",
+        "F": 81.0,
+        "K": 459.0,
+        "effective_root_level": 0
+      }
+    },
+    {
+      "date": "1963-03-23 10:00:00",
+      "pillars": [
+        "癸卯",
+        "乙卯",
+        "乙丑",
+        "辛巳"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "建禄格",
+        "ge_category": "禄刃",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身旺",
+        "F": 308.0,
+        "K": 220.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1917-03-18 22:00:00",
+      "pillars": [
+        "丁巳",
+        "癸卯",
+        "己未",
+        "乙亥"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "七杀格",
+        "ge_category": "八格",
+        "ge_status": "成中有败",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 132.0,
+        "K": 576.0,
+        "effective_root_level": 3
+      }
+    },
+    {
+      "date": "1991-07-25 13:00:00",
+      "pillars": [
+        "辛未",
+        "乙未",
+        "丙申",
+        "乙未"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "正印格",
+        "ge_category": "八格",
+        "ge_status": "成中有败",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 176.0,
+        "K": 316.0,
+        "effective_root_level": 3
+      }
+    },
+    {
+      "date": "2008-09-07 15:00:00",
+      "pillars": [
+        "戊子",
+        "辛酉",
+        "庚戌",
+        "甲申"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "建禄格",
+        "ge_category": "禄刃",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身旺",
+        "F": 576.0,
+        "K": 140.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "2017-06-21 22:00:00",
+      "pillars": [
+        "丁酉",
+        "丙午",
+        "己卯",
+        "乙亥"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "建禄格",
+        "ge_category": "禄刃",
+        "ge_status": "成格",
+        "clean_level": "浊而无去",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "中和偏弱",
+        "F": 210.0,
+        "K": 240.0,
+        "effective_root_level": 3
+      }
+    },
+    {
+      "date": "2012-09-09 00:00:00",
+      "pillars": [
+        "壬辰",
+        "己酉",
+        "癸酉",
+        "壬子"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "偏印格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "从强",
+        "F": 531.0,
+        "K": 60.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1933-10-13 05:00:00",
+      "pillars": [
+        "癸酉",
+        "壬戌",
+        "壬子",
+        "癸卯"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "七杀格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身旺",
+        "F": 338.9,
+        "K": 107.1,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1921-07-05 13:00:00",
+      "pillars": [
+        "辛酉",
+        "甲午",
+        "己巳",
+        "辛未"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "正印格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱无根",
+        "F": 504.0,
+        "K": 242.0,
+        "effective_root_level": 0
+      }
+    },
+    {
+      "date": "1977-08-23 22:00:00",
+      "pillars": [
+        "丁巳",
+        "戊申",
+        "壬子",
+        "辛亥"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "七杀格",
+        "ge_category": "八格",
+        "ge_status": "成中有败",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身旺",
+        "F": 253.8,
+        "K": 190.2,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1963-11-01 20:00:00",
+      "pillars": [
+        "癸卯",
+        "壬戌",
+        "戊申",
+        "壬戌"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "建禄格",
+        "ge_category": "禄刃",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 117.1,
+        "K": 371.9,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1930-04-25 16:00:00",
+      "pillars": [
+        "庚午",
+        "庚辰",
+        "乙巳",
+        "甲申"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "正财格",
+        "ge_category": "八格",
+        "ge_status": "成中有败",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 102.9,
+        "K": 350.1,
+        "effective_root_level": 3
+      }
+    },
+    {
+      "date": "1981-02-10 16:00:00",
+      "pillars": [
+        "辛酉",
+        "庚寅",
+        "己未",
+        "壬申"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "正官格",
+        "ge_category": "八格",
+        "ge_status": "真破格",
+        "clean_level": "浊而无去",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 112.5,
+        "K": 337.5,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1925-05-20 13:00:00",
+      "pillars": [
+        "乙丑",
+        "辛巳",
+        "甲辰",
+        "辛未"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "食神格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 113.5,
+        "K": 346.5,
+        "effective_root_level": 3
+      }
+    },
+    {
+      "date": "1939-03-06 02:00:00",
+      "pillars": [
+        "己卯",
+        "丙寅",
+        "壬寅",
+        "辛丑"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "偏财格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "假从弱",
+        "F": 72.0,
+        "K": 444.0,
+        "effective_root_level": 3
+      }
+    },
+    {
+      "date": "1991-12-06 11:00:00",
+      "pillars": [
+        "辛未",
+        "己亥",
+        "庚戌",
+        "壬午"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "食神格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "中和偏旺",
+        "F": 250.5,
+        "K": 226.5,
+        "effective_root_level": 3
+      }
+    },
+    {
+      "date": "1997-10-12 21:00:00",
+      "pillars": [
+        "丁丑",
+        "庚戌",
+        "丁亥",
+        "辛亥"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "偏财格",
+        "ge_category": "八格",
+        "ge_status": "真破格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 102.0,
+        "K": 414.0,
+        "effective_root_level": 1
+      }
+    },
+    {
+      "date": "2029-12-25 04:00:00",
+      "pillars": [
+        "己酉",
+        "丙子",
+        "己丑",
+        "丙寅"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "偏财格",
+        "ge_category": "八格",
+        "ge_status": "真破格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "中和偏旺",
+        "F": 258.0,
+        "K": 225.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1947-03-07 07:00:00",
+      "pillars": [
+        "丁亥",
+        "癸卯",
+        "乙酉",
+        "庚辰"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "建禄格",
+        "ge_category": "禄刃",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "中和偏旺",
+        "F": 210.2,
+        "K": 209.8,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1907-09-13 06:00:00",
+      "pillars": [
+        "丁未",
+        "己酉",
+        "乙丑",
+        "己卯"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "七杀格",
+        "ge_category": "八格",
+        "ge_status": "真破格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 72.0,
+        "K": 306.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "2026-06-09 05:00:00",
+      "pillars": [
+        "丙午",
+        "甲午",
+        "甲寅",
+        "丁卯"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "伤官格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "浊而无去",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 210.0,
+        "K": 330.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "2001-11-09 18:00:00",
+      "pillars": [
+        "辛巳",
+        "己亥",
+        "丙子",
+        "丁酉"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "七杀格",
+        "ge_category": "八格",
+        "ge_status": "真破格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "假从弱",
+        "F": 49.5,
+        "K": 357.5,
+        "effective_root_level": 0
+      }
+    },
+    {
+      "date": "1904-03-19 13:00:00",
+      "pillars": [
+        "甲辰",
+        "丁卯",
+        "壬子",
+        "丁未"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "伤官格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 108.0,
+        "K": 414.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1922-01-11 04:00:00",
+      "pillars": [
+        "辛酉",
+        "辛丑",
+        "己卯",
+        "丙寅"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "食神格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 150.0,
+        "K": 300.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1955-12-13 09:00:00",
+      "pillars": [
+        "乙未",
+        "戊子",
+        "戊申",
+        "丁巳"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "正财格",
+        "ge_category": "八格",
+        "ge_status": "成中有败",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 180.0,
+        "K": 405.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1991-06-07 02:00:00",
+      "pillars": [
+        "辛未",
+        "甲午",
+        "戊申",
+        "癸丑"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "阳刃格",
+        "ge_category": "禄刃",
+        "ge_status": "真破格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 150.4,
+        "K": 295.8,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1995-07-06 20:00:00",
+      "pillars": [
+        "乙亥",
+        "壬午",
+        "戊戌",
+        "壬戌"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "阳刃格",
+        "ge_category": "禄刃",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "中和偏弱",
+        "F": 223.0,
+        "K": 317.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1972-03-23 21:00:00",
+      "pillars": [
+        "壬子",
+        "癸卯",
+        "癸丑",
+        "癸亥"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "食神格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身旺",
+        "F": 289.8,
+        "K": 142.2,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1998-03-01 11:00:00",
+      "pillars": [
+        "戊寅",
+        "甲寅",
+        "丁未",
+        "丙午"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "正印格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "浊而无去",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身旺",
+        "F": 345.1,
+        "K": 137.9,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1975-09-08 18:00:00",
+      "pillars": [
+        "乙卯",
+        "乙酉",
+        "丁巳",
+        "己酉"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "偏财格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "中和偏旺",
+        "F": 220.0,
+        "K": 190.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "2014-07-23 22:00:00",
+      "pillars": [
+        "甲午",
+        "辛未",
+        "乙未",
+        "丁亥"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "食神格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 160.0,
+        "K": 431.0,
+        "effective_root_level": 3
+      }
+    },
+    {
+      "date": "1935-08-05 23:00:00",
+      "pillars": [
+        "乙亥",
+        "癸未",
+        "癸丑",
+        "甲子"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "食神格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "浊而无去",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "中和偏弱",
+        "F": 183.6,
+        "K": 224.4,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1953-11-14 04:00:00",
+      "pillars": [
+        "癸巳",
+        "癸亥",
+        "己巳",
+        "丙寅"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "正财格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 166.2,
+        "K": 229.8,
+        "effective_root_level": 3
+      }
+    },
+    {
+      "date": "1940-04-19 10:00:00",
+      "pillars": [
+        "庚辰",
+        "庚辰",
+        "壬辰",
+        "乙巳"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "伤官格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 156.0,
+        "K": 384.0,
+        "effective_root_level": 1
+      }
+    },
+    {
+      "date": "2004-10-19 19:00:00",
+      "pillars": [
+        "甲申",
+        "甲戌",
+        "辛未",
+        "戊戌"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "正印格",
+        "ge_category": "八格",
+        "ge_status": "成中有败",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身旺",
+        "F": 338.0,
+        "K": 202.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1941-12-27 01:00:00",
+      "pillars": [
+        "辛巳",
+        "庚子",
+        "己酉",
+        "乙丑"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "偏财格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "浊而无去",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 75.6,
+        "K": 356.4,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "2028-05-07 12:00:00",
+      "pillars": [
+        "戊申",
+        "丁巳",
+        "壬辰",
+        "丙午"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "偏财格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "浊而无去",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "假从弱",
+        "F": 66.7,
+        "K": 404.3,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "2006-03-23 11:00:00",
+      "pillars": [
+        "丙戌",
+        "辛卯",
+        "辛亥",
+        "甲午"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "偏财格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 111.0,
+        "K": 333.6,
+        "effective_root_level": 3
+      }
+    },
+    {
+      "date": "1975-06-23 09:00:00",
+      "pillars": [
+        "乙卯",
+        "壬午",
+        "庚子",
+        "辛巳"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "正官格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 85.5,
+        "K": 335.5,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "2009-01-20 22:00:00",
+      "pillars": [
+        "戊子",
+        "乙丑",
+        "乙丑",
+        "丁亥"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "偏财格",
+        "ge_category": "八格",
+        "ge_status": "成中有败",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "中和偏弱",
+        "F": 196.2,
+        "K": 227.8,
+        "effective_root_level": 3
+      }
+    },
+    {
+      "date": "1977-09-21 03:00:00",
+      "pillars": [
+        "丁巳",
+        "己酉",
+        "辛巳",
+        "庚寅"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "建禄格",
+        "ge_category": "禄刃",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身旺",
+        "F": 279.0,
+        "K": 249.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1905-06-04 04:00:00",
+      "pillars": [
+        "乙巳",
+        "辛巳",
+        "甲戌",
+        "丙寅"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "食神格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 114.0,
+        "K": 426.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1927-10-18 09:00:00",
+      "pillars": [
+        "丁卯",
+        "庚戌",
+        "乙酉",
+        "辛巳"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "七杀格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "浊而无去",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "从弱",
+        "F": 56.0,
+        "K": 365.0,
+        "effective_root_level": 0
+      }
+    },
+    {
+      "date": "1966-09-22 02:00:00",
+      "pillars": [
+        "丙午",
+        "丁酉",
+        "甲申",
+        "乙丑"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "正官格",
+        "ge_category": "八格",
+        "ge_status": "真破格",
+        "clean_level": "浊而无去",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "假从弱",
+        "F": 69.0,
+        "K": 423.0,
+        "effective_root_level": 0
+      }
+    },
+    {
+      "date": "1964-02-15 16:00:00",
+      "pillars": [
+        "甲辰",
+        "丙寅",
+        "甲午",
+        "壬申"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "建禄格",
+        "ge_category": "禄刃",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "中和偏弱",
+        "F": 192.5,
+        "K": 257.5,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "2024-02-19 16:00:00",
+      "pillars": [
+        "甲辰",
+        "丙寅",
+        "癸丑",
+        "庚申"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "伤官格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "浊而无去",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 148.5,
+        "K": 301.5,
+        "effective_root_level": 3
+      }
+    },
+    {
+      "date": "1931-12-18 02:00:00",
+      "pillars": [
+        "辛未",
+        "庚子",
+        "丁未",
+        "辛丑"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "七杀格",
+        "ge_category": "八格",
+        "ge_status": "真破格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "假从弱",
+        "F": 54.0,
+        "K": 372.6,
+        "effective_root_level": 3
+      }
+    },
+    {
+      "date": "1951-06-15 00:00:00",
+      "pillars": [
+        "辛卯",
+        "甲午",
+        "丙戌",
+        "戊子"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "阳刃格",
+        "ge_category": "禄刃",
+        "ge_status": "真破格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身旺",
+        "F": 277.5,
+        "K": 178.5,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1989-10-04 10:00:00",
+      "pillars": [
+        "己巳",
+        "癸酉",
+        "丁酉",
+        "乙巳"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "偏财格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 114.0,
+        "K": 378.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1948-10-18 22:00:00",
+      "pillars": [
+        "戊子",
+        "壬戌",
+        "丙子",
+        "己亥"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "食神格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "浊而无去",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "假从弱",
+        "F": 36.0,
+        "K": 504.0,
+        "effective_root_level": 1
+      }
+    },
+    {
+      "date": "1929-10-17 19:00:00",
+      "pillars": [
+        "己巳",
+        "甲戌",
+        "乙未",
+        "丙戌"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "正财格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "假从弱",
+        "F": 10.0,
+        "K": 578.0,
+        "effective_root_level": 1
+      }
+    },
+    {
+      "date": "2010-06-01 14:00:00",
+      "pillars": [
+        "庚寅",
+        "辛巳",
+        "壬午",
+        "丁未"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "从财格",
+        "ge_category": "外格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "从弱",
+        "F": 24.0,
+        "K": 626.0,
+        "effective_root_level": 0
+      }
+    },
+    {
+      "date": "1987-12-21 11:00:00",
+      "pillars": [
+        "丁卯",
+        "壬子",
+        "甲辰",
+        "庚午"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "正印格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "中和偏旺",
+        "F": 207.0,
+        "K": 207.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "2030-06-19 10:00:00",
+      "pillars": [
+        "庚戌",
+        "壬午",
+        "乙酉",
+        "辛巳"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "从杀格",
+        "ge_category": "外格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "从弱",
+        "F": 12.0,
+        "K": 480.0,
+        "effective_root_level": 0
+      }
+    },
+    {
+      "date": "1926-10-27 17:00:00",
+      "pillars": [
+        "丙寅",
+        "戊戌",
+        "己丑",
+        "癸酉"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "建禄格",
+        "ge_category": "禄刃",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "中和偏旺",
+        "F": 275.0,
+        "K": 265.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "2011-11-26 08:00:00",
+      "pillars": [
+        "辛卯",
+        "己亥",
+        "乙酉",
+        "庚辰"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "正印格",
+        "ge_category": "八格",
+        "ge_status": "成中有败",
+        "clean_level": "浊而无去",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 155.2,
+        "K": 269.8,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1960-11-21 05:00:00",
+      "pillars": [
+        "庚子",
+        "丁亥",
+        "癸丑",
+        "乙卯"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "建禄格",
+        "ge_category": "禄刃",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身旺",
+        "F": 498.0,
+        "K": 210.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "2017-11-12 16:00:00",
+      "pillars": [
+        "丁酉",
+        "辛亥",
+        "癸卯",
+        "庚申"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "月劫格",
+        "ge_category": "禄刃",
+        "ge_status": "成格",
+        "clean_level": "浊而无去",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身旺",
+        "F": 304.0,
+        "K": 146.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1973-01-12 05:00:00",
+      "pillars": [
+        "壬子",
+        "癸丑",
+        "戊申",
+        "乙卯"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "正财格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 231.0,
+        "K": 342.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1945-03-03 16:00:00",
+      "pillars": [
+        "乙酉",
+        "戊寅",
+        "辛未",
+        "丙申"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "正官格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "浊而无去",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "中和偏旺",
+        "F": 236.0,
+        "K": 196.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1930-04-24 22:00:00",
+      "pillars": [
+        "庚午",
+        "庚辰",
+        "甲辰",
+        "乙亥"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "偏财格",
+        "ge_category": "八格",
+        "ge_status": "真破格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 214.0,
+        "K": 314.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1915-05-20 22:00:00",
+      "pillars": [
+        "乙卯",
+        "辛巳",
+        "辛亥",
+        "己亥"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "正官格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱无根",
+        "F": 78.0,
+        "K": 262.0,
+        "effective_root_level": 0
+      }
+    },
+    {
+      "date": "1981-05-11 05:00:00",
+      "pillars": [
+        "辛酉",
+        "癸巳",
+        "己丑",
+        "丁卯"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "月劫格",
+        "ge_category": "禄刃",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 144.6,
+        "K": 242.4,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1962-08-13 17:00:00",
+      "pillars": [
+        "壬寅",
+        "戊申",
+        "癸未",
+        "辛酉"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "正官格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱无根",
+        "F": 202.5,
+        "K": 186.5,
+        "effective_root_level": 0
+      }
+    },
+    {
+      "date": "1946-07-27 18:00:00",
+      "pillars": [
+        "丙戌",
+        "乙未",
+        "壬寅",
+        "己酉"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "正官格",
+        "ge_category": "八格",
+        "ge_status": "真破格",
+        "clean_level": "浊而无去",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱无根",
+        "F": 114.0,
+        "K": 426.0,
+        "effective_root_level": 0
+      }
+    },
+    {
+      "date": "2021-04-24 22:00:00",
+      "pillars": [
+        "辛丑",
+        "壬辰",
+        "壬寅",
+        "辛亥"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "七杀格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "中和偏弱",
+        "F": 217.1,
+        "K": 217.9,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "2010-06-12 15:00:00",
+      "pillars": [
+        "庚寅",
+        "壬午",
+        "癸巳",
+        "庚申"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "偏财格",
+        "ge_category": "八格",
+        "ge_status": "真破格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱无根",
+        "F": 195.7,
+        "K": 199.3,
+        "effective_root_level": 0
+      }
+    },
+    {
+      "date": "1960-10-14 04:00:00",
+      "pillars": [
+        "庚子",
+        "丙戌",
+        "乙亥",
+        "戊寅"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "正财格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 187.8,
+        "K": 295.2,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "2014-08-04 03:00:00",
+      "pillars": [
+        "甲午",
+        "辛未",
+        "丁未",
+        "壬寅"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "食神格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 181.0,
+        "K": 392.0,
+        "effective_root_level": 3
+      }
+    },
+    {
+      "date": "2015-03-26 23:00:00",
+      "pillars": [
+        "乙未",
+        "己卯",
+        "辛丑",
+        "庚子"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "偏财格",
+        "ge_category": "八格",
+        "ge_status": "成中有败",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 195.0,
+        "K": 258.0,
+        "effective_root_level": 3
+      }
+    },
+    {
+      "date": "1951-02-06 08:00:00",
+      "pillars": [
+        "辛卯",
+        "庚寅",
+        "丁丑",
+        "甲辰"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "正印格",
+        "ge_category": "八格",
+        "ge_status": "真破格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 172.8,
+        "K": 263.2,
+        "effective_root_level": 3
+      }
+    },
+    {
+      "date": "1990-03-19 09:00:00",
+      "pillars": [
+        "庚午",
+        "己卯",
+        "癸未",
+        "丁巳"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "食神格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱无根",
+        "F": 65.4,
+        "K": 366.6,
+        "effective_root_level": 0
+      }
+    },
+    {
+      "date": "1965-06-20 07:00:00",
+      "pillars": [
+        "乙巳",
+        "壬午",
+        "乙巳",
+        "庚辰"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "食神格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 120.0,
+        "K": 366.0,
+        "effective_root_level": 3
+      }
+    },
+    {
+      "date": "1972-01-11 06:00:00",
+      "pillars": [
+        "辛亥",
+        "辛丑",
+        "辛丑",
+        "辛卯"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "偏印格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "中和偏旺",
+        "F": 241.0,
+        "K": 227.0,
+        "effective_root_level": 1
+      }
+    },
+    {
+      "date": "1984-05-05 18:00:00",
+      "pillars": [
+        "甲子",
+        "己巳",
+        "己亥",
+        "癸酉"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "月劫格",
+        "ge_category": "禄刃",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "假从弱",
+        "F": 48.9,
+        "K": 326.5,
+        "effective_root_level": 0
+      }
+    },
+    {
+      "date": "1981-08-17 21:00:00",
+      "pillars": [
+        "辛酉",
+        "丙申",
+        "丁卯",
+        "辛亥"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "正财格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱无根",
+        "F": 85.4,
+        "K": 295.0,
+        "effective_root_level": 0
+      }
+    },
+    {
+      "date": "2029-04-04 04:00:00",
+      "pillars": [
+        "己酉",
+        "丁卯",
+        "甲子",
+        "丙寅"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "阳刃格",
+        "ge_category": "禄刃",
+        "ge_status": "真破格",
+        "clean_level": "浊而无去",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "中和偏弱",
+        "F": 199.0,
+        "K": 256.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "2024-02-02 10:00:00",
+      "pillars": [
+        "癸卯",
+        "乙丑",
+        "丙申",
+        "癸巳"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "正官格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 177.8,
+        "K": 305.2,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1905-09-18 07:00:00",
+      "pillars": [
+        "乙巳",
+        "乙酉",
+        "庚申",
+        "庚辰"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "阳刃格",
+        "ge_category": "禄刃",
+        "ge_status": "真破格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身旺",
+        "F": 449.4,
+        "K": 114.6,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "2006-07-14 03:00:00",
+      "pillars": [
+        "丙戌",
+        "乙未",
+        "甲辰",
+        "丙寅"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "正财格",
+        "ge_category": "八格",
+        "ge_status": "真破格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 153.0,
+        "K": 315.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "2013-04-27 07:00:00",
+      "pillars": [
+        "癸巳",
+        "丙辰",
+        "癸亥",
+        "丙辰"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "正官格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 117.0,
+        "K": 333.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "2016-10-27 16:00:00",
+      "pillars": [
+        "丙申",
+        "戊戌",
+        "壬午",
+        "戊申"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "七杀格",
+        "ge_category": "八格",
+        "ge_status": "成中有败",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 180.0,
+        "K": 360.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "2030-01-23 02:00:00",
+      "pillars": [
+        "己酉",
+        "丁丑",
+        "戊午",
+        "癸丑"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "正财格",
+        "ge_category": "八格",
+        "ge_status": "真破格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身旺",
+        "F": 328.0,
+        "K": 194.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1963-07-05 20:00:00",
+      "pillars": [
+        "癸卯",
+        "戊午",
+        "己酉",
+        "甲戌"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "建禄格",
+        "ge_category": "禄刃",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "中和偏弱",
+        "F": 176.1,
+        "K": 208.9,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1904-12-06 18:00:00",
+      "pillars": [
+        "甲辰",
+        "乙亥",
+        "甲戌",
+        "癸酉"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "偏印格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身旺",
+        "F": 291.6,
+        "K": 156.6,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1940-02-08 02:00:00",
+      "pillars": [
+        "庚辰",
+        "戊寅",
+        "辛巳",
+        "己丑"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "正印格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "浊而无去",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身旺",
+        "F": 340.0,
+        "K": 200.0,
+        "effective_root_level": 1
+      }
+    },
+    {
+      "date": "1964-07-09 14:00:00",
+      "pillars": [
+        "甲辰",
+        "辛未",
+        "己未",
+        "辛未"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "建禄格",
+        "ge_category": "禄刃",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身旺",
+        "F": 300.0,
+        "K": 240.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1927-12-03 18:00:00",
+      "pillars": [
+        "丁卯",
+        "辛亥",
+        "辛未",
+        "丁酉"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "伤官格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱无根",
+        "F": 93.0,
+        "K": 246.0,
+        "effective_root_level": 0
+      }
+    },
+    {
+      "date": "2016-05-27 15:00:00",
+      "pillars": [
+        "丙申",
+        "癸巳",
+        "己酉",
+        "壬申"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "月劫格",
+        "ge_category": "禄刃",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 131.3,
+        "K": 357.7,
+        "effective_root_level": 3
+      }
+    },
+    {
+      "date": "2015-10-03 04:00:00",
+      "pillars": [
+        "乙未",
+        "乙酉",
+        "壬子",
+        "壬寅"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "正印格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "中和偏弱",
+        "F": 250.0,
+        "K": 290.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1964-07-12 13:00:00",
+      "pillars": [
+        "甲辰",
+        "辛未",
+        "壬戌",
+        "丁未"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "正财格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 75.0,
+        "K": 363.0,
+        "effective_root_level": 3
+      }
+    },
+    {
+      "date": "1902-02-16 12:00:00",
+      "pillars": [
+        "壬寅",
+        "壬寅",
+        "庚午",
+        "壬午"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "偏财格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "假从弱",
+        "F": 74.0,
+        "K": 466.0,
+        "effective_root_level": 0
+      }
+    },
+    {
+      "date": "1908-09-14 21:00:00",
+      "pillars": [
+        "戊申",
+        "辛酉",
+        "壬申",
+        "辛亥"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "正印格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身旺",
+        "F": 435.0,
+        "K": 105.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1968-01-20 15:00:00",
+      "pillars": [
+        "丁未",
+        "癸丑",
+        "己丑",
+        "壬申"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "偏财格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 150.0,
+        "K": 270.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1966-02-13 02:00:00",
+      "pillars": [
+        "丙午",
+        "庚寅",
+        "癸卯",
+        "癸丑"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "正财格",
+        "ge_category": "八格",
+        "ge_status": "真破格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 120.0,
+        "K": 384.0,
+        "effective_root_level": 3
+      }
+    },
+    {
+      "date": "1934-01-08 19:00:00",
+      "pillars": [
+        "癸酉",
+        "乙丑",
+        "己卯",
+        "甲戌"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "偏财格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "浊而无去",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 98.1,
+        "K": 326.9,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1978-02-05 02:00:00",
+      "pillars": [
+        "戊午",
+        "甲寅",
+        "戊戌",
+        "癸丑"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "七杀格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "中和偏旺",
+        "F": 225.6,
+        "K": 188.4,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "2013-03-06 03:00:00",
+      "pillars": [
+        "癸巳",
+        "乙卯",
+        "辛未",
+        "庚寅"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "偏财格",
+        "ge_category": "八格",
+        "ge_status": "真破格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 161.0,
+        "K": 379.0,
+        "effective_root_level": 1
+      }
+    },
+    {
+      "date": "1926-05-25 18:00:00",
+      "pillars": [
+        "丙寅",
+        "癸巳",
+        "甲寅",
+        "癸酉"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "食神格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 132.0,
+        "K": 312.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1987-04-02 15:00:00",
+      "pillars": [
+        "丁卯",
+        "癸卯",
+        "辛巳",
+        "丙申"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "偏财格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "浊而无去",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 72.1,
+        "K": 392.9,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "2004-10-25 13:00:00",
+      "pillars": [
+        "甲申",
+        "甲戌",
+        "丁丑",
+        "丁未"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "伤官格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 180.0,
+        "K": 248.0,
+        "effective_root_level": 3
+      }
+    },
+    {
+      "date": "1970-10-25 04:00:00",
+      "pillars": [
+        "庚戌",
+        "丙戌",
+        "戊寅",
+        "甲寅"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "建禄格",
+        "ge_category": "禄刃",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "中和偏弱",
+        "F": 255.0,
+        "K": 285.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1962-11-13 13:00:00",
+      "pillars": [
+        "壬寅",
+        "辛亥",
+        "乙卯",
+        "癸未"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "正印格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "浊而无去",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身旺",
+        "F": 287.4,
+        "K": 140.6,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1985-08-14 03:00:00",
+      "pillars": [
+        "乙丑",
+        "甲申",
+        "乙酉",
+        "戊寅"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "正财格",
+        "ge_category": "八格",
+        "ge_status": "真破格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱无根",
+        "F": 88.5,
+        "K": 265.5,
+        "effective_root_level": 0
+      }
+    },
+    {
+      "date": "1985-11-23 04:00:00",
+      "pillars": [
+        "乙丑",
+        "丁亥",
+        "丙寅",
+        "庚寅"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "七杀格",
+        "ge_category": "八格",
+        "ge_status": "成中有败",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "中和偏旺",
+        "F": 270.9,
+        "K": 200.1,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "2023-01-07 00:00:00",
+      "pillars": [
+        "壬寅",
+        "癸丑",
+        "乙丑",
+        "丙子"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "偏印格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "浊而无去",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 174.0,
+        "K": 396.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1930-01-20 00:00:00",
+      "pillars": [
+        "己巳",
+        "丁丑",
+        "庚午",
+        "丙子"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "正印格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "浊而无去",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 151.1,
+        "K": 284.9,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1926-12-17 22:00:00",
+      "pillars": [
+        "丙寅",
+        "庚子",
+        "庚辰",
+        "丁亥"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "伤官格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "浊而无去",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱无根",
+        "F": 77.6,
+        "K": 363.4,
+        "effective_root_level": 0
+      }
+    },
+    {
+      "date": "1970-10-11 21:00:00",
+      "pillars": [
+        "庚戌",
+        "丙戌",
+        "甲子",
+        "乙亥"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "偏财格",
+        "ge_category": "八格",
+        "ge_status": "成中有败",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "中和偏弱",
+        "F": 238.0,
+        "K": 290.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1929-12-18 19:00:00",
+      "pillars": [
+        "己巳",
+        "丙子",
+        "丁酉",
+        "庚戌"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "七杀格",
+        "ge_category": "八格",
+        "ge_status": "真破格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 117.0,
+        "K": 423.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1990-11-13 17:00:00",
+      "pillars": [
+        "庚午",
+        "丁亥",
+        "壬午",
+        "己酉"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "建禄格",
+        "ge_category": "禄刃",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 213.0,
+        "K": 309.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "2005-04-07 11:00:00",
+      "pillars": [
+        "乙酉",
+        "庚辰",
+        "辛酉",
+        "甲午"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "偏财格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身旺",
+        "F": 262.8,
+        "K": 190.2,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1968-07-04 06:00:00",
+      "pillars": [
+        "戊申",
+        "戊午",
+        "乙亥",
+        "己卯"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "偏财格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 214.0,
+        "K": 326.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1965-12-09 09:00:00",
+      "pillars": [
+        "乙巳",
+        "戊子",
+        "丁酉",
+        "乙巳"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "七杀格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 126.0,
+        "K": 318.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1903-01-04 21:00:00",
+      "pillars": [
+        "壬寅",
+        "壬子",
+        "壬辰",
+        "辛亥"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "阳刃格",
+        "ge_category": "禄刃",
+        "ge_status": "真破格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身旺",
+        "F": 276.1,
+        "K": 164.9,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1946-08-13 07:00:00",
+      "pillars": [
+        "丙戌",
+        "丙申",
+        "己未",
+        "戊辰"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "伤官格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身旺",
+        "F": 318.0,
+        "K": 130.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1929-04-27 17:00:00",
+      "pillars": [
+        "己巳",
+        "戊辰",
+        "壬寅",
+        "己酉"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "七杀格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "浊而无去",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 77.3,
+        "K": 408.7,
+        "effective_root_level": 1
+      }
+    },
+    {
+      "date": "1957-06-19 15:00:00",
+      "pillars": [
+        "丁酉",
+        "丙午",
+        "壬戌",
+        "戊申"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "正财格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 114.6,
+        "K": 317.4,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1960-07-03 16:00:00",
+      "pillars": [
+        "庚子",
+        "壬午",
+        "壬辰",
+        "戊申"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "正财格",
+        "ge_category": "八格",
+        "ge_status": "真破格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "中和偏旺",
+        "F": 222.6,
+        "K": 164.4,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1915-05-27 11:00:00",
+      "pillars": [
+        "乙卯",
+        "辛巳",
+        "戊午",
+        "戊午"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "建禄格",
+        "ge_category": "禄刃",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身旺",
+        "F": 319.0,
+        "K": 209.0,
+        "effective_root_level": 3
+      }
+    },
+    {
+      "date": "2023-03-08 15:00:00",
+      "pillars": [
+        "癸卯",
+        "乙卯",
+        "乙丑",
+        "甲申"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "建禄格",
+        "ge_category": "禄刃",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身旺",
+        "F": 395.0,
+        "K": 133.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1914-07-06 06:00:00",
+      "pillars": [
+        "甲寅",
+        "庚午",
+        "癸巳",
+        "乙卯"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "偏财格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "浊而无去",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "假从弱",
+        "F": 70.0,
+        "K": 470.0,
+        "effective_root_level": 0
+      }
+    },
+    {
+      "date": "1970-04-04 19:00:00",
+      "pillars": [
+        "庚戌",
+        "己卯",
+        "甲寅",
+        "甲戌"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "阳刃格",
+        "ge_category": "禄刃",
+        "ge_status": "真破格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 183.0,
+        "K": 288.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "2012-09-20 06:00:00",
+      "pillars": [
+        "壬辰",
+        "己酉",
+        "甲申",
+        "丁卯"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "正官格",
+        "ge_category": "八格",
+        "ge_status": "成中有败",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 157.4,
+        "K": 268.6,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1938-02-27 02:00:00",
+      "pillars": [
+        "戊寅",
+        "甲寅",
+        "庚寅",
+        "丁丑"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "偏财格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "浊而无去",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 150.0,
+        "K": 390.0,
+        "effective_root_level": 1
+      }
+    },
+    {
+      "date": "1947-06-11 03:00:00",
+      "pillars": [
+        "丁亥",
+        "丙午",
+        "辛酉",
+        "庚寅"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "七杀格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "浊而能清",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 193.3,
+        "K": 277.7,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1990-12-10 01:00:00",
+      "pillars": [
+        "庚午",
+        "戊子",
+        "己酉",
+        "乙丑"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "偏财格",
+        "ge_category": "八格",
+        "ge_status": "成中有败",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 137.8,
+        "K": 308.2,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "2008-12-18 06:00:00",
+      "pillars": [
+        "戊子",
+        "甲子",
+        "壬辰",
+        "癸卯"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "阳刃格",
+        "ge_category": "禄刃",
+        "ge_status": "真破格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "中和偏弱",
+        "F": 240.0,
+        "K": 300.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1909-10-18 02:00:00",
+      "pillars": [
+        "己酉",
+        "甲戌",
+        "辛亥",
+        "己丑"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "正印格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身旺",
+        "F": 326.0,
+        "K": 178.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1947-08-23 13:00:00",
+      "pillars": [
+        "丁亥",
+        "戊申",
+        "甲戌",
+        "辛未"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "偏财格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 116.0,
+        "K": 424.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1925-04-22 15:00:00",
+      "pillars": [
+        "乙丑",
+        "庚辰",
+        "丙子",
+        "丙申"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "正印格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱无根",
+        "F": 61.8,
+        "K": 273.8,
+        "effective_root_level": 0
+      }
+    },
+    {
+      "date": "1906-08-02 13:00:00",
+      "pillars": [
+        "丙午",
+        "乙未",
+        "戊寅",
+        "己未"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "正官格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身旺",
+        "F": 462.0,
+        "K": 129.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "2009-06-14 23:00:00",
+      "pillars": [
+        "己丑",
+        "庚午",
+        "庚寅",
+        "戊子"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "正印格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "浊而无去",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "中和偏弱",
+        "F": 218.7,
+        "K": 201.3,
+        "effective_root_level": 1
+      }
+    },
+    {
+      "date": "1991-07-03 23:00:00",
+      "pillars": [
+        "辛未",
+        "甲午",
+        "甲戌",
+        "丙子"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "伤官格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 86.6,
+        "K": 333.4,
+        "effective_root_level": 1
+      }
+    },
+    {
+      "date": "2014-09-15 16:00:00",
+      "pillars": [
+        "甲午",
+        "癸酉",
+        "己丑",
+        "壬申"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "食神格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "暗格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 149.0,
+        "K": 391.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1970-10-26 06:00:00",
+      "pillars": [
+        "庚戌",
+        "丙戌",
+        "己卯",
+        "丁卯"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "偏印格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "浊而无去",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 155.3,
+        "K": 228.7,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "1972-06-05 23:00:00",
+      "pillars": [
+        "壬子",
+        "丙午",
+        "丁卯",
+        "壬子"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "建禄格",
+        "ge_category": "禄刃",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱无根",
+        "F": 143.5,
+        "K": 200.5,
+        "effective_root_level": 0
+      }
+    },
+    {
+      "date": "1900-03-04 09:00:00",
+      "pillars": [
+        "庚子",
+        "戊寅",
+        "丙子",
+        "癸巳"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "食神格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 135.0,
+        "K": 405.0,
+        "effective_root_level": 2
+      }
+    },
+    {
+      "date": "2014-02-02 20:00:00",
+      "pillars": [
+        "癸巳",
+        "乙丑",
+        "甲辰",
+        "甲戌"
+      ],
+      "external": false,
+      "baseline": {
+        "main_ge_name": "正印格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱无根",
+        "F": 129.0,
+        "K": 227.0,
+        "effective_root_level": 0
+      }
+    },
+    {
+      "date": "1902-10-09 22:00:00",
+      "pillars": [
+        "壬寅",
+        "庚戌",
+        "乙丑",
+        "丁亥"
+      ],
+      "external": true,
+      "baseline": {
+        "main_ge_name": "食神格",
+        "ge_category": "八格",
+        "ge_status": "成格",
+        "clean_level": "清纯",
+        "ge_variant": "明格"
+      },
+      "wangshuai_baseline": {
+        "tag": "身弱",
+        "F": 186.6,
+        "K": 284.4,
+        "effective_root_level": 2
+      }
+    }
+  ],
+  "config": {
+    "cong_threshold": 0.85,
+    "hehua_strict": true,
+    "store_self_punish_open": false,
+    "store_open_enable": true,
+    "tiangan_base": 60,
+    "void_gan_factor": 0.2,
+    "micro_root_factor": 0.6,
+    "middle_root_factor": 0.8,
+    "branch_chong_factor": 0.5,
+    "void_wang_min_share_f": 0.5,
+    "cong_requires_yin_no_root": true,
+    "cong_yin_root_as_fake": false,
+    "cong_yin_root_policy": "fake",
+    "cong_allow_rootless": true,
+    "cong_root_gate": "tiered",
+    "cong_root_gate_side": "both",
+    "cong_bi_root_source": "gan_level",
+    "cong_fake_need_weak_root": true,
+    "root_include_mid_micro": false,
+    "store_root_exempt_from_pull": true,
+    "chong_ban_combine": "ban_priority",
+    "de_ling_month_discount": false,
+    "enable_lian_gen_check": true
+  },
+  "baseline_revision": "2026-11-06 从格专项定稿后；5例外格迁移详见validation/calendar-baseline-migration.json"
+}

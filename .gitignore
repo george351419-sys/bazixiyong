@@ -1,0 +1,21 @@
+# ---- Python 缓存 / 编译产物 ----
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ---- 第三方依赖（通过 .vendor 本地挂载，改用 requirements.txt 安装）----
+.vendor/
+
+# ---- 项目内部工作笔记（非源码）----
+.workbuddy/
+
+# ---- 系统 / 编辑器 ----
+.DS_Store
+*.swp
+.idea/
+.vscode/
