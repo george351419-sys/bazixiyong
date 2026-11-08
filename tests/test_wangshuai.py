@@ -13,6 +13,11 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from bazi_core import wangshuai as W
 from bazi_core import heju as H
+# 此套PRD数值用例固定为季节层之前的口径；月令新层另测。
+from types import SimpleNamespace
+_root_compute=W.compute_wangshuai
+W=SimpleNamespace(**vars(W))
+W.compute_wangshuai=lambda chart,config=None: _root_compute(chart,dict(config or {},seasonal_strength=False))
 
 GAN_ZHI = "甲乙丙丁戊己庚辛壬癸", "子丑寅卯辰巳午未申酉戌亥"
 
@@ -401,7 +406,9 @@ def case32():
     g, z = gz("癸辰 己子 壬子 庚申")
     r = W.compute_wangshuai(mk(g, z))
     check("case32 从强", r["tag"] == "从强", r["tag"])
-    check("case32 从强 F 占比≈0.91", round(r["ratio_share_f"], 3) == 0.907, str(round(r["ratio_share_f"], 3)))
+    check("case32 对称折扣降低无根克泄耗", r["ratio_share_f"] > .907)
+    r = W.compute_wangshuai(mk(g,z),config={"symmetric_root_discount":False})
+    check("case32 旧版从强 F 占比≈0.91", round(r["ratio_share_f"], 3) == 0.907, str(round(r["ratio_share_f"], 3)))
 
 
 def case33():

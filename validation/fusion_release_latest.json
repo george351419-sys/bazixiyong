@@ -1,0 +1,117 @@
+{
+  "case_count": 360,
+  "frozen_hash": "495461c26d779beac136767c31c8daebaa055854415c24fe740f890caa235c5c",
+  "passed": false,
+  "failures": [
+    "pending_rate_exceeded",
+    "conflict_coverage_insufficient",
+    "no_action_release_cases",
+    "independent_comparison_missing_or_failed",
+    "no_resolved_conflict_action_cases",
+    "independent_conflict_comparison_missing",
+    "release_profile_unverified",
+    "independent_validation_missing"
+  ],
+  "pending_count": 355,
+  "pending_rate": 0.9861111111111112,
+  "conditional_count": 0,
+  "conditional_rate": 0.0,
+  "direction_release_count": 4,
+  "action_release_count": 0,
+  "primary_gap_counts": {
+    "implementation_gap": 355
+  },
+  "primary_gap_rates": {
+    "implementation_gap": 0.9861111111111112
+  },
+  "conflict_count": 0,
+  "covered_conflicts": 0,
+  "conflict_coverage": null,
+  "conflict_groups": {},
+  "conflict_decided_count": 0,
+  "conflict_evidence_pending_count": 0,
+  "conflict_unknown_count": 355,
+  "additional_gap_counts": {
+    "evidence_gap": 355,
+    "implementation_gap": 355
+  },
+  "scenario_groups": {
+    "other_months": {
+      "total": 176,
+      "pending": 176
+    },
+    "winter_summer": {
+      "total": 179,
+      "pending": 179
+    },
+    "winter_summer:external": {
+      "total": 4,
+      "pending": 0
+    },
+    "other_months:external": {
+      "total": 1,
+      "pending": 0
+    }
+  },
+  "baseline_sources": {
+    "implementation_snapshot": 360
+  },
+  "groups": {
+    "身弱": {
+      "total": 150,
+      "pending": 150
+    },
+    "身弱无根": {
+      "total": 43,
+      "pending": 43
+    },
+    "中和偏旺": {
+      "total": 22,
+      "pending": 22
+    },
+    "身旺": {
+      "total": 69,
+      "pending": 69
+    },
+    "中和偏弱": {
+      "total": 39,
+      "pending": 39
+    },
+    "假从弱": {
+      "total": 22,
+      "pending": 22
+    },
+    "从弱": {
+      "total": 9,
+      "pending": 4
+    },
+    "假从强": {
+      "total": 3,
+      "pending": 3
+    },
+    "虚旺": {
+      "total": 2,
+      "pending": 2
+    },
+    "从强": {
+      "total": 1,
+      "pending": 1
+    }
+  },
+  "independent_validation": {
+    "passed": false,
+    "case_count": 0,
+    "compared_count": 0,
+    "failures": [
+      "independent_dataset_missing"
+    ],
+    "required_scope": "integrated_action",
+    "conflict_positive_count": 0,
+    "conflict_negative_count": 0,
+    "birth_positive_count": 0,
+    "scope_counts": {},
+    "integrated_action_positive_count": 0
+  },
+  "constructed_contract_suite_passed": true,
+  "domain_gold_standard": false
+}

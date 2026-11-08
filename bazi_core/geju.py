@@ -9,7 +9,7 @@
       ① 月令藏干唯一透出 → 取该透出为格神；
       ② 多透 → 按藏干序位「本气 > 中气 > 余气」取最前者；
       ③ 都不透 → 取本气为格，标为「暗格」；
-      ④ 透出字为日主比劫 → 该字不取（比劫不成格），整盘按建禄/禄刃论。
+      ④ 比劫不作八格格神；最终候选为比劫或月临禄刃帝旺时走禄刃分支。
     **人元司令（节气后天数决定的当令之干）不参与取格**，仅作参考字段输出。
   - 优先月令提纲；格神必须溯源到月令之气；禄刃单独分类，不属于八格。
   - 旺衰仅作附加辅助输出，不参与主格局判定（PRD §六.8）。
@@ -25,10 +25,10 @@
 说明（PRD 内部冲突已在此收敛，详见文件末尾 DATA_NOTES）：
   - 人元司令表 PRD §2.2 对卯/酉列了双段（甲/庚），但新口径下司令不参与取格，
     该冲突已无实义；siling_gan 仅保留作参考字段（卯→乙、酉→辛）。
-  - 禄刃触发以「月令透出比劫 / 取出的格神为比劫」为准；月支是否临官/帝旺
-    只用于细分格名（建禄 / 阳刃 / 月劫），见 Step3。
+  - 禄刃触发及细分以Step3的实际判据为准；人元司令不参与取格。
 """
 from __future__ import annotations
+from .numeric import finite as safe_finite
 from .geju_status import State
 
 from . import metadata as M
@@ -337,12 +337,20 @@ def compute_geju(chart, config=None, ws=None):
         ws    : 可选，已算好的旺衰结果（compute_wangshuai 返回值），避免重复计算。
     返回: 标准化格局 JSON（含 trace_log）。
     """
+    if config is not None and not isinstance(config,dict): raise ValueError('格局config必须为字典')
     if config is None:
         config = M.default_config()
     else:
         base = M.default_config()
         base.update(config)
         config = base
+
+    from .input_contracts import boolean
+    from math import isfinite
+    boolean(config.get('enable_special_ge',True),'enable_special_ge')
+    ratio=config.get('blade_control_ratio',1.0)
+    if type(ratio) not in (int,float) or not safe_finite(ratio) or ratio<=0:
+        raise ValueError('blade_control_ratio必须为正有限数值')
 
     gans, zhis = _parse_chart(chart)
     day_gan = gans[2]
@@ -360,6 +368,8 @@ def compute_geju(chart, config=None, ws=None):
     # engine.analyze 会把已算好的 ws 传进来，整条链路全局只调一次 heju.evaluate。
     if ws is None:
         ws = compute_wangshuai(chart, config=config)
+    from .ws_identity import verify
+    verify(ws, chart, config)
     he = ws.get("he_detail")
     if he is None:
         # 兼容外部传入的精简/旧格式 ws（如单测 mock）：退回直算并在链路日志标注来源
@@ -451,6 +461,10 @@ def compute_geju(chart, config=None, ws=None):
             "xiang_shen_list": [], "ji_shen_list": [],
             "ge_status": "成格", "clean_level": "清纯",
             "ge_category": "外格", "note": sp_note, "lu_ren_flag": False,
+            "structure_evidence": dict(source='geju._screen_special_ge',name=special_ge,matched=True,
+                kind='hua' if special_ge.startswith('化') else 'zhuanwang' if '专旺' in special_ge else 'two_elements' if '两气成象' in special_ge else 'cong',
+                day_hua=strict_he['gan_hua'][2],day_isolated=special_ge.startswith('化'),
+                pair=[w for w in M.WUXING_LIST if w in special_ge] if '两气成象' in special_ge else []),
             "special_ge": special_ge, "trace_log": trace,
             "wangshuai_tag": wangshuai_tag, "wangshuai_confidence": wangshuai_conf,
             "is_cong": cong_context["is_cong"],
@@ -689,6 +703,7 @@ def compute_geju(chart, config=None, ws=None):
         "ge_good": (SHISHEN_GOOD.get(ge_ss) if ge_ss in SHISHEN_GOOD
                     else GE_ROUTE.get(ge_ss, {}).get("good", True)),
         "wangshuai_tag": wangshuai_tag,
+        "blade_control_ratio": config.get("blade_control_ratio", 1.0),
         "special_ge": special_ge,
         "eff_hide": eff_hide, "zhis": zhis,
     }
@@ -1132,11 +1147,8 @@ def _screen_special_ge(gans, zhis, day_gan, day_wx, he, ws, config, trace):
         trace.append("Step7：旺衰真从弱，克泄耗主导=%s → 从格：%s" % (dom, sub))
         return sub, "外格前置筛查：旺衰真从弱、%s主导 → 外格：%s" % (dom, sub)
     if is_cong and tag == "从强":
-        zhuan = {"木": "曲直格（专旺木）", "火": "炎上格（专旺火）",
-                 "金": "从革格（专旺金）", "水": "润下格（专旺水）",
-                 "土": "稼穑格（专旺土）"}.get(day_wx, "专旺格")
-        trace.append("Step7：旺衰真从强，日主%s一气专旺 → 专旺：%s" % (day_wx, zhuan))
-        return zhuan, "外格前置筛查：旺衰真从强、日主%s一气专旺 → 外格：%s" % (day_wx, zhuan)
+        trace.append("Step7：旺衰真从强 → 从强格；专旺细分需要独立审定条件，不由F占比推定")
+        return "从强格", "外格前置筛查：真从强，按印比顺势；专旺细分尚未审定，不直接命名五类专旺格"
 
     # 3) 两气成象（两行）：全局仅两五行且相生成象；不以日主孤立为门槛。
     two = _two_line_check(gans, zhis, he, day_wx)

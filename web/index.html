@@ -44,9 +44,10 @@
           <span>直接四柱（跳过排盘）</span>
           <input id="chart" type="text" placeholder="庚午 辛巳 癸巳 乙卯" />
         </label>
+        <label><input id="ruleCase" type="checkbox" /> 这是规则构造案例（允许与实际历法不一致）</label>
         <label class="field">
           <span>节气后第几天（可选，司令参考 / 调候分段）</span>
-          <input id="solarTermDay" type="number" min="0" max="30" placeholder="留空仅影响司令参考与调候分段" />
+          <input id="solarTermDay" type="number" min="0" max="40" step="1" placeholder="留空仅影响司令参考与调候分段" />
         </label>
         <label class="field">
           <span>调候节气分段（可选）</span>

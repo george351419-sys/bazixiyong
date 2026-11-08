@@ -205,7 +205,7 @@ DISTANCE = [0.8, 0.9, 1.0, 0.9]
 # ============================ 能量 / 倍率 常量（PRD 第五节） ============================
 class Const:
     HEHUA_STRICT = True            # 固定开启严格合化规则
-    CONG_THRESHOLD = 0.85          # 从格能量占比阈值（邵伟华严格）
+    from .fuyi_policy import CONG_THRESHOLD          # 从格候选范围：含日干生扶≥85%或≤15%，仍须结构门
     VOID_MOMENTUM_MAX = 15         # 虚势分上限
     VOID_WANG_TRIGGER = 10         # 虚旺触发阈值
     SANHUI_MAG = 1.8               # 三会成功倍率
@@ -236,6 +236,9 @@ def default_config() -> dict:
         "store_self_punish_open": Const.STORE_SELF_PUNISH_OPEN,
         "store_open_enable": Const.STORE_OPEN_ENABLE,
         "tiangan_base": Const.TIANGAN_BASE,
+        "symmetric_root_discount": True,
+        "seasonal_strength": True,
+        "include_day_stem": True,
         "void_gan_factor": Const.VOID_GAN_FACTOR,
         # V1.2 旺衰专项：微根折扣 / 支冲折半 / 虚旺旺势门槛 / 从格印根开关
         "micro_root_factor": Const.MICRO_ROOT_FACTOR,

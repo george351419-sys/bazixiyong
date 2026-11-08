@@ -2,6 +2,7 @@
 from copy import deepcopy
 import hashlib
 import json
+from . import metadata as M
 
 
 def generate_routes(facts, needs):
@@ -68,6 +69,9 @@ def generate_structure_route(facts):
     geju=facts['geju']
     xy=geju.get('xiyong_geju', {})
     records=sorted(deepcopy(xy.get('selected_records', [])),key=lambda r:r['id'])
+    if not records and geju.get('ge_category')=='外格':
+        records=[dict(id='wuxing:'+w,wuxing=w,precision='wuxing')
+                 for w in xy.get('special_yong_wuxing',[]) if w in M.WUXING_LIST]
     if not records: return [], ['geju_selected_route']
     restrictions=sorted(deepcopy(xy.get('conditional_yong_shen', [])),key=lambda r:r['id'])
     payload=dict(records=records,restrictions=restrictions,ge_status=geju.get('ge_status'),
@@ -76,18 +80,80 @@ def generate_structure_route(facts):
         allow_nan=False,separators=(',',':')).encode()).hexdigest()[:16]
     route_id='geju:structure:'+digest
     # 成格维护属于结构条件，不能虚构数值需求或治疗药力。
-    actions=[dict(gan=r['gan'],record_id=r['id'],method='maintain_structure',
-        intended_action='protect',recommendation_status='unverified_intent',
-        evidence_refs=['selection:'+r['id']]) for r in records]
-    registry={'selection:'+r['id']:dict(route_id=route_id,record=deepcopy(r),
-        source='geju.xiyong_geju.selected_records',ge_status=geju.get('ge_status')) for r in records}
+    actions=[]
+    registry={}
+    structure_goals={}
+    for record in records:
+        target='structure:'+str(geju.get('main_ge_name'))+':'+record['id']
+        ref='selection:'+record['id']
+        precision=record.get('precision','gan')
+        action=dict(gan=record.get('gan'),wuxing=record.get('wuxing'),precision=precision,
+            target_id=target,record_id=record['id'],method='maintain_structure',
+            intended_action='protect',recommendation_status='unverified_intent',evidence_refs=[ref])
+        actions.append(action)
+        registry[ref]=dict(route_id=route_id,target_id=target,gan=record.get('gan'),
+            wuxing=record.get('wuxing'),precision=precision,method='maintain_structure',
+            record=deepcopy(record),source='geju.xiyong_geju.selected_records' if precision=='gan'
+            else 'geju.xiyong_geju.special_yong_wuxing',ge_status=geju.get('ge_status'))
+        structure_goals[target]=dict(record_id=record['id'],precision=precision,
+            record=deepcopy(record),evidence_refs=[ref],dependency_status='unknown')
     missing=['structure_guard_verification','climate_effects','bearing_capacity',
              'cross_dimension_compatibility']
     missing += ['source_restriction:'+r['id'] for r in restrictions]
-    return [dict(route_id=route_id,route_kind='structure_maintenance',origin='geju_selected_records',
+    return [dict(route_id=route_id,route_kind='structure_maintenance',origin='geju_external_wuxing' if all(r.get('precision')=='wuxing' for r in records) else 'geju_selected_records',
         structure=dict(name=geju.get('main_ge_name'),status=geju.get('ge_status'),
                        ge_shen=geju.get('ge_shen')),
         selected_records=records,source_restrictions=restrictions,actions=actions,
-        goals=[],goal_results={},checks={},evidence_registry=registry,
+        goals=sorted(structure_goals),structure_goals=structure_goals,goal_results={},checks={},evidence_registry=registry,
         execution_status='requires_structure_and_cross_dimension_validation',
         missing_evidence=missing)],missing
+
+
+def generate_repair_candidates(facts, needs, climate_model=None):
+    """枚举来源有据的补缺意图；药效未知时不填零，不成为可执行处方。"""
+    candidates=[]
+    sources=[]
+    for gan in facts.get('tiaohou',{}).get('yongshen',[]):
+        if gan in M.GAN_LIST: sources.append((gan,M.WUXING_GAN[gan],'tiaohou.yongshen'))
+    for wx in facts.get('fuyi',{}).get('favored',[]):
+        if wx in M.WUXING_LIST: sources.append((None,wx,'fuyi.favored'))
+    for gan,wx,source in sources:
+        targets=sorted(k for k,n in needs.items() if n['initial_demand']>0)
+        if not targets: continue
+        route_id='repair:'+str(gan or wx)+':'+source
+        presence=facts.get('tiaohou',{}).get('presence',{}).get(gan,{}) if gan else {}
+        absent=presence.get('state')=='原局无'
+        registry={};actions=[]
+        for target in targets:
+            ref=route_id+':'+target
+            method='conditional_supply' if absent else 'evaluate_increment'
+            registry[ref]=dict(route_id=route_id,target_id=target,gan=gan,wuxing=wx,
+                               method=method,source=source)
+            actions.append(dict(gan=gan,wuxing=wx,precision='gan' if gan else 'wuxing',
+                target_id=target,method=method,intended_action='wait_condition' if absent else 'increase',
+                evidence_refs=[ref],recommendation_status='unverified_intent'))
+        candidates.append(dict(route_id=route_id,route_kind='conditional_repair' if absent else 'deficit_repair',
+            origin=source,goals=targets,actions=actions,checks={},goal_results={},
+            evidence_registry=registry,execution_status='not_executed',
+            relief_realized=0,relief_feasible=None,
+            missing_evidence=['relief_feasible','bearing_capacity','cross_dimension_compatibility',
+                              'supply_condition' if absent else 'dose_limit'],
+            interpretation='仅为待评估修复意图，不因列入候选就建议加强'))
+    if isinstance(climate_model,dict) and climate_model.get('review_status')=='approved':
+        from .scenario_evaluation import climate_intervention
+        for route in candidates:
+            wx=route['actions'][0]['wuxing']
+            amounts=[]
+            for key,need in needs.items():
+                if need['need_type']!='climate' or need['initial_demand']<=0: continue
+                coefficient=climate_model.get('axes',{}).get(key.split(':')[-1],{}).get('effect',{}).get(wx)
+                if type(coefficient) in (int,float) and coefficient>0:
+                    amounts.append(need['initial_demand']/coefficient)
+            if amounts:
+                amount=min(amounts)
+                projection=climate_intervention(facts,climate_model,{wx:amount})
+                route['climate_projection']=projection
+                route['proposed_energy_increment']=amount
+                # 能量投影不证明该字原局可用，也不证明格局与日主能承受。
+                route['execution_status']='not_executed'
+    return candidates

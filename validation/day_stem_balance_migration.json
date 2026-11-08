@@ -1,0 +1,5047 @@
+{
+  "count": 360,
+  "tag_changes": 99,
+  "note": "两次均用40/50/60门槛，仅比较日干纳入影响；非准确率。",
+  "cases": [
+    {
+      "pillars": [
+        "壬辰",
+        "壬寅",
+        "戊戌",
+        "庚申"
+      ],
+      "external_share": 0.2136752136752137,
+      "inclusive_share": 0.296,
+      "day_contribution": 42.0,
+      "old_tag": "身弱",
+      "new_tag": "身弱",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "庚申",
+        "丁亥",
+        "庚午",
+        "丙戌"
+      ],
+      "external_share": 0.42927615020638277,
+      "inclusive_share": 0.491,
+      "day_contribution": 60.0,
+      "old_tag": "中和偏弱",
+      "new_tag": "中和偏弱",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "庚戌",
+        "甲申",
+        "丁巳",
+        "丙午"
+      ],
+      "external_share": 0.3478212228002461,
+      "inclusive_share": 0.415,
+      "day_contribution": 51.0,
+      "old_tag": "身弱",
+      "new_tag": "中和偏弱",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "甲子",
+        "戊辰",
+        "丁亥",
+        "戊申"
+      ],
+      "external_share": 0.24271576329021077,
+      "inclusive_share": 0.263,
+      "day_contribution": 12.899999999999999,
+      "old_tag": "身弱无根",
+      "new_tag": "身弱无根",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "辛酉",
+        "戊戌",
+        "己酉",
+        "己巳"
+      ],
+      "external_share": 0.48591629604287834,
+      "inclusive_share": 0.54,
+      "day_contribution": 78.0,
+      "old_tag": "中和偏弱",
+      "new_tag": "中和偏旺",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "丁巳",
+        "壬寅",
+        "丁酉",
+        "癸卯"
+      ],
+      "external_share": 0.7393624490942283,
+      "inclusive_share": 0.782,
+      "day_contribution": 69.0,
+      "old_tag": "身旺",
+      "new_tag": "身旺",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "癸酉",
+        "乙卯",
+        "壬辰",
+        "壬子"
+      ],
+      "external_share": 0.5779816513761468,
+      "inclusive_share": 0.627,
+      "day_contribution": 60.0,
+      "old_tag": "中和偏旺",
+      "new_tag": "身旺",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "丁酉",
+        "丙午",
+        "己卯",
+        "乙亥"
+      ],
+      "external_share": 0.5516923076923077,
+      "inclusive_share": 0.597,
+      "day_contribution": 55.199999999999996,
+      "old_tag": "中和偏旺",
+      "new_tag": "中和偏旺",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "癸未",
+        "丙辰",
+        "甲戌",
+        "癸酉"
+      ],
+      "external_share": 0.2821424392201004,
+      "inclusive_share": 0.356,
+      "day_contribution": 51.599999999999994,
+      "old_tag": "身弱",
+      "new_tag": "身弱",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "甲戌",
+        "丁卯",
+        "庚辰",
+        "乙酉"
+      ],
+      "external_share": 0.26360599908310955,
+      "inclusive_share": 0.317,
+      "day_contribution": 35.699999999999996,
+      "old_tag": "身弱",
+      "new_tag": "身弱",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "乙巳",
+        "丁亥",
+        "壬辰",
+        "乙巳"
+      ],
+      "external_share": 0.17315957299320675,
+      "inclusive_share": 0.282,
+      "day_contribution": 54.6,
+      "old_tag": "身弱",
+      "new_tag": "身弱",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "壬午",
+        "戊申",
+        "庚子",
+        "乙酉"
+      ],
+      "external_share": 0.6683127572016462,
+      "inclusive_share": 0.724,
+      "day_contribution": 109.2,
+      "old_tag": "身旺",
+      "new_tag": "身旺",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "乙酉",
+        "丁亥",
+        "辛丑",
+        "丁酉"
+      ],
+      "external_share": 0.5077481041872733,
+      "inclusive_share": 0.565,
+      "day_contribution": 60.0,
+      "old_tag": "中和偏旺",
+      "new_tag": "中和偏旺",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "戊申",
+        "丁巳",
+        "辛巳",
+        "己丑"
+      ],
+      "external_share": 0.5564035689773507,
+      "inclusive_share": 0.588,
+      "day_contribution": 42.0,
+      "old_tag": "中和偏旺",
+      "new_tag": "中和偏旺",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "乙亥",
+        "己丑",
+        "丁未",
+        "辛丑"
+      ],
+      "external_share": 0.22138378738278863,
+      "inclusive_share": 0.239,
+      "day_contribution": 10.2,
+      "old_tag": "身弱无根",
+      "new_tag": "身弱无根",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "壬戌",
+        "丁未",
+        "癸巳",
+        "壬子"
+      ],
+      "external_share": 0.34815780578492445,
+      "inclusive_share": 0.402,
+      "day_contribution": 46.49999999999999,
+      "old_tag": "身弱",
+      "new_tag": "中和偏弱",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "丁未",
+        "癸丑",
+        "丁亥",
+        "丁未"
+      ],
+      "external_share": 0.37967418920938567,
+      "inclusive_share": 0.435,
+      "day_contribution": 40.8,
+      "old_tag": "身弱",
+      "new_tag": "中和偏弱",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "丁巳",
+        "癸卯",
+        "丁卯",
+        "丁未"
+      ],
+      "external_share": 0.8680686618136065,
+      "inclusive_share": 0.883,
+      "day_contribution": 69.0,
+      "old_tag": "假从强",
+      "new_tag": "假从强",
+      "fuyi_priority": null
+    },
+    {
+      "pillars": [
+        "甲辰",
+        "辛未",
+        "甲戌",
+        "甲子"
+      ],
+      "external_share": 0.43126079447322974,
+      "inclusive_share": 0.484,
+      "day_contribution": 44.400000000000006,
+      "old_tag": "中和偏弱",
+      "new_tag": "中和偏弱",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "庚子",
+        "丁亥",
+        "乙丑",
+        "丁亥"
+      ],
+      "external_share": 0.9627690517742874,
+      "inclusive_share": 0.965,
+      "day_contribution": 55.199999999999996,
+      "old_tag": "从强",
+      "new_tag": "从强",
+      "fuyi_priority": null
+    },
+    {
+      "pillars": [
+        "丁未",
+        "癸丑",
+        "丁卯",
+        "丙午"
+      ],
+      "external_share": 0.6013524401153519,
+      "inclusive_share": 0.642,
+      "day_contribution": 51.0,
+      "old_tag": "身旺",
+      "new_tag": "身旺",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "庚辰",
+        "庚辰",
+        "壬戌",
+        "甲辰"
+      ],
+      "external_share": 0.3656773211567732,
+      "inclusive_share": 0.425,
+      "day_contribution": 40.8,
+      "old_tag": "身弱",
+      "new_tag": "中和偏弱",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "辛巳",
+        "丁酉",
+        "癸未",
+        "庚申"
+      ],
+      "external_share": 0.6427701966814018,
+      "inclusive_share": 0.676,
+      "day_contribution": 55.199999999999996,
+      "old_tag": "身旺",
+      "new_tag": "身旺",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "乙巳",
+        "戊子",
+        "乙巳",
+        "乙酉"
+      ],
+      "external_share": 0.3485177151120752,
+      "inclusive_share": 0.369,
+      "day_contribution": 13.799999999999999,
+      "old_tag": "身弱无根",
+      "new_tag": "身弱无根",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "癸未",
+        "乙丑",
+        "丁酉",
+        "辛丑"
+      ],
+      "external_share": 0.15682770175928512,
+      "inclusive_share": 0.176,
+      "day_contribution": 10.2,
+      "old_tag": "身弱无根",
+      "new_tag": "身弱无根",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "己酉",
+        "甲戌",
+        "癸酉",
+        "癸亥"
+      ],
+      "external_share": 0.6631464933658272,
+      "inclusive_share": 0.694,
+      "day_contribution": 55.49999999999999,
+      "old_tag": "身旺",
+      "new_tag": "身旺",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "壬申",
+        "己酉",
+        "丁酉",
+        "戊申"
+      ],
+      "external_share": 0.0,
+      "inclusive_share": 0.017,
+      "day_contribution": 10.2,
+      "old_tag": "从弱",
+      "new_tag": "从弱",
+      "fuyi_priority": null
+    },
+    {
+      "pillars": [
+        "癸巳",
+        "乙丑",
+        "乙丑",
+        "丙子"
+      ],
+      "external_share": 0.14644862094215277,
+      "inclusive_share": 0.163,
+      "day_contribution": 12.0,
+      "old_tag": "从弱",
+      "new_tag": "身弱无根",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "丙辰",
+        "壬辰",
+        "甲寅",
+        "庚午"
+      ],
+      "external_share": 0.3151663311283674,
+      "inclusive_share": 0.391,
+      "day_contribution": 64.5,
+      "old_tag": "身弱",
+      "new_tag": "身弱",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "己酉",
+        "乙亥",
+        "甲戌",
+        "丙寅"
+      ],
+      "external_share": 0.4065524707080999,
+      "inclusive_share": 0.482,
+      "day_contribution": 69.0,
+      "old_tag": "中和偏弱",
+      "new_tag": "中和偏弱",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "丙子",
+        "己亥",
+        "戊午",
+        "庚申"
+      ],
+      "external_share": 0.28907753254102997,
+      "inclusive_share": 0.349,
+      "day_contribution": 40.8,
+      "old_tag": "身弱",
+      "new_tag": "身弱",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "戊子",
+        "乙丑",
+        "戊申",
+        "辛酉"
+      ],
+      "external_share": 0.5855583933132111,
+      "inclusive_share": 0.63,
+      "day_contribution": 78.0,
+      "old_tag": "中和偏旺",
+      "new_tag": "身旺",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "辛丑",
+        "乙未",
+        "戊辰",
+        "癸丑"
+      ],
+      "external_share": 0.48597303681727244,
+      "inclusive_share": 0.548,
+      "day_contribution": 54.6,
+      "old_tag": "中和偏弱",
+      "new_tag": "中和偏旺",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "壬寅",
+        "丙午",
+        "辛酉",
+        "庚子"
+      ],
+      "external_share": 0.3411940857196331,
+      "inclusive_share": 0.386,
+      "day_contribution": 29.4,
+      "old_tag": "身弱",
+      "new_tag": "身弱",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "丙戌",
+        "癸巳",
+        "丙午",
+        "癸巳"
+      ],
+      "external_share": 0.613348676639816,
+      "inclusive_share": 0.664,
+      "day_contribution": 78.0,
+      "old_tag": "身旺",
+      "new_tag": "身旺",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "辛卯",
+        "甲午",
+        "庚寅",
+        "庚辰"
+      ],
+      "external_share": 0.2541010770505385,
+      "inclusive_share": 0.271,
+      "day_contribution": 8.399999999999999,
+      "old_tag": "身弱无根",
+      "new_tag": "身弱无根",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "癸巳",
+        "乙丑",
+        "戊戌",
+        "庚申"
+      ],
+      "external_share": 0.4539397389672549,
+      "inclusive_share": 0.531,
+      "day_contribution": 78.0,
+      "old_tag": "中和偏弱",
+      "new_tag": "中和偏旺",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "乙巳",
+        "己卯",
+        "癸亥",
+        "甲子"
+      ],
+      "external_share": 0.26177370030581043,
+      "inclusive_share": 0.342,
+      "day_contribution": 60.0,
+      "old_tag": "身弱",
+      "new_tag": "身弱",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "甲寅",
+        "癸酉",
+        "庚辰",
+        "丙子"
+      ],
+      "external_share": 0.5074005550416282,
+      "inclusive_share": 0.56,
+      "day_contribution": 78.0,
+      "old_tag": "中和偏旺",
+      "new_tag": "中和偏旺",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "乙亥",
+        "己丑",
+        "乙巳",
+        "癸未"
+      ],
+      "external_share": 0.43797903957453466,
+      "inclusive_share": 0.498,
+      "day_contribution": 48.0,
+      "old_tag": "中和偏弱",
+      "new_tag": "中和偏弱",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "癸丑",
+        "己未",
+        "甲辰",
+        "戊辰"
+      ],
+      "external_share": 0.22791284558707553,
+      "inclusive_share": 0.19,
+      "day_contribution": 109.2,
+      "old_tag": "身弱",
+      "new_tag": "身弱",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "乙卯",
+        "己卯",
+        "庚辰",
+        "癸未"
+      ],
+      "external_share": 0.22203992343450918,
+      "inclusive_share": 0.236,
+      "day_contribution": 10.2,
+      "old_tag": "身弱无根",
+      "new_tag": "身弱无根",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "癸丑",
+        "壬戌",
+        "辛卯",
+        "丙申"
+      ],
+      "external_share": 0.49103366791444447,
+      "inclusive_share": 0.543,
+      "day_contribution": 51.45,
+      "old_tag": "中和偏弱",
+      "new_tag": "中和偏旺",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "丁酉",
+        "丁未",
+        "丁亥",
+        "甲辰"
+      ],
+      "external_share": 0.5210439286159989,
+      "inclusive_share": 0.57,
+      "day_contribution": 55.199999999999996,
+      "old_tag": "中和偏旺",
+      "new_tag": "中和偏旺",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "癸丑",
+        "丙辰",
+        "壬午",
+        "癸卯"
+      ],
+      "external_share": 0.2120679554774458,
+      "inclusive_share": 0.266,
+      "day_contribution": 40.8,
+      "old_tag": "身弱",
+      "new_tag": "身弱",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "辛亥",
+        "壬辰",
+        "丙寅",
+        "乙未"
+      ],
+      "external_share": 0.462395011453296,
+      "inclusive_share": 0.527,
+      "day_contribution": 64.5,
+      "old_tag": "中和偏弱",
+      "new_tag": "中和偏旺",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "己巳",
+        "庚午",
+        "丁酉",
+        "丁未"
+      ],
+      "external_share": 0.845112041369121,
+      "inclusive_share": 0.859,
+      "day_contribution": 78.0,
+      "old_tag": "身旺",
+      "new_tag": "假从强",
+      "fuyi_priority": null
+    },
+    {
+      "pillars": [
+        "丙午",
+        "庚子",
+        "辛亥",
+        "癸巳"
+      ],
+      "external_share": 0.12007548950224108,
+      "inclusive_share": 0.152,
+      "day_contribution": 12.0,
+      "old_tag": "从弱",
+      "new_tag": "身弱无根",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "丁卯",
+        "甲辰",
+        "己卯",
+        "甲戌"
+      ],
+      "external_share": 0.32641959050575364,
+      "inclusive_share": 0.395,
+      "day_contribution": 54.6,
+      "old_tag": "身弱",
+      "new_tag": "身弱",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "辛亥",
+        "丁酉",
+        "庚申",
+        "庚辰"
+      ],
+      "external_share": 0.8132324580922712,
+      "inclusive_share": 0.833,
+      "day_contribution": 78.0,
+      "old_tag": "身旺",
+      "new_tag": "身旺",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "庚申",
+        "辛巳",
+        "癸巳",
+        "甲寅"
+      ],
+      "external_share": 0.30782206816868857,
+      "inclusive_share": 0.324,
+      "day_contribution": 10.2,
+      "old_tag": "身弱无根",
+      "new_tag": "身弱无根",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "壬子",
+        "癸丑",
+        "己酉",
+        "甲戌"
+      ],
+      "external_share": 0.7471549517621578,
+      "inclusive_share": 0.784,
+      "day_contribution": 109.2,
+      "old_tag": "身旺",
+      "new_tag": "身旺",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "戊辰",
+        "乙卯",
+        "癸酉",
+        "丙辰"
+      ],
+      "external_share": 0.19263765403213226,
+      "inclusive_share": 0.262,
+      "day_contribution": 36.0,
+      "old_tag": "身弱",
+      "new_tag": "身弱",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "辛酉",
+        "庚寅",
+        "戊申",
+        "乙卯"
+      ],
+      "external_share": 0.059887921139693455,
+      "inclusive_share": 0.156,
+      "day_contribution": 42.0,
+      "old_tag": "假从弱",
+      "new_tag": "身弱",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "丙子",
+        "丁酉",
+        "壬寅",
+        "壬寅"
+      ],
+      "external_share": 0.5507022444087875,
+      "inclusive_share": 0.59,
+      "day_contribution": 48.3,
+      "old_tag": "中和偏旺",
+      "new_tag": "中和偏旺",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "庚辰",
+        "丙戌",
+        "己酉",
+        "甲戌"
+      ],
+      "external_share": 0.5697101336346282,
+      "inclusive_share": 0.645,
+      "day_contribution": 109.2,
+      "old_tag": "中和偏旺",
+      "new_tag": "身旺",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "戊寅",
+        "己未",
+        "丙戌",
+        "己亥"
+      ],
+      "external_share": 0.20828619785500688,
+      "inclusive_share": 0.294,
+      "day_contribution": 69.0,
+      "old_tag": "身弱",
+      "new_tag": "身弱",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "己亥",
+        "丁丑",
+        "甲寅",
+        "壬申"
+      ],
+      "external_share": 0.4324618736383442,
+      "inclusive_share": 0.498,
+      "day_contribution": 60.0,
+      "old_tag": "中和偏弱",
+      "new_tag": "中和偏弱",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "庚申",
+        "庚辰",
+        "乙丑",
+        "戊寅"
+      ],
+      "external_share": 0.20729307745381137,
+      "inclusive_share": 0.274,
+      "day_contribution": 45.15,
+      "old_tag": "身弱",
+      "new_tag": "身弱",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "戊子",
+        "甲寅",
+        "辛未",
+        "庚子"
+      ],
+      "external_share": 0.20211161387631976,
+      "inclusive_share": 0.218,
+      "day_contribution": 10.2,
+      "old_tag": "身弱无根",
+      "new_tag": "身弱无根",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "戊申",
+        "庚申",
+        "辛未",
+        "辛卯"
+      ],
+      "external_share": 0.7341095299698146,
+      "inclusive_share": 0.766,
+      "day_contribution": 78.0,
+      "old_tag": "身旺",
+      "new_tag": "身旺",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "丁卯",
+        "癸卯",
+        "庚申",
+        "丙戌"
+      ],
+      "external_share": 0.2193097279490368,
+      "inclusive_share": 0.297,
+      "day_contribution": 51.0,
+      "old_tag": "身弱",
+      "new_tag": "身弱",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "丁酉",
+        "丙午",
+        "庚辰",
+        "庚辰"
+      ],
+      "external_share": 0.4264100354304318,
+      "inclusive_share": 0.469,
+      "day_contribution": 42.0,
+      "old_tag": "中和偏弱",
+      "new_tag": "中和偏弱",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "庚午",
+        "癸未",
+        "己未",
+        "戊辰"
+      ],
+      "external_share": 0.8723336517032791,
+      "inclusive_share": 0.886,
+      "day_contribution": 78.0,
+      "old_tag": "身旺",
+      "new_tag": "身旺",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "壬子",
+        "壬子",
+        "壬申",
+        "辛亥"
+      ],
+      "external_share": 0.9398433340938475,
+      "inclusive_share": 0.946,
+      "day_contribution": 78.0,
+      "old_tag": "假从强",
+      "new_tag": "假从强",
+      "fuyi_priority": null
+    },
+    {
+      "pillars": [
+        "壬寅",
+        "己酉",
+        "丙申",
+        "庚寅"
+      ],
+      "external_share": 0.13432835820895522,
+      "inclusive_share": 0.227,
+      "day_contribution": 51.0,
+      "old_tag": "假从弱",
+      "new_tag": "身弱",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "丙寅",
+        "丁酉",
+        "甲子",
+        "壬申"
+      ],
+      "external_share": 0.4516886777679177,
+      "inclusive_share": 0.461,
+      "day_contribution": 8.399999999999999,
+      "old_tag": "身弱无根",
+      "new_tag": "身弱无根",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "己巳",
+        "癸酉",
+        "己亥",
+        "庚午"
+      ],
+      "external_share": 0.3346849656893325,
+      "inclusive_share": 0.395,
+      "day_contribution": 48.0,
+      "old_tag": "身弱",
+      "new_tag": "身弱",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "辛巳",
+        "庚子",
+        "戊申",
+        "庚申"
+      ],
+      "external_share": 0.10031225604996095,
+      "inclusive_share": 0.167,
+      "day_contribution": 40.8,
+      "old_tag": "假从弱",
+      "new_tag": "身弱",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "丙辰",
+        "丁酉",
+        "丁卯",
+        "庚戌"
+      ],
+      "external_share": 0.3653586707101922,
+      "inclusive_share": 0.42,
+      "day_contribution": 40.8,
+      "old_tag": "身弱",
+      "new_tag": "中和偏弱",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "丁亥",
+        "辛亥",
+        "甲辰",
+        "丁卯"
+      ],
+      "external_share": 0.8203309692671394,
+      "inclusive_share": 0.844,
+      "day_contribution": 69.0,
+      "old_tag": "身旺",
+      "new_tag": "身旺",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "己丑",
+        "庚午",
+        "庚辰",
+        "丁丑"
+      ],
+      "external_share": 0.5722753007784854,
+      "inclusive_share": 0.591,
+      "day_contribution": 25.2,
+      "old_tag": "中和偏旺",
+      "new_tag": "中和偏旺",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "戊子",
+        "甲子",
+        "丁丑",
+        "壬寅"
+      ],
+      "external_share": 0.28677946659019216,
+      "inclusive_share": 0.317,
+      "day_contribution": 23.52,
+      "old_tag": "身弱",
+      "new_tag": "身弱",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "癸亥",
+        "己未",
+        "庚子",
+        "丁丑"
+      ],
+      "external_share": 0.4272937809493325,
+      "inclusive_share": 0.485,
+      "day_contribution": 44.4,
+      "old_tag": "中和偏弱",
+      "new_tag": "中和偏弱",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "丁亥",
+        "戊申",
+        "丙戌",
+        "辛卯"
+      ],
+      "external_share": 0.2137061403508772,
+      "inclusive_share": 0.249,
+      "day_contribution": 21.419999999999998,
+      "old_tag": "身弱",
+      "new_tag": "身弱",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "乙丑",
+        "甲申",
+        "戊寅",
+        "癸亥"
+      ],
+      "external_share": 0.19751289515346507,
+      "inclusive_share": 0.275,
+      "day_contribution": 42.0,
+      "old_tag": "身弱",
+      "new_tag": "身弱",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "癸亥",
+        "己未",
+        "庚子",
+        "丁亥"
+      ],
+      "external_share": 0.2927841161653579,
+      "inclusive_share": 0.308,
+      "day_contribution": 11.1,
+      "old_tag": "身弱无根",
+      "new_tag": "身弱无根",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "癸未",
+        "甲子",
+        "丁卯",
+        "辛亥"
+      ],
+      "external_share": 0.3803246107982775,
+      "inclusive_share": 0.423,
+      "day_contribution": 33.599999999999994,
+      "old_tag": "身弱",
+      "new_tag": "中和偏弱",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "甲寅",
+        "甲戌",
+        "辛丑",
+        "庚寅"
+      ],
+      "external_share": 0.5180518193402237,
+      "inclusive_share": 0.566,
+      "day_contribution": 58.800000000000004,
+      "old_tag": "中和偏旺",
+      "new_tag": "中和偏旺",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "庚申",
+        "癸未",
+        "甲申",
+        "乙亥"
+      ],
+      "external_share": 0.4341566904076375,
+      "inclusive_share": 0.491,
+      "day_contribution": 55.5,
+      "old_tag": "中和偏弱",
+      "new_tag": "中和偏弱",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "丁未",
+        "己酉",
+        "戊午",
+        "甲寅"
+      ],
+      "external_share": 0.5580801409070895,
+      "inclusive_share": 0.61,
+      "day_contribution": 60.0,
+      "old_tag": "中和偏旺",
+      "new_tag": "身旺",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "己亥",
+        "乙亥",
+        "丁丑",
+        "己酉"
+      ],
+      "external_share": 0.20310409419320308,
+      "inclusive_share": 0.215,
+      "day_contribution": 8.399999999999999,
+      "old_tag": "身弱无根",
+      "new_tag": "身弱无根",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "丙申",
+        "甲午",
+        "丙子",
+        "丙申"
+      ],
+      "external_share": 0.30436748349760373,
+      "inclusive_share": 0.342,
+      "day_contribution": 15.600000000000001,
+      "old_tag": "身弱无根",
+      "new_tag": "身弱无根",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "癸亥",
+        "庚申",
+        "庚午",
+        "丙戌"
+      ],
+      "external_share": 0.4799374674309536,
+      "inclusive_share": 0.542,
+      "day_contribution": 78.0,
+      "old_tag": "中和偏弱",
+      "new_tag": "中和偏旺",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "乙未",
+        "己卯",
+        "戊寅",
+        "乙卯"
+      ],
+      "external_share": 0.23222596693949604,
+      "inclusive_share": 0.281,
+      "day_contribution": 42.0,
+      "old_tag": "身弱",
+      "new_tag": "身弱",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "癸酉",
+        "丙辰",
+        "甲戌",
+        "庚午"
+      ],
+      "external_share": 0.1608731221568556,
+      "inclusive_share": 0.183,
+      "day_contribution": 12.899999999999999,
+      "old_tag": "身弱无根",
+      "new_tag": "身弱无根",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "辛巳",
+        "辛卯",
+        "癸酉",
+        "辛酉"
+      ],
+      "external_share": 0.6482953779814041,
+      "inclusive_share": 0.659,
+      "day_contribution": 12.0,
+      "old_tag": "虚旺",
+      "new_tag": "虚旺",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "丙午",
+        "辛丑",
+        "丙戌",
+        "癸巳"
+      ],
+      "external_share": 0.26742018177580984,
+      "inclusive_share": 0.333,
+      "day_contribution": 51.0,
+      "old_tag": "身弱",
+      "new_tag": "身弱",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "己未",
+        "癸酉",
+        "癸巳",
+        "乙卯"
+      ],
+      "external_share": 0.22819689673622257,
+      "inclusive_share": 0.256,
+      "day_contribution": 13.799999999999999,
+      "old_tag": "身弱无根",
+      "new_tag": "身弱无根",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "丁亥",
+        "辛亥",
+        "壬寅",
+        "辛亥"
+      ],
+      "external_share": 0.5648049582475813,
+      "inclusive_share": 0.633,
+      "day_contribution": 78.0,
+      "old_tag": "中和偏旺",
+      "new_tag": "身旺",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "甲子",
+        "丁卯",
+        "甲寅",
+        "乙亥"
+      ],
+      "external_share": 0.8496931420823521,
+      "inclusive_share": 0.868,
+      "day_contribution": 78.0,
+      "old_tag": "身旺",
+      "new_tag": "假从强",
+      "fuyi_priority": null
+    },
+    {
+      "pillars": [
+        "戊申",
+        "壬戌",
+        "甲午",
+        "戊辰"
+      ],
+      "external_share": 0.19032761310452417,
+      "inclusive_share": 0.204,
+      "day_contribution": 9.299999999999999,
+      "old_tag": "身弱无根",
+      "new_tag": "身弱无根",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "庚子",
+        "戊子",
+        "辛卯",
+        "戊子"
+      ],
+      "external_share": 0.06674907292954264,
+      "inclusive_share": 0.089,
+      "day_contribution": 12.0,
+      "old_tag": "从弱",
+      "new_tag": "从弱",
+      "fuyi_priority": null
+    },
+    {
+      "pillars": [
+        "甲午",
+        "丙子",
+        "丁巳",
+        "庚子"
+      ],
+      "external_share": 0.34519259041458394,
+      "inclusive_share": 0.417,
+      "day_contribution": 42.0,
+      "old_tag": "身弱",
+      "new_tag": "中和偏弱",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "甲午",
+        "辛未",
+        "乙亥",
+        "己卯"
+      ],
+      "external_share": 0.394092743677409,
+      "inclusive_share": 0.467,
+      "day_contribution": 55.5,
+      "old_tag": "身弱",
+      "new_tag": "中和偏弱",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "丁丑",
+        "壬寅",
+        "庚辰",
+        "丁丑"
+      ],
+      "external_share": 0.22027914614121508,
+      "inclusive_share": 0.258,
+      "day_contribution": 30.599999999999998,
+      "old_tag": "身弱",
+      "new_tag": "身弱",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "戊戌",
+        "丁巳",
+        "辛丑",
+        "丙申"
+      ],
+      "external_share": 0.5422530383602158,
+      "inclusive_share": 0.567,
+      "day_contribution": 29.4,
+      "old_tag": "中和偏旺",
+      "new_tag": "中和偏旺",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "乙巳",
+        "庚辰",
+        "甲辰",
+        "壬申"
+      ],
+      "external_share": 0.37598884170205676,
+      "inclusive_share": 0.437,
+      "day_contribution": 51.599999999999994,
+      "old_tag": "身弱",
+      "new_tag": "中和偏弱",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "辛未",
+        "丁酉",
+        "甲申",
+        "己巳"
+      ],
+      "external_share": 0.05868197329230526,
+      "inclusive_share": 0.09,
+      "day_contribution": 17.639999999999997,
+      "old_tag": "假从弱",
+      "new_tag": "假从弱",
+      "fuyi_priority": null
+    },
+    {
+      "pillars": [
+        "戊辰",
+        "丙辰",
+        "辛卯",
+        "戊子"
+      ],
+      "external_share": 0.5238652762272988,
+      "inclusive_share": 0.531,
+      "day_contribution": 8.4,
+      "old_tag": "身弱无根",
+      "new_tag": "身弱无根",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "庚寅",
+        "壬午",
+        "辛卯",
+        "辛卯"
+      ],
+      "external_share": 0.13636906896139595,
+      "inclusive_share": 0.153,
+      "day_contribution": 8.399999999999999,
+      "old_tag": "假从弱",
+      "new_tag": "身弱无根",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "癸卯",
+        "乙丑",
+        "庚申",
+        "己卯"
+      ],
+      "external_share": 0.4261145055442408,
+      "inclusive_share": 0.469,
+      "day_contribution": 45.15,
+      "old_tag": "中和偏弱",
+      "new_tag": "中和偏弱",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "丙午",
+        "丁酉",
+        "癸丑",
+        "癸亥"
+      ],
+      "external_share": 0.5478556719491449,
+      "inclusive_share": 0.598,
+      "day_contribution": 69.0,
+      "old_tag": "中和偏旺",
+      "new_tag": "中和偏旺",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "丙午",
+        "丙申",
+        "己酉",
+        "乙亥"
+      ],
+      "external_share": 0.3389012620638456,
+      "inclusive_share": 0.393,
+      "day_contribution": 48.0,
+      "old_tag": "身弱",
+      "new_tag": "身弱",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "丙申",
+        "庚寅",
+        "丙戌",
+        "戊子"
+      ],
+      "external_share": 0.31222096553366274,
+      "inclusive_share": 0.409,
+      "day_contribution": 69.0,
+      "old_tag": "身弱",
+      "new_tag": "中和偏弱",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "乙亥",
+        "戊子",
+        "戊辰",
+        "甲寅"
+      ],
+      "external_share": 0.22462209058649302,
+      "inclusive_share": 0.292,
+      "day_contribution": 51.0,
+      "old_tag": "身弱",
+      "new_tag": "身弱",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "丁亥",
+        "乙巳",
+        "壬寅",
+        "壬寅"
+      ],
+      "external_share": 0.10881451171032537,
+      "inclusive_share": 0.13,
+      "day_contribution": 10.2,
+      "old_tag": "假从弱",
+      "new_tag": "假从弱",
+      "fuyi_priority": null
+    },
+    {
+      "pillars": [
+        "己亥",
+        "庚午",
+        "辛巳",
+        "壬辰"
+      ],
+      "external_share": 0.44113916753141935,
+      "inclusive_share": 0.452,
+      "day_contribution": 8.399999999999999,
+      "old_tag": "身弱无根",
+      "new_tag": "身弱无根",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "庚辰",
+        "丙戌",
+        "丙寅",
+        "己亥"
+      ],
+      "external_share": 0.33897865925472276,
+      "inclusive_share": 0.415,
+      "day_contribution": 55.5,
+      "old_tag": "身弱",
+      "new_tag": "中和偏弱",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "戊午",
+        "戊午",
+        "庚戌",
+        "丁丑"
+      ],
+      "external_share": 0.5692640692640693,
+      "inclusive_share": 0.591,
+      "day_contribution": 33.599999999999994,
+      "old_tag": "中和偏旺",
+      "new_tag": "中和偏旺",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "己未",
+        "乙亥",
+        "丁卯",
+        "壬寅"
+      ],
+      "external_share": 0.5753919563735514,
+      "inclusive_share": 0.597,
+      "day_contribution": 23.52,
+      "old_tag": "中和偏旺",
+      "new_tag": "中和偏旺",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "丙戌",
+        "乙未",
+        "戊子",
+        "己未"
+      ],
+      "external_share": 0.7313044258910135,
+      "inclusive_share": 0.764,
+      "day_contribution": 78.0,
+      "old_tag": "身旺",
+      "new_tag": "身旺",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "丁亥",
+        "壬子",
+        "癸卯",
+        "丁巳"
+      ],
+      "external_share": 0.47960277605371554,
+      "inclusive_share": 0.558,
+      "day_contribution": 78.0,
+      "old_tag": "中和偏弱",
+      "new_tag": "中和偏旺",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "壬午",
+        "壬子",
+        "甲辰",
+        "庚午"
+      ],
+      "external_share": 0.6746925899697419,
+      "inclusive_share": 0.715,
+      "day_contribution": 55.199999999999996,
+      "old_tag": "身旺",
+      "new_tag": "身旺",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "甲寅",
+        "丙寅",
+        "乙亥",
+        "戊寅"
+      ],
+      "external_share": 0.7378229563744177,
+      "inclusive_share": 0.764,
+      "day_contribution": 78.0,
+      "old_tag": "身旺",
+      "new_tag": "身旺",
+      "fuyi_priority": null
+    },
+    {
+      "pillars": [
+        "乙丑",
+        "壬午",
+        "乙亥",
+        "戊子"
+      ],
+      "external_share": 0.5655655252886976,
+      "inclusive_share": 0.615,
+      "day_contribution": 48.0,
+      "old_tag": "中和偏旺",
+      "new_tag": "身旺",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "丁巳",
+        "辛亥",
+        "癸未",
+        "戊午"
+      ],
+      "external_share": 0.27460069531919185,
+      "inclusive_share": 0.3,
+      "day_contribution": 10.920000000000002,
+      "old_tag": "身弱无根",
+      "new_tag": "身弱无根",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "壬午",
+        "庚戌",
+        "丁酉",
+        "庚戌"
+      ],
+      "external_share": 0.1166496250852079,
+      "inclusive_share": 0.193,
+      "day_contribution": 55.5,
+      "old_tag": "身弱",
+      "new_tag": "身弱",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "己丑",
+        "丁卯",
+        "丙子",
+        "庚子"
+      ],
+      "external_share": 0.3202115158636898,
+      "inclusive_share": 0.342,
+      "day_contribution": 13.799999999999999,
+      "old_tag": "身弱无根",
+      "new_tag": "身弱无根",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "辛丑",
+        "乙未",
+        "辛酉",
+        "己亥"
+      ],
+      "external_share": 0.6611282107155504,
+      "inclusive_share": 0.698,
+      "day_contribution": 55.49999999999999,
+      "old_tag": "身旺",
+      "new_tag": "身旺",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "壬戌",
+        "癸丑",
+        "己亥",
+        "丙寅"
+      ],
+      "external_share": 0.42511833323430975,
+      "inclusive_share": 0.502,
+      "day_contribution": 78.0,
+      "old_tag": "中和偏弱",
+      "new_tag": "中和偏旺",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "丁亥",
+        "乙巳",
+        "己亥",
+        "丙寅"
+      ],
+      "external_share": 0.5490719845253996,
+      "inclusive_share": 0.6,
+      "day_contribution": 55.199999999999996,
+      "old_tag": "中和偏旺",
+      "new_tag": "中和偏旺",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "甲午",
+        "丙子",
+        "辛亥",
+        "癸巳"
+      ],
+      "external_share": 0.07224177188987788,
+      "inclusive_share": 0.093,
+      "day_contribution": 8.4,
+      "old_tag": "从弱",
+      "new_tag": "从弱",
+      "fuyi_priority": null
+    },
+    {
+      "pillars": [
+        "壬午",
+        "庚戌",
+        "丙寅",
+        "丙申"
+      ],
+      "external_share": 0.33609243930892724,
+      "inclusive_share": 0.416,
+      "day_contribution": 55.5,
+      "old_tag": "身弱",
+      "new_tag": "中和偏弱",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "乙亥",
+        "辛巳",
+        "己丑",
+        "丁卯"
+      ],
+      "external_share": 0.44482583985144336,
+      "inclusive_share": 0.519,
+      "day_contribution": 69.0,
+      "old_tag": "中和偏弱",
+      "new_tag": "中和偏旺",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "壬辰",
+        "壬子",
+        "癸卯",
+        "癸亥"
+      ],
+      "external_share": 0.6739642721398708,
+      "inclusive_share": 0.709,
+      "day_contribution": 78.0,
+      "old_tag": "身旺",
+      "new_tag": "身旺",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "己丑",
+        "辛未",
+        "戊辰",
+        "庚申"
+      ],
+      "external_share": 0.4992621864292324,
+      "inclusive_share": 0.567,
+      "day_contribution": 78.0,
+      "old_tag": "中和偏弱",
+      "new_tag": "中和偏旺",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "己巳",
+        "戊辰",
+        "辛丑",
+        "己丑"
+      ],
+      "external_share": 0.7887846136021318,
+      "inclusive_share": 0.8,
+      "day_contribution": 36.0,
+      "old_tag": "身旺",
+      "new_tag": "身旺",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "甲寅",
+        "甲戌",
+        "丙子",
+        "丙申"
+      ],
+      "external_share": 0.4249708085324523,
+      "inclusive_share": 0.49,
+      "day_contribution": 55.5,
+      "old_tag": "中和偏弱",
+      "new_tag": "中和偏弱",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "丁亥",
+        "辛亥",
+        "辛亥",
+        "丙申"
+      ],
+      "external_share": 0.2385855495410685,
+      "inclusive_share": 0.297,
+      "day_contribution": 42.0,
+      "old_tag": "身弱",
+      "new_tag": "身弱",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "丙寅",
+        "辛卯",
+        "甲寅",
+        "丁卯"
+      ],
+      "external_share": 0.6688819809197127,
+      "inclusive_share": 0.709,
+      "day_contribution": 78.0,
+      "old_tag": "身旺",
+      "new_tag": "身旺",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "庚申",
+        "己卯",
+        "庚寅",
+        "辛巳"
+      ],
+      "external_share": 0.448835809622715,
+      "inclusive_share": 0.508,
+      "day_contribution": 51.0,
+      "old_tag": "中和偏弱",
+      "new_tag": "中和偏旺",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "己亥",
+        "辛未",
+        "癸巳",
+        "癸亥"
+      ],
+      "external_share": 0.32989006823351014,
+      "inclusive_share": 0.4,
+      "day_contribution": 46.49999999999999,
+      "old_tag": "身弱",
+      "new_tag": "中和偏弱",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "丁巳",
+        "壬子",
+        "丁巳",
+        "辛亥"
+      ],
+      "external_share": 0.2277513937641957,
+      "inclusive_share": 0.308,
+      "day_contribution": 42.0,
+      "old_tag": "身弱",
+      "new_tag": "身弱",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "癸卯",
+        "甲寅",
+        "辛丑",
+        "壬辰"
+      ],
+      "external_share": 0.17873981001927677,
+      "inclusive_share": 0.233,
+      "day_contribution": 30.599999999999998,
+      "old_tag": "身弱",
+      "new_tag": "身弱",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "辛卯",
+        "戊戌",
+        "癸卯",
+        "癸丑"
+      ],
+      "external_share": 0.3506382013735908,
+      "inclusive_share": 0.391,
+      "day_contribution": 31.08,
+      "old_tag": "身弱",
+      "new_tag": "身弱",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "癸巳",
+        "癸亥",
+        "戊寅",
+        "庚申"
+      ],
+      "external_share": 0.1412427502545712,
+      "inclusive_share": 0.204,
+      "day_contribution": 35.699999999999996,
+      "old_tag": "假从弱",
+      "new_tag": "身弱",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "甲辰",
+        "己巳",
+        "丁卯",
+        "丙午"
+      ],
+      "external_share": 0.6891092553931802,
+      "inclusive_share": 0.726,
+      "day_contribution": 78.0,
+      "old_tag": "身旺",
+      "new_tag": "身旺",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "癸卯",
+        "乙卯",
+        "壬申",
+        "戊申"
+      ],
+      "external_share": 0.3743047830923248,
+      "inclusive_share": 0.437,
+      "day_contribution": 60.0,
+      "old_tag": "身弱",
+      "new_tag": "中和偏弱",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "壬辰",
+        "壬寅",
+        "丙申",
+        "庚寅"
+      ],
+      "external_share": 0.33501960288352095,
+      "inclusive_share": 0.434,
+      "day_contribution": 69.0,
+      "old_tag": "身弱",
+      "new_tag": "中和偏弱",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "戊子",
+        "丙辰",
+        "乙酉",
+        "庚辰"
+      ],
+      "external_share": 0.2880050818902422,
+      "inclusive_share": 0.341,
+      "day_contribution": 36.12,
+      "old_tag": "身弱",
+      "new_tag": "身弱",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "戊戌",
+        "壬戌",
+        "辛卯",
+        "甲午"
+      ],
+      "external_share": 0.6044715841168298,
+      "inclusive_share": 0.649,
+      "day_contribution": 58.800000000000004,
+      "old_tag": "身旺",
+      "new_tag": "身旺",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "丙寅",
+        "癸巳",
+        "乙未",
+        "乙酉"
+      ],
+      "external_share": 0.24412072741121582,
+      "inclusive_share": 0.322,
+      "day_contribution": 60.0,
+      "old_tag": "身弱",
+      "new_tag": "身弱",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "壬午",
+        "壬寅",
+        "辛酉",
+        "己亥"
+      ],
+      "external_share": 0.25643939393939397,
+      "inclusive_share": 0.322,
+      "day_contribution": 51.0,
+      "old_tag": "身弱",
+      "new_tag": "身弱",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "庚申",
+        "庚辰",
+        "庚午",
+        "壬午"
+      ],
+      "external_share": 0.5624400871459696,
+      "inclusive_share": 0.604,
+      "day_contribution": 60.0,
+      "old_tag": "中和偏旺",
+      "new_tag": "身旺",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "己巳",
+        "丙子",
+        "甲寅",
+        "庚午"
+      ],
+      "external_share": 0.32251944602542215,
+      "inclusive_share": 0.423,
+      "day_contribution": 69.0,
+      "old_tag": "身弱",
+      "new_tag": "中和偏弱",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "甲午",
+        "己巳",
+        "庚寅",
+        "丁丑"
+      ],
+      "external_share": 0.3341117453727729,
+      "inclusive_share": 0.379,
+      "day_contribution": 42.0,
+      "old_tag": "身弱",
+      "new_tag": "身弱",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "甲申",
+        "丙寅",
+        "乙亥",
+        "丙戌"
+      ],
+      "external_share": 0.4546250672631546,
+      "inclusive_share": 0.532,
+      "day_contribution": 78.0,
+      "old_tag": "中和偏弱",
+      "new_tag": "中和偏旺",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "戊辰",
+        "乙卯",
+        "戊子",
+        "乙卯"
+      ],
+      "external_share": 0.12499999999999997,
+      "inclusive_share": 0.182,
+      "day_contribution": 42.0,
+      "old_tag": "身弱",
+      "new_tag": "身弱",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "壬辰",
+        "丁未",
+        "乙卯",
+        "己卯"
+      ],
+      "external_share": 0.4528738324598132,
+      "inclusive_share": 0.506,
+      "day_contribution": 55.5,
+      "old_tag": "中和偏弱",
+      "new_tag": "中和偏旺",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "丙辰",
+        "戊戌",
+        "壬午",
+        "庚戌"
+      ],
+      "external_share": 0.21637949148980878,
+      "inclusive_share": 0.283,
+      "day_contribution": 44.4,
+      "old_tag": "身弱",
+      "new_tag": "身弱",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "辛未",
+        "甲午",
+        "甲午",
+        "己巳"
+      ],
+      "external_share": 0.015133553610613667,
+      "inclusive_share": 0.025,
+      "day_contribution": 8.4,
+      "old_tag": "从弱",
+      "new_tag": "从弱",
+      "fuyi_priority": null
+    },
+    {
+      "pillars": [
+        "戊寅",
+        "辛酉",
+        "癸亥",
+        "己未"
+      ],
+      "external_share": 0.49024770821142966,
+      "inclusive_share": 0.551,
+      "day_contribution": 69.0,
+      "old_tag": "中和偏弱",
+      "new_tag": "中和偏旺",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "癸丑",
+        "壬戌",
+        "辛卯",
+        "庚寅"
+      ],
+      "external_share": 0.47470716170414784,
+      "inclusive_share": 0.535,
+      "day_contribution": 58.800000000000004,
+      "old_tag": "中和偏弱",
+      "new_tag": "中和偏旺",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "戊申",
+        "壬戌",
+        "乙丑",
+        "戊子"
+      ],
+      "external_share": 0.1056280587275693,
+      "inclusive_share": 0.117,
+      "day_contribution": 9.299999999999999,
+      "old_tag": "假从弱",
+      "new_tag": "假从弱",
+      "fuyi_priority": null
+    },
+    {
+      "pillars": [
+        "甲申",
+        "己巳",
+        "己丑",
+        "辛未"
+      ],
+      "external_share": 0.5745371963388617,
+      "inclusive_share": 0.642,
+      "day_contribution": 69.0,
+      "old_tag": "中和偏旺",
+      "new_tag": "身旺",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "辛酉",
+        "壬辰",
+        "丁未",
+        "辛亥"
+      ],
+      "external_share": 0.18842043512638051,
+      "inclusive_share": 0.244,
+      "day_contribution": 36.12,
+      "old_tag": "身弱",
+      "new_tag": "身弱",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "壬戌",
+        "丁未",
+        "戊戌",
+        "丁巳"
+      ],
+      "external_share": 0.8670630591315732,
+      "inclusive_share": 0.884,
+      "day_contribution": 78.0,
+      "old_tag": "假从强",
+      "new_tag": "假从强",
+      "fuyi_priority": null
+    },
+    {
+      "pillars": [
+        "辛卯",
+        "辛卯",
+        "丁巳",
+        "甲辰"
+      ],
+      "external_share": 0.7456529781724011,
+      "inclusive_share": 0.774,
+      "day_contribution": 69.0,
+      "old_tag": "身旺",
+      "new_tag": "身旺",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "己酉",
+        "丁丑",
+        "丁酉",
+        "乙巳"
+      ],
+      "external_share": 0.22081311123576325,
+      "inclusive_share": 0.307,
+      "day_contribution": 51.0,
+      "old_tag": "身弱",
+      "new_tag": "身弱",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "戊寅",
+        "甲子",
+        "乙未",
+        "丁亥"
+      ],
+      "external_share": 0.6454820048123688,
+      "inclusive_share": 0.689,
+      "day_contribution": 69.0,
+      "old_tag": "身旺",
+      "new_tag": "身旺",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "己丑",
+        "辛未",
+        "乙卯",
+        "癸未"
+      ],
+      "external_share": 0.3814037332092807,
+      "inclusive_share": 0.452,
+      "day_contribution": 55.5,
+      "old_tag": "身弱",
+      "new_tag": "中和偏弱",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "丁酉",
+        "庚戌",
+        "癸酉",
+        "丁巳"
+      ],
+      "external_share": 0.5518423307626393,
+      "inclusive_share": 0.56,
+      "day_contribution": 11.1,
+      "old_tag": "身弱无根",
+      "new_tag": "身弱无根",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "己卯",
+        "丙子",
+        "己未",
+        "庚午"
+      ],
+      "external_share": 0.5274117793757014,
+      "inclusive_share": 0.586,
+      "day_contribution": 51.0,
+      "old_tag": "中和偏旺",
+      "new_tag": "中和偏旺",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "甲子",
+        "丁卯",
+        "庚戌",
+        "癸未"
+      ],
+      "external_share": 0.17323556370302473,
+      "inclusive_share": 0.237,
+      "day_contribution": 40.8,
+      "old_tag": "身弱",
+      "new_tag": "身弱",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "乙丑",
+        "丁亥",
+        "戊申",
+        "丙辰"
+      ],
+      "external_share": 0.24289741921492083,
+      "inclusive_share": 0.318,
+      "day_contribution": 51.0,
+      "old_tag": "身弱",
+      "new_tag": "身弱",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "丁酉",
+        "癸卯",
+        "丙午",
+        "丁酉"
+      ],
+      "external_share": 0.724656638325703,
+      "inclusive_share": 0.767,
+      "day_contribution": 69.0,
+      "old_tag": "身旺",
+      "new_tag": "身旺",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "乙巳",
+        "庚辰",
+        "甲辰",
+        "乙丑"
+      ],
+      "external_share": 0.34305437766166014,
+      "inclusive_share": 0.4,
+      "day_contribution": 51.599999999999994,
+      "old_tag": "身弱",
+      "new_tag": "身弱",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "己卯",
+        "丙子",
+        "乙酉",
+        "己卯"
+      ],
+      "external_share": 0.7315619144949753,
+      "inclusive_share": 0.783,
+      "day_contribution": 69.0,
+      "old_tag": "身旺",
+      "new_tag": "身旺",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "丁未",
+        "戊申",
+        "丙寅",
+        "壬辰"
+      ],
+      "external_share": 0.2837797707430065,
+      "inclusive_share": 0.361,
+      "day_contribution": 51.0,
+      "old_tag": "身弱",
+      "new_tag": "身弱",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "壬辰",
+        "丁未",
+        "戊子",
+        "甲子"
+      ],
+      "external_share": 0.4367086558077783,
+      "inclusive_share": 0.518,
+      "day_contribution": 78.0,
+      "old_tag": "中和偏弱",
+      "new_tag": "中和偏旺",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "辛酉",
+        "庚寅",
+        "戊午",
+        "庚申"
+      ],
+      "external_share": 0.2965434325217914,
+      "inclusive_share": 0.361,
+      "day_contribution": 42.0,
+      "old_tag": "身弱",
+      "new_tag": "身弱",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "乙亥",
+        "己丑",
+        "庚戌",
+        "庚辰"
+      ],
+      "external_share": 0.6061280210334715,
+      "inclusive_share": 0.643,
+      "day_contribution": 51.599999999999994,
+      "old_tag": "身旺",
+      "new_tag": "身旺",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "壬子",
+        "己酉",
+        "壬辰",
+        "戊申"
+      ],
+      "external_share": 0.6396396396396397,
+      "inclusive_share": 0.685,
+      "day_contribution": 69.0,
+      "old_tag": "身旺",
+      "new_tag": "身旺",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "己丑",
+        "乙亥",
+        "丙寅",
+        "庚寅"
+      ],
+      "external_share": 0.4966202278569389,
+      "inclusive_share": 0.538,
+      "day_contribution": 42.0,
+      "old_tag": "中和偏弱",
+      "new_tag": "中和偏旺",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "癸丑",
+        "辛酉",
+        "癸卯",
+        "壬戌"
+      ],
+      "external_share": 0.6882846816791771,
+      "inclusive_share": 0.722,
+      "day_contribution": 55.199999999999996,
+      "old_tag": "身旺",
+      "new_tag": "身旺",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "辛未",
+        "辛丑",
+        "癸巳",
+        "辛酉"
+      ],
+      "external_share": 0.661056139277092,
+      "inclusive_share": 0.67,
+      "day_contribution": 12.0,
+      "old_tag": "虚旺",
+      "new_tag": "虚旺",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "癸酉",
+        "辛酉",
+        "乙巳",
+        "丁亥"
+      ],
+      "external_share": 0.2241168710607319,
+      "inclusive_share": 0.237,
+      "day_contribution": 8.399999999999999,
+      "old_tag": "身弱无根",
+      "new_tag": "身弱无根",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "甲辰",
+        "己巳",
+        "戊子",
+        "丙辰"
+      ],
+      "external_share": 0.6443385650224215,
+      "inclusive_share": 0.685,
+      "day_contribution": 69.0,
+      "old_tag": "身旺",
+      "new_tag": "身旺",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "丙辰",
+        "庚子",
+        "己酉",
+        "壬申"
+      ],
+      "external_share": 0.08880620008058207,
+      "inclusive_share": 0.187,
+      "day_contribution": 51.0,
+      "old_tag": "假从弱",
+      "new_tag": "身弱",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "癸丑",
+        "乙卯",
+        "甲辰",
+        "丙寅"
+      ],
+      "external_share": 0.6501013972767589,
+      "inclusive_share": 0.702,
+      "day_contribution": 78.0,
+      "old_tag": "身旺",
+      "new_tag": "身旺",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "己丑",
+        "戊辰",
+        "丙子",
+        "丙申"
+      ],
+      "external_share": 0.07082695699917059,
+      "inclusive_share": 0.098,
+      "day_contribution": 12.899999999999999,
+      "old_tag": "从弱",
+      "new_tag": "从弱",
+      "fuyi_priority": null
+    },
+    {
+      "pillars": [
+        "丁亥",
+        "庚戌",
+        "甲申",
+        "庚午"
+      ],
+      "external_share": 0.16575891914713953,
+      "inclusive_share": 0.227,
+      "day_contribution": 46.49999999999999,
+      "old_tag": "身弱",
+      "new_tag": "身弱",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "己亥",
+        "丙寅",
+        "丁丑",
+        "戊申"
+      ],
+      "external_share": 0.3006987084480203,
+      "inclusive_share": 0.327,
+      "day_contribution": 13.799999999999999,
+      "old_tag": "身弱无根",
+      "new_tag": "身弱无根",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "己卯",
+        "癸酉",
+        "丙寅",
+        "癸巳"
+      ],
+      "external_share": 0.4361505243676742,
+      "inclusive_share": 0.513,
+      "day_contribution": 51.0,
+      "old_tag": "中和偏弱",
+      "new_tag": "中和偏旺",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "甲戌",
+        "壬申",
+        "丙寅",
+        "辛卯"
+      ],
+      "external_share": 0.3425469039928527,
+      "inclusive_share": 0.401,
+      "day_contribution": 35.699999999999996,
+      "old_tag": "身弱",
+      "new_tag": "中和偏弱",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "丙子",
+        "庚子",
+        "甲辰",
+        "甲子"
+      ],
+      "external_share": 0.8605741066198007,
+      "inclusive_share": 0.874,
+      "day_contribution": 55.199999999999996,
+      "old_tag": "假从强",
+      "new_tag": "假从强",
+      "fuyi_priority": null
+    },
+    {
+      "pillars": [
+        "辛未",
+        "乙未",
+        "丁丑",
+        "辛亥"
+      ],
+      "external_share": 0.31298589116038006,
+      "inclusive_share": 0.398,
+      "day_contribution": 55.199999999999996,
+      "old_tag": "身弱",
+      "new_tag": "身弱",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "庚戌",
+        "戊寅",
+        "戊辰",
+        "壬戌"
+      ],
+      "external_share": 0.4345683878596768,
+      "inclusive_share": 0.491,
+      "day_contribution": 42.0,
+      "old_tag": "中和偏弱",
+      "new_tag": "中和偏弱",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "庚申",
+        "丁亥",
+        "丙子",
+        "丙申"
+      ],
+      "external_share": 0.09522388059701492,
+      "inclusive_share": 0.11,
+      "day_contribution": 8.399999999999999,
+      "old_tag": "假从弱",
+      "new_tag": "假从弱",
+      "fuyi_priority": null
+    },
+    {
+      "pillars": [
+        "丙寅",
+        "甲午",
+        "丁卯",
+        "辛丑"
+      ],
+      "external_share": 0.7179348803741681,
+      "inclusive_share": 0.753,
+      "day_contribution": 78.0,
+      "old_tag": "身旺",
+      "new_tag": "身旺",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "辛未",
+        "乙未",
+        "庚辰",
+        "丙子"
+      ],
+      "external_share": 0.4546713015658166,
+      "inclusive_share": 0.463,
+      "day_contribution": 7.77,
+      "old_tag": "身弱无根",
+      "new_tag": "身弱无根",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "乙亥",
+        "戊子",
+        "甲申",
+        "庚午"
+      ],
+      "external_share": 0.5551351647749081,
+      "inclusive_share": 0.614,
+      "day_contribution": 69.0,
+      "old_tag": "中和偏旺",
+      "new_tag": "身旺",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "庚申",
+        "戊寅",
+        "己酉",
+        "乙丑"
+      ],
+      "external_share": 0.2426184344493023,
+      "inclusive_share": 0.312,
+      "day_contribution": 42.0,
+      "old_tag": "身弱",
+      "new_tag": "身弱",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "丙戌",
+        "庚寅",
+        "乙亥",
+        "庚辰"
+      ],
+      "external_share": 0.6564940996625716,
+      "inclusive_share": 0.688,
+      "day_contribution": 54.6,
+      "old_tag": "身旺",
+      "new_tag": "身旺",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "戊寅",
+        "己未",
+        "戊午",
+        "丁巳"
+      ],
+      "external_share": 0.892966782115869,
+      "inclusive_share": 0.907,
+      "day_contribution": 78.0,
+      "old_tag": "假从强",
+      "new_tag": "假从强",
+      "fuyi_priority": null
+    },
+    {
+      "pillars": [
+        "乙卯",
+        "庚辰",
+        "辛亥",
+        "戊子"
+      ],
+      "external_share": 0.3178565991779571,
+      "inclusive_share": 0.334,
+      "day_contribution": 12.0,
+      "old_tag": "身弱无根",
+      "new_tag": "身弱无根",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "庚辰",
+        "壬午",
+        "丙戌",
+        "庚寅"
+      ],
+      "external_share": 0.38054268696227667,
+      "inclusive_share": 0.49,
+      "day_contribution": 78.0,
+      "old_tag": "身弱",
+      "new_tag": "中和偏弱",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "庚申",
+        "癸未",
+        "戊申",
+        "甲子"
+      ],
+      "external_share": 0.26758976010304303,
+      "inclusive_share": 0.344,
+      "day_contribution": 54.6,
+      "old_tag": "身弱",
+      "new_tag": "身弱",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "乙巳",
+        "辛巳",
+        "戊子",
+        "庚申"
+      ],
+      "external_share": 0.42319366301450984,
+      "inclusive_share": 0.492,
+      "day_contribution": 55.199999999999996,
+      "old_tag": "中和偏弱",
+      "new_tag": "中和偏弱",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "辛卯",
+        "壬辰",
+        "庚子",
+        "丁亥"
+      ],
+      "external_share": 0.18838088690271573,
+      "inclusive_share": 0.21,
+      "day_contribution": 12.0,
+      "old_tag": "身弱无根",
+      "new_tag": "身弱无根",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "庚子",
+        "己丑",
+        "辛酉",
+        "丙申"
+      ],
+      "external_share": 0.9467552519533992,
+      "inclusive_share": 0.95,
+      "day_contribution": 45.15,
+      "old_tag": "假从强",
+      "new_tag": "假从强",
+      "fuyi_priority": null
+    },
+    {
+      "pillars": [
+        "乙巳",
+        "辛巳",
+        "乙亥",
+        "丙子"
+      ],
+      "external_share": 0.3942016123067821,
+      "inclusive_share": 0.415,
+      "day_contribution": 12.0,
+      "old_tag": "身弱无根",
+      "new_tag": "身弱无根",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "丙午",
+        "辛卯",
+        "丙寅",
+        "癸巳"
+      ],
+      "external_share": 0.8283647837400373,
+      "inclusive_share": 0.85,
+      "day_contribution": 69.0,
+      "old_tag": "身旺",
+      "new_tag": "身旺",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "己卯",
+        "丙子",
+        "丁酉",
+        "丙午"
+      ],
+      "external_share": 0.3454452926208651,
+      "inclusive_share": 0.367,
+      "day_contribution": 8.399999999999999,
+      "old_tag": "身弱无根",
+      "new_tag": "身弱无根",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "壬午",
+        "壬寅",
+        "辛亥",
+        "戊子"
+      ],
+      "external_share": 0.13730475844533235,
+      "inclusive_share": 0.159,
+      "day_contribution": 10.2,
+      "old_tag": "假从弱",
+      "new_tag": "身弱无根",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "壬戌",
+        "乙巳",
+        "戊寅",
+        "丙辰"
+      ],
+      "external_share": 0.6026066703008077,
+      "inclusive_share": 0.65,
+      "day_contribution": 69.0,
+      "old_tag": "身旺",
+      "new_tag": "身旺",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "丙子",
+        "己亥",
+        "乙卯",
+        "戊子"
+      ],
+      "external_share": 0.9397174254317111,
+      "inclusive_share": 0.947,
+      "day_contribution": 69.0,
+      "old_tag": "从强",
+      "new_tag": "从强",
+      "fuyi_priority": null
+    },
+    {
+      "pillars": [
+        "辛巳",
+        "甲午",
+        "甲辰",
+        "辛未"
+      ],
+      "external_share": 0.23280557314756176,
+      "inclusive_share": 0.316,
+      "day_contribution": 48.0,
+      "old_tag": "身弱",
+      "new_tag": "身弱",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "丙辰",
+        "乙未",
+        "戊子",
+        "庚申"
+      ],
+      "external_share": 0.4838872832369943,
+      "inclusive_share": 0.566,
+      "day_contribution": 78.0,
+      "old_tag": "中和偏弱",
+      "new_tag": "中和偏旺",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "己未",
+        "丁卯",
+        "壬辰",
+        "丙午"
+      ],
+      "external_share": 0.020774256541294032,
+      "inclusive_share": 0.069,
+      "day_contribution": 25.2,
+      "old_tag": "假从弱",
+      "new_tag": "假从弱",
+      "fuyi_priority": null
+    },
+    {
+      "pillars": [
+        "辛巳",
+        "丙申",
+        "戊午",
+        "辛酉"
+      ],
+      "external_share": 0.350485023235536,
+      "inclusive_share": 0.407,
+      "day_contribution": 48.0,
+      "old_tag": "身弱",
+      "new_tag": "中和偏弱",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "癸未",
+        "壬戌",
+        "辛巳",
+        "庚子"
+      ],
+      "external_share": 0.5034234702721443,
+      "inclusive_share": 0.549,
+      "day_contribution": 58.800000000000004,
+      "old_tag": "中和偏旺",
+      "new_tag": "中和偏旺",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "庚辰",
+        "己卯",
+        "乙丑",
+        "乙酉"
+      ],
+      "external_share": 0.4678777351571735,
+      "inclusive_share": 0.552,
+      "day_contribution": 78.0,
+      "old_tag": "中和偏弱",
+      "new_tag": "中和偏旺",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "丁未",
+        "丙午",
+        "辛巳",
+        "乙未"
+      ],
+      "external_share": 0.29464228833535067,
+      "inclusive_share": 0.32,
+      "day_contribution": 17.639999999999997,
+      "old_tag": "身弱",
+      "new_tag": "身弱",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "乙巳",
+        "甲申",
+        "乙酉",
+        "丁丑"
+      ],
+      "external_share": 0.185067646567563,
+      "inclusive_share": 0.204,
+      "day_contribution": 8.399999999999999,
+      "old_tag": "身弱无根",
+      "new_tag": "身弱无根",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "庚戌",
+        "庚辰",
+        "己巳",
+        "丙寅"
+      ],
+      "external_share": 0.5602062407276794,
+      "inclusive_share": 0.618,
+      "day_contribution": 78.0,
+      "old_tag": "中和偏旺",
+      "new_tag": "身旺",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "甲辰",
+        "丙寅",
+        "辛卯",
+        "丁酉"
+      ],
+      "external_share": 0.15319243275199526,
+      "inclusive_share": 0.168,
+      "day_contribution": 7.14,
+      "old_tag": "身弱无根",
+      "new_tag": "身弱无根",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "甲申",
+        "丁卯",
+        "癸酉",
+        "庚申"
+      ],
+      "external_share": 0.5876970005083885,
+      "inclusive_share": 0.633,
+      "day_contribution": 48.0,
+      "old_tag": "中和偏旺",
+      "new_tag": "身旺",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "甲辰",
+        "壬申",
+        "丁巳",
+        "丁未"
+      ],
+      "external_share": 0.38406926406926406,
+      "inclusive_share": 0.431,
+      "day_contribution": 35.699999999999996,
+      "old_tag": "身弱",
+      "new_tag": "中和偏弱",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "癸亥",
+        "癸亥",
+        "丁亥",
+        "辛丑"
+      ],
+      "external_share": 0.15003624063783522,
+      "inclusive_share": 0.161,
+      "day_contribution": 8.399999999999999,
+      "old_tag": "身弱无根",
+      "new_tag": "身弱无根",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "癸卯",
+        "乙卯",
+        "乙丑",
+        "辛巳"
+      ],
+      "external_share": 0.6895290352080475,
+      "inclusive_share": 0.728,
+      "day_contribution": 78.0,
+      "old_tag": "身旺",
+      "new_tag": "身旺",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "丁巳",
+        "癸卯",
+        "己未",
+        "乙亥"
+      ],
+      "external_share": 0.17190929041697148,
+      "inclusive_share": 0.204,
+      "day_contribution": 33.599999999999994,
+      "old_tag": "身弱",
+      "new_tag": "身弱",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "辛未",
+        "乙未",
+        "丙申",
+        "乙未"
+      ],
+      "external_share": 0.340026395173454,
+      "inclusive_share": 0.402,
+      "day_contribution": 55.199999999999996,
+      "old_tag": "身弱",
+      "new_tag": "中和偏弱",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "戊子",
+        "辛酉",
+        "庚戌",
+        "甲申"
+      ],
+      "external_share": 0.881267738883633,
+      "inclusive_share": 0.891,
+      "day_contribution": 78.0,
+      "old_tag": "假从强",
+      "new_tag": "假从强",
+      "fuyi_priority": null
+    },
+    {
+      "pillars": [
+        "丁酉",
+        "丙午",
+        "己卯",
+        "乙亥"
+      ],
+      "external_share": 0.5516923076923077,
+      "inclusive_share": 0.597,
+      "day_contribution": 55.199999999999996,
+      "old_tag": "中和偏旺",
+      "new_tag": "中和偏旺",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "壬辰",
+        "己酉",
+        "癸酉",
+        "壬子"
+      ],
+      "external_share": 0.9821109123434705,
+      "inclusive_share": 0.984,
+      "day_contribution": 69.0,
+      "old_tag": "从强",
+      "new_tag": "从强",
+      "fuyi_priority": null
+    },
+    {
+      "pillars": [
+        "癸酉",
+        "壬戌",
+        "壬子",
+        "癸卯"
+      ],
+      "external_share": 0.761366379657198,
+      "inclusive_share": 0.788,
+      "day_contribution": 55.49999999999999,
+      "old_tag": "身旺",
+      "new_tag": "身旺",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "辛酉",
+        "甲午",
+        "己巳",
+        "辛未"
+      ],
+      "external_share": 0.8153310104529617,
+      "inclusive_share": 0.818,
+      "day_contribution": 9.66,
+      "old_tag": "身弱无根",
+      "new_tag": "身弱无根",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "丁巳",
+        "戊申",
+        "壬子",
+        "辛亥"
+      ],
+      "external_share": 0.6575113906179811,
+      "inclusive_share": 0.702,
+      "day_contribution": 69.0,
+      "old_tag": "身旺",
+      "new_tag": "身旺",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "癸卯",
+        "壬戌",
+        "戊申",
+        "壬戌"
+      ],
+      "external_share": 0.2913708057362214,
+      "inclusive_share": 0.387,
+      "day_contribution": 78.0,
+      "old_tag": "身弱",
+      "new_tag": "身弱",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "庚午",
+        "庚辰",
+        "乙巳",
+        "甲申"
+      ],
+      "external_share": 0.2114799951355953,
+      "inclusive_share": 0.265,
+      "day_contribution": 36.12,
+      "old_tag": "身弱",
+      "new_tag": "身弱",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "辛酉",
+        "庚寅",
+        "己未",
+        "壬申"
+      ],
+      "external_share": 0.23814713896457765,
+      "inclusive_share": 0.308,
+      "day_contribution": 42.0,
+      "old_tag": "身弱",
+      "new_tag": "身弱",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "乙丑",
+        "辛巳",
+        "甲辰",
+        "辛未"
+      ],
+      "external_share": 0.25128263595941175,
+      "inclusive_share": 0.325,
+      "day_contribution": 48.0,
+      "old_tag": "身弱",
+      "new_tag": "身弱",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "己卯",
+        "丙寅",
+        "壬寅",
+        "辛丑"
+      ],
+      "external_share": 0.11970280682443588,
+      "inclusive_share": 0.191,
+      "day_contribution": 48.0,
+      "old_tag": "假从弱",
+      "new_tag": "身弱",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "辛未",
+        "己亥",
+        "庚戌",
+        "壬午"
+      ],
+      "external_share": 0.47625862672136887,
+      "inclusive_share": 0.525,
+      "day_contribution": 48.0,
+      "old_tag": "中和偏弱",
+      "new_tag": "中和偏旺",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "丁丑",
+        "庚戌",
+        "丁亥",
+        "辛亥"
+      ],
+      "external_share": 0.16370921579851172,
+      "inclusive_share": 0.214,
+      "day_contribution": 33.300000000000004,
+      "old_tag": "身弱",
+      "new_tag": "身弱",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "己酉",
+        "丙子",
+        "己丑",
+        "丙寅"
+      ],
+      "external_share": 0.4329930852815278,
+      "inclusive_share": 0.49,
+      "day_contribution": 51.0,
+      "old_tag": "中和偏弱",
+      "new_tag": "中和偏弱",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "丁亥",
+        "癸卯",
+        "乙酉",
+        "庚辰"
+      ],
+      "external_share": 0.6358895787974088,
+      "inclusive_share": 0.682,
+      "day_contribution": 54.6,
+      "old_tag": "身旺",
+      "new_tag": "身旺",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "丁未",
+        "己酉",
+        "乙丑",
+        "己卯"
+      ],
+      "external_share": 0.15868388171595169,
+      "inclusive_share": 0.247,
+      "day_contribution": 42.0,
+      "old_tag": "身弱",
+      "new_tag": "身弱",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "丙午",
+        "甲午",
+        "甲寅",
+        "丁卯"
+      ],
+      "external_share": 0.33341271731364613,
+      "inclusive_share": 0.391,
+      "day_contribution": 60.0,
+      "old_tag": "身弱",
+      "new_tag": "身弱",
+      "fuyi_priority": null
+    },
+    {
+      "pillars": [
+        "辛巳",
+        "己亥",
+        "丙子",
+        "丁酉"
+      ],
+      "external_share": 0.09773804523909518,
+      "inclusive_share": 0.116,
+      "day_contribution": 8.399999999999999,
+      "old_tag": "假从弱",
+      "new_tag": "假从弱",
+      "fuyi_priority": null
+    },
+    {
+      "pillars": [
+        "甲辰",
+        "丁卯",
+        "壬子",
+        "丁未"
+      ],
+      "external_share": 0.1991921651081724,
+      "inclusive_share": 0.257,
+      "day_contribution": 42.0,
+      "old_tag": "身弱",
+      "new_tag": "身弱",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "辛酉",
+        "辛丑",
+        "己卯",
+        "丙寅"
+      ],
+      "external_share": 0.33263966704017933,
+      "inclusive_share": 0.428,
+      "day_contribution": 78.0,
+      "old_tag": "身弱",
+      "new_tag": "中和偏弱",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "乙未",
+        "戊子",
+        "戊申",
+        "丁巳"
+      ],
+      "external_share": 0.22539229671897285,
+      "inclusive_share": 0.283,
+      "day_contribution": 51.0,
+      "old_tag": "身弱",
+      "new_tag": "身弱",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "辛未",
+        "甲午",
+        "戊申",
+        "癸丑"
+      ],
+      "external_share": 0.44864245589829516,
+      "inclusive_share": 0.507,
+      "day_contribution": 48.3,
+      "old_tag": "中和偏弱",
+      "new_tag": "中和偏旺",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "乙亥",
+        "壬午",
+        "戊戌",
+        "壬戌"
+      ],
+      "external_share": 0.5068363979255068,
+      "inclusive_share": 0.564,
+      "day_contribution": 69.0,
+      "old_tag": "中和偏旺",
+      "new_tag": "中和偏旺",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "壬子",
+        "癸卯",
+        "癸丑",
+        "癸亥"
+      ],
+      "external_share": 0.6389331210191084,
+      "inclusive_share": 0.681,
+      "day_contribution": 60.0,
+      "old_tag": "身旺",
+      "new_tag": "身旺",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "戊寅",
+        "甲寅",
+        "丁未",
+        "丙午"
+      ],
+      "external_share": 0.8139162787111202,
+      "inclusive_share": 0.836,
+      "day_contribution": 69.0,
+      "old_tag": "身旺",
+      "new_tag": "身旺",
+      "fuyi_priority": null
+    },
+    {
+      "pillars": [
+        "乙卯",
+        "乙酉",
+        "丁巳",
+        "己酉"
+      ],
+      "external_share": 0.4393530997304582,
+      "inclusive_share": 0.507,
+      "day_contribution": 51.0,
+      "old_tag": "中和偏弱",
+      "new_tag": "中和偏旺",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "甲午",
+        "辛未",
+        "乙未",
+        "丁亥"
+      ],
+      "external_share": 0.2291408252708178,
+      "inclusive_share": 0.282,
+      "day_contribution": 44.400000000000006,
+      "old_tag": "身弱",
+      "new_tag": "身弱",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "乙亥",
+        "癸未",
+        "癸丑",
+        "甲子"
+      ],
+      "external_share": 0.39386345577898657,
+      "inclusive_share": 0.462,
+      "day_contribution": 46.49999999999999,
+      "old_tag": "身弱",
+      "new_tag": "中和偏弱",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "癸巳",
+        "癸亥",
+        "己巳",
+        "丙寅"
+      ],
+      "external_share": 0.2967569154009832,
+      "inclusive_share": 0.361,
+      "day_contribution": 40.8,
+      "old_tag": "身弱",
+      "new_tag": "身弱",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "庚辰",
+        "庚辰",
+        "壬辰",
+        "乙巳"
+      ],
+      "external_share": 0.25564668769716087,
+      "inclusive_share": 0.292,
+      "day_contribution": 30.599999999999998,
+      "old_tag": "身弱",
+      "new_tag": "身弱",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "甲申",
+        "甲戌",
+        "辛未",
+        "戊戌"
+      ],
+      "external_share": 0.7683751557216587,
+      "inclusive_share": 0.795,
+      "day_contribution": 73.5,
+      "old_tag": "身旺",
+      "new_tag": "身旺",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "辛巳",
+        "庚子",
+        "己酉",
+        "乙丑"
+      ],
+      "external_share": 0.14910447761194026,
+      "inclusive_share": 0.245,
+      "day_contribution": 51.0,
+      "old_tag": "假从弱",
+      "new_tag": "身弱",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "戊申",
+        "丁巳",
+        "壬辰",
+        "丙午"
+      ],
+      "external_share": 0.0936343073443198,
+      "inclusive_share": 0.15,
+      "day_contribution": 35.699999999999996,
+      "old_tag": "假从弱",
+      "new_tag": "假从弱",
+      "fuyi_priority": null
+    },
+    {
+      "pillars": [
+        "丙戌",
+        "辛卯",
+        "辛亥",
+        "甲午"
+      ],
+      "external_share": 0.1771268307884076,
+      "inclusive_share": 0.241,
+      "day_contribution": 40.8,
+      "old_tag": "身弱",
+      "new_tag": "身弱",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "乙卯",
+        "壬午",
+        "庚子",
+        "辛巳"
+      ],
+      "external_share": 0.18469454136850197,
+      "inclusive_share": 0.258,
+      "day_contribution": 42.0,
+      "old_tag": "身弱",
+      "new_tag": "身弱",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "戊子",
+        "乙丑",
+        "乙丑",
+        "丁亥"
+      ],
+      "external_share": 0.46595024639316035,
+      "inclusive_share": 0.521,
+      "day_contribution": 48.0,
+      "old_tag": "中和偏弱",
+      "new_tag": "中和偏旺",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "丁巳",
+        "己酉",
+        "辛巳",
+        "庚寅"
+      ],
+      "external_share": 0.6180692372642836,
+      "inclusive_share": 0.667,
+      "day_contribution": 78.0,
+      "old_tag": "身旺",
+      "new_tag": "身旺",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "乙巳",
+        "辛巳",
+        "甲戌",
+        "丙寅"
+      ],
+      "external_share": 0.1975051975051975,
+      "inclusive_share": 0.273,
+      "day_contribution": 60.0,
+      "old_tag": "身弱",
+      "new_tag": "身弱",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "丁卯",
+        "庚戌",
+        "乙酉",
+        "辛巳"
+      ],
+      "external_share": 0.09449264633840994,
+      "inclusive_share": 0.107,
+      "day_contribution": 6.51,
+      "old_tag": "从弱",
+      "new_tag": "从弱",
+      "fuyi_priority": null
+    },
+    {
+      "pillars": [
+        "丙午",
+        "丁酉",
+        "甲申",
+        "乙丑"
+      ],
+      "external_share": 0.14269175108538348,
+      "inclusive_share": 0.156,
+      "day_contribution": 8.399999999999999,
+      "old_tag": "假从弱",
+      "new_tag": "身弱无根",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "甲辰",
+        "丙寅",
+        "甲午",
+        "壬申"
+      ],
+      "external_share": 0.4756938958234582,
+      "inclusive_share": 0.55,
+      "day_contribution": 78.0,
+      "old_tag": "中和偏弱",
+      "new_tag": "中和偏旺",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "甲辰",
+        "丙寅",
+        "癸丑",
+        "庚申"
+      ],
+      "external_share": 0.3012312362961714,
+      "inclusive_share": 0.369,
+      "day_contribution": 48.0,
+      "old_tag": "身弱",
+      "new_tag": "身弱",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "辛未",
+        "庚子",
+        "丁未",
+        "辛丑"
+      ],
+      "external_share": 0.12570781426953567,
+      "inclusive_share": 0.194,
+      "day_contribution": 33.599999999999994,
+      "old_tag": "假从弱",
+      "new_tag": "身弱",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "辛卯",
+        "甲午",
+        "丙戌",
+        "戊子"
+      ],
+      "external_share": 0.7526473842263316,
+      "inclusive_share": 0.788,
+      "day_contribution": 78.0,
+      "old_tag": "身旺",
+      "new_tag": "身旺",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "己巳",
+        "癸酉",
+        "丁酉",
+        "乙巳"
+      ],
+      "external_share": 0.19937106918238992,
+      "inclusive_share": 0.277,
+      "day_contribution": 51.0,
+      "old_tag": "身弱",
+      "new_tag": "身弱",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "戊子",
+        "壬戌",
+        "丙子",
+        "己亥"
+      ],
+      "external_share": 0.05142405063291139,
+      "inclusive_share": 0.104,
+      "day_contribution": 33.300000000000004,
+      "old_tag": "假从弱",
+      "new_tag": "假从弱",
+      "fuyi_priority": null
+    },
+    {
+      "pillars": [
+        "己巳",
+        "甲戌",
+        "乙未",
+        "丙戌"
+      ],
+      "external_share": 0.011135057471264366,
+      "inclusive_share": 0.049,
+      "day_contribution": 27.9,
+      "old_tag": "假从弱",
+      "new_tag": "假从弱",
+      "fuyi_priority": null
+    },
+    {
+      "pillars": [
+        "庚寅",
+        "辛巳",
+        "壬午",
+        "丁未"
+      ],
+      "external_share": 0.020613496932515334,
+      "inclusive_share": 0.029,
+      "day_contribution": 7.14,
+      "old_tag": "从弱",
+      "new_tag": "从弱",
+      "fuyi_priority": null
+    },
+    {
+      "pillars": [
+        "丁卯",
+        "壬子",
+        "甲辰",
+        "庚午"
+      ],
+      "external_share": 0.6673271250247672,
+      "inclusive_share": 0.719,
+      "day_contribution": 69.0,
+      "old_tag": "身旺",
+      "new_tag": "身旺",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "庚戌",
+        "壬午",
+        "乙酉",
+        "辛巳"
+      ],
+      "external_share": 0.021836865767501604,
+      "inclusive_share": 0.046,
+      "day_contribution": 12.0,
+      "old_tag": "从弱",
+      "new_tag": "从弱",
+      "fuyi_priority": null
+    },
+    {
+      "pillars": [
+        "丙寅",
+        "戊戌",
+        "己丑",
+        "癸酉"
+      ],
+      "external_share": 0.5491022040677389,
+      "inclusive_share": 0.602,
+      "day_contribution": 78.0,
+      "old_tag": "中和偏旺",
+      "new_tag": "身旺",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "辛卯",
+        "己亥",
+        "乙酉",
+        "庚辰"
+      ],
+      "external_share": 0.4253893537234941,
+      "inclusive_share": 0.482,
+      "day_contribution": 48.3,
+      "old_tag": "中和偏弱",
+      "new_tag": "中和偏弱",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "庚子",
+        "丁亥",
+        "癸丑",
+        "乙卯"
+      ],
+      "external_share": 0.7806475081847946,
+      "inclusive_share": 0.8,
+      "day_contribution": 78.0,
+      "old_tag": "身旺",
+      "new_tag": "身旺",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "丁酉",
+        "辛亥",
+        "癸卯",
+        "庚申"
+      ],
+      "external_share": 0.7598714416896235,
+      "inclusive_share": 0.796,
+      "day_contribution": 78.0,
+      "old_tag": "身旺",
+      "new_tag": "身旺",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "壬子",
+        "癸丑",
+        "戊申",
+        "乙卯"
+      ],
+      "external_share": 0.4703947368421052,
+      "inclusive_share": 0.512,
+      "day_contribution": 54.6,
+      "old_tag": "中和偏弱",
+      "new_tag": "中和偏旺",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "乙酉",
+        "戊寅",
+        "辛未",
+        "丙申"
+      ],
+      "external_share": 0.43239697023916024,
+      "inclusive_share": 0.477,
+      "day_contribution": 35.699999999999996,
+      "old_tag": "中和偏弱",
+      "new_tag": "中和偏弱",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "庚午",
+        "庚辰",
+        "甲辰",
+        "乙亥"
+      ],
+      "external_share": 0.4452861952861953,
+      "inclusive_share": 0.512,
+      "day_contribution": 64.5,
+      "old_tag": "中和偏弱",
+      "new_tag": "中和偏旺",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "乙卯",
+        "辛巳",
+        "辛亥",
+        "己亥"
+      ],
+      "external_share": 0.24028913551401868,
+      "inclusive_share": 0.258,
+      "day_contribution": 8.399999999999999,
+      "old_tag": "身弱无根",
+      "new_tag": "身弱无根",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "辛酉",
+        "癸巳",
+        "己丑",
+        "丁卯"
+      ],
+      "external_share": 0.49379162897788015,
+      "inclusive_share": 0.574,
+      "day_contribution": 69.0,
+      "old_tag": "中和偏弱",
+      "new_tag": "中和偏旺",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "壬寅",
+        "戊申",
+        "癸未",
+        "辛酉"
+      ],
+      "external_share": 0.6041217907667229,
+      "inclusive_share": 0.613,
+      "day_contribution": 9.66,
+      "old_tag": "身弱无根",
+      "new_tag": "身弱无根",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "丙戌",
+        "乙未",
+        "壬寅",
+        "己酉"
+      ],
+      "external_share": 0.17808739708676374,
+      "inclusive_share": 0.191,
+      "day_contribution": 9.299999999999999,
+      "old_tag": "身弱无根",
+      "new_tag": "身弱无根",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "辛丑",
+        "壬辰",
+        "壬寅",
+        "辛亥"
+      ],
+      "external_share": 0.43165807347862134,
+      "inclusive_share": 0.489,
+      "day_contribution": 51.0,
+      "old_tag": "中和偏弱",
+      "new_tag": "中和偏弱",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "庚寅",
+        "壬午",
+        "癸巳",
+        "庚申"
+      ],
+      "external_share": 0.3680770330327209,
+      "inclusive_share": 0.384,
+      "day_contribution": 10.2,
+      "old_tag": "身弱无根",
+      "new_tag": "身弱无根",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "庚子",
+        "丙戌",
+        "乙亥",
+        "戊寅"
+      ],
+      "external_share": 0.3334799557099304,
+      "inclusive_share": 0.391,
+      "day_contribution": 46.49999999999999,
+      "old_tag": "身弱",
+      "new_tag": "身弱",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "甲午",
+        "辛未",
+        "丁未",
+        "壬寅"
+      ],
+      "external_share": 0.3135546045993807,
+      "inclusive_share": 0.357,
+      "day_contribution": 38.64,
+      "old_tag": "身弱",
+      "new_tag": "身弱",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "乙未",
+        "己卯",
+        "辛丑",
+        "庚子"
+      ],
+      "external_share": 0.3225700164744646,
+      "inclusive_share": 0.378,
+      "day_contribution": 40.8,
+      "old_tag": "身弱",
+      "new_tag": "身弱",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "辛卯",
+        "庚寅",
+        "丁丑",
+        "甲辰"
+      ],
+      "external_share": 0.5614624655734392,
+      "inclusive_share": 0.615,
+      "day_contribution": 55.199999999999996,
+      "old_tag": "中和偏旺",
+      "new_tag": "身旺",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "庚午",
+        "己卯",
+        "癸未",
+        "丁巳"
+      ],
+      "external_share": 0.12790777938841721,
+      "inclusive_share": 0.151,
+      "day_contribution": 12.0,
+      "old_tag": "假从弱",
+      "new_tag": "身弱无根",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "乙巳",
+        "壬午",
+        "乙巳",
+        "庚辰"
+      ],
+      "external_share": 0.21255630630630631,
+      "inclusive_share": 0.259,
+      "day_contribution": 33.6,
+      "old_tag": "身弱",
+      "new_tag": "身弱",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "辛亥",
+        "辛丑",
+        "辛丑",
+        "辛卯"
+      ],
+      "external_share": 0.5564023645512727,
+      "inclusive_share": 0.588,
+      "day_contribution": 38.699999999999996,
+      "old_tag": "中和偏旺",
+      "new_tag": "中和偏旺",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "甲子",
+        "己巳",
+        "己亥",
+        "癸酉"
+      ],
+      "external_share": 0.18148019928654216,
+      "inclusive_share": 0.214,
+      "day_contribution": 13.799999999999999,
+      "old_tag": "身弱无根",
+      "new_tag": "身弱无根",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "辛酉",
+        "丙申",
+        "丁卯",
+        "辛亥"
+      ],
+      "external_share": 0.14250361862072183,
+      "inclusive_share": 0.162,
+      "day_contribution": 10.2,
+      "old_tag": "假从弱",
+      "new_tag": "身弱无根",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "己酉",
+        "丁卯",
+        "甲子",
+        "丙寅"
+      ],
+      "external_share": 0.5088441428412505,
+      "inclusive_share": 0.581,
+      "day_contribution": 78.0,
+      "old_tag": "中和偏旺",
+      "new_tag": "中和偏旺",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "癸卯",
+        "乙丑",
+        "丙申",
+        "癸巳"
+      ],
+      "external_share": 0.3574146460477889,
+      "inclusive_share": 0.419,
+      "day_contribution": 51.0,
+      "old_tag": "身弱",
+      "new_tag": "中和偏弱",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "乙巳",
+        "乙酉",
+        "庚申",
+        "庚辰"
+      ],
+      "external_share": 0.9042448173741362,
+      "inclusive_share": 0.918,
+      "day_contribution": 109.2,
+      "old_tag": "假从强",
+      "new_tag": "假从强",
+      "fuyi_priority": null
+    },
+    {
+      "pillars": [
+        "丙戌",
+        "乙未",
+        "甲辰",
+        "丙寅"
+      ],
+      "external_share": 0.26971677559912854,
+      "inclusive_share": 0.341,
+      "day_contribution": 55.5,
+      "old_tag": "身弱",
+      "new_tag": "身弱",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "癸巳",
+        "丙辰",
+        "癸亥",
+        "丙辰"
+      ],
+      "external_share": 0.20627802690582958,
+      "inclusive_share": 0.282,
+      "day_contribution": 51.0,
+      "old_tag": "身弱",
+      "new_tag": "身弱",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "丙申",
+        "戊戌",
+        "壬午",
+        "戊申"
+      ],
+      "external_share": 0.33039487984542926,
+      "inclusive_share": 0.385,
+      "day_contribution": 55.49999999999999,
+      "old_tag": "身弱",
+      "new_tag": "身弱",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "己酉",
+        "丁丑",
+        "戊午",
+        "癸丑"
+      ],
+      "external_share": 0.6559686190603549,
+      "inclusive_share": 0.686,
+      "day_contribution": 54.6,
+      "old_tag": "身旺",
+      "new_tag": "身旺",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "癸卯",
+        "戊午",
+        "己酉",
+        "甲戌"
+      ],
+      "external_share": 0.5812766189800153,
+      "inclusive_share": 0.63,
+      "day_contribution": 48.3,
+      "old_tag": "中和偏旺",
+      "new_tag": "身旺",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "甲辰",
+        "乙亥",
+        "甲戌",
+        "癸酉"
+      ],
+      "external_share": 0.7142341692224428,
+      "inclusive_share": 0.749,
+      "day_contribution": 69.0,
+      "old_tag": "身旺",
+      "new_tag": "身旺",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "庚辰",
+        "戊寅",
+        "辛巳",
+        "己丑"
+      ],
+      "external_share": 0.5137775035986016,
+      "inclusive_share": 0.543,
+      "day_contribution": 30.599999999999998,
+      "old_tag": "中和偏旺",
+      "new_tag": "中和偏旺",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "甲辰",
+        "辛未",
+        "己未",
+        "辛未"
+      ],
+      "external_share": 0.75737507525587,
+      "inclusive_share": 0.79,
+      "day_contribution": 78.0,
+      "old_tag": "身旺",
+      "new_tag": "身旺",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "丁卯",
+        "辛亥",
+        "辛未",
+        "丁酉"
+      ],
+      "external_share": 0.29468160258350995,
+      "inclusive_share": 0.322,
+      "day_contribution": 12.0,
+      "old_tag": "身弱无根",
+      "new_tag": "身弱无根",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "丙申",
+        "癸巳",
+        "己酉",
+        "壬申"
+      ],
+      "external_share": 0.3848870302607888,
+      "inclusive_share": 0.455,
+      "day_contribution": 55.199999999999996,
+      "old_tag": "身弱",
+      "new_tag": "中和偏弱",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "乙未",
+        "乙酉",
+        "壬子",
+        "壬寅"
+      ],
+      "external_share": 0.5692671394799055,
+      "inclusive_share": 0.619,
+      "day_contribution": 69.0,
+      "old_tag": "中和偏旺",
+      "new_tag": "身旺",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "甲辰",
+        "辛未",
+        "壬戌",
+        "丁未"
+      ],
+      "external_share": 0.14429390474360207,
+      "inclusive_share": 0.189,
+      "day_contribution": 26.04,
+      "old_tag": "假从弱",
+      "new_tag": "身弱",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "壬寅",
+        "壬寅",
+        "庚午",
+        "壬午"
+      ],
+      "external_share": 0.11990740740740741,
+      "inclusive_share": 0.14,
+      "day_contribution": 10.2,
+      "old_tag": "假从弱",
+      "new_tag": "假从弱",
+      "fuyi_priority": null
+    },
+    {
+      "pillars": [
+        "戊申",
+        "辛酉",
+        "壬申",
+        "辛亥"
+      ],
+      "external_share": 0.8825803334138681,
+      "inclusive_share": 0.894,
+      "day_contribution": 69.0,
+      "old_tag": "假从强",
+      "new_tag": "假从强",
+      "fuyi_priority": null
+    },
+    {
+      "pillars": [
+        "丁未",
+        "癸丑",
+        "己丑",
+        "壬申"
+      ],
+      "external_share": 0.38872017353579175,
+      "inclusive_share": 0.482,
+      "day_contribution": 78.0,
+      "old_tag": "身弱",
+      "new_tag": "中和偏弱",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "丙午",
+        "庚寅",
+        "癸卯",
+        "癸丑"
+      ],
+      "external_share": 0.21018930957683743,
+      "inclusive_share": 0.275,
+      "day_contribution": 48.0,
+      "old_tag": "身弱",
+      "new_tag": "身弱",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "癸酉",
+        "乙丑",
+        "己卯",
+        "甲戌"
+      ],
+      "external_share": 0.2804104005621926,
+      "inclusive_share": 0.359,
+      "day_contribution": 54.6,
+      "old_tag": "身弱",
+      "new_tag": "身弱",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "戊午",
+        "甲寅",
+        "戊戌",
+        "癸丑"
+      ],
+      "external_share": 0.4733126454615981,
+      "inclusive_share": 0.511,
+      "day_contribution": 29.4,
+      "old_tag": "中和偏弱",
+      "new_tag": "中和偏旺",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "癸巳",
+        "乙卯",
+        "辛未",
+        "庚寅"
+      ],
+      "external_share": 0.23021447972276854,
+      "inclusive_share": 0.272,
+      "day_contribution": 30.599999999999998,
+      "old_tag": "身弱",
+      "new_tag": "身弱",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "丙寅",
+        "癸巳",
+        "甲寅",
+        "癸酉"
+      ],
+      "external_share": 0.2744469381211927,
+      "inclusive_share": 0.357,
+      "day_contribution": 60.0,
+      "old_tag": "身弱",
+      "new_tag": "身弱",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "丁卯",
+        "癸卯",
+        "辛巳",
+        "丙申"
+      ],
+      "external_share": 0.11198574477667471,
+      "inclusive_share": 0.17,
+      "day_contribution": 35.699999999999996,
+      "old_tag": "假从弱",
+      "new_tag": "身弱",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "甲申",
+        "甲戌",
+        "丁丑",
+        "丁未"
+      ],
+      "external_share": 0.3326867656838838,
+      "inclusive_share": 0.392,
+      "day_contribution": 44.400000000000006,
+      "old_tag": "身弱",
+      "new_tag": "身弱",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "庚戌",
+        "丙戌",
+        "戊寅",
+        "甲寅"
+      ],
+      "external_share": 0.5233775296580601,
+      "inclusive_share": 0.584,
+      "day_contribution": 78.0,
+      "old_tag": "中和偏旺",
+      "new_tag": "中和偏旺",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "壬寅",
+        "辛亥",
+        "乙卯",
+        "癸未"
+      ],
+      "external_share": 0.8262492418233566,
+      "inclusive_share": 0.85,
+      "day_contribution": 69.0,
+      "old_tag": "身旺",
+      "new_tag": "假从强",
+      "fuyi_priority": null
+    },
+    {
+      "pillars": [
+        "乙丑",
+        "甲申",
+        "乙酉",
+        "戊寅"
+      ],
+      "external_share": 0.2059169278996865,
+      "inclusive_share": 0.223,
+      "day_contribution": 8.399999999999999,
+      "old_tag": "身弱无根",
+      "new_tag": "身弱无根",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "乙丑",
+        "丁亥",
+        "丙寅",
+        "庚寅"
+      ],
+      "external_share": 0.5894039735099338,
+      "inclusive_share": 0.624,
+      "day_contribution": 42.0,
+      "old_tag": "中和偏旺",
+      "new_tag": "身旺",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "壬寅",
+        "癸丑",
+        "乙丑",
+        "丙子"
+      ],
+      "external_share": 0.2682080924855491,
+      "inclusive_share": 0.33,
+      "day_contribution": 60.0,
+      "old_tag": "身弱",
+      "new_tag": "身弱",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "己巳",
+        "丁丑",
+        "庚午",
+        "丙子"
+      ],
+      "external_share": 0.4316030491720884,
+      "inclusive_share": 0.503,
+      "day_contribution": 64.5,
+      "old_tag": "中和偏弱",
+      "new_tag": "中和偏旺",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "丙寅",
+        "庚子",
+        "庚辰",
+        "丁亥"
+      ],
+      "external_share": 0.15494197679071628,
+      "inclusive_share": 0.178,
+      "day_contribution": 12.0,
+      "old_tag": "身弱无根",
+      "new_tag": "身弱无根",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "庚戌",
+        "丙戌",
+        "甲子",
+        "乙亥"
+      ],
+      "external_share": 0.40816725283313793,
+      "inclusive_share": 0.457,
+      "day_contribution": 46.49999999999999,
+      "old_tag": "中和偏弱",
+      "new_tag": "中和偏弱",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "己巳",
+        "丙子",
+        "丁酉",
+        "庚戌"
+      ],
+      "external_share": 0.16021126760563378,
+      "inclusive_share": 0.224,
+      "day_contribution": 42.0,
+      "old_tag": "身弱",
+      "new_tag": "身弱",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "庚午",
+        "丁亥",
+        "壬午",
+        "己酉"
+      ],
+      "external_share": 0.4963081861958267,
+      "inclusive_share": 0.549,
+      "day_contribution": 54.6,
+      "old_tag": "中和偏弱",
+      "new_tag": "中和偏旺",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "乙酉",
+        "庚辰",
+        "辛酉",
+        "甲午"
+      ],
+      "external_share": 0.6091193085252747,
+      "inclusive_share": 0.654,
+      "day_contribution": 60.0,
+      "old_tag": "身旺",
+      "new_tag": "身旺",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "戊申",
+        "戊午",
+        "乙亥",
+        "己卯"
+      ],
+      "external_share": 0.38350119904076735,
+      "inclusive_share": 0.447,
+      "day_contribution": 60.0,
+      "old_tag": "身弱",
+      "new_tag": "中和偏弱",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "乙巳",
+        "戊子",
+        "丁酉",
+        "乙巳"
+      ],
+      "external_share": 0.23732470334412079,
+      "inclusive_share": 0.307,
+      "day_contribution": 42.0,
+      "old_tag": "身弱",
+      "new_tag": "身弱",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "壬寅",
+        "壬子",
+        "壬辰",
+        "辛亥"
+      ],
+      "external_share": 0.6863296151431745,
+      "inclusive_share": 0.727,
+      "day_contribution": 78.0,
+      "old_tag": "身旺",
+      "new_tag": "身旺",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "丙戌",
+        "丙申",
+        "己未",
+        "戊辰"
+      ],
+      "external_share": 0.666405155505744,
+      "inclusive_share": 0.706,
+      "day_contribution": 60.0,
+      "old_tag": "身旺",
+      "new_tag": "身旺",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "己巳",
+        "戊辰",
+        "壬寅",
+        "己酉"
+      ],
+      "external_share": 0.13340321911376093,
+      "inclusive_share": 0.177,
+      "day_contribution": 30.599999999999998,
+      "old_tag": "假从弱",
+      "new_tag": "身弱",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "丁酉",
+        "丙午",
+        "壬戌",
+        "戊申"
+      ],
+      "external_share": 0.1736308060755026,
+      "inclusive_share": 0.254,
+      "day_contribution": 51.0,
+      "old_tag": "身弱",
+      "new_tag": "身弱",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "庚子",
+        "壬午",
+        "壬辰",
+        "戊申"
+      ],
+      "external_share": 0.4785296164394777,
+      "inclusive_share": 0.542,
+      "day_contribution": 51.0,
+      "old_tag": "中和偏弱",
+      "new_tag": "中和偏旺",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "乙卯",
+        "辛巳",
+        "戊午",
+        "戊午"
+      ],
+      "external_share": 0.6972104519774012,
+      "inclusive_share": 0.724,
+      "day_contribution": 55.199999999999996,
+      "old_tag": "身旺",
+      "new_tag": "身旺",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "癸卯",
+        "乙卯",
+        "乙丑",
+        "甲申"
+      ],
+      "external_share": 0.8243543697622712,
+      "inclusive_share": 0.845,
+      "day_contribution": 78.0,
+      "old_tag": "身旺",
+      "new_tag": "身旺",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "甲寅",
+        "庚午",
+        "癸巳",
+        "乙卯"
+      ],
+      "external_share": 0.08553722614995199,
+      "inclusive_share": 0.102,
+      "day_contribution": 10.2,
+      "old_tag": "假从弱",
+      "new_tag": "假从弱",
+      "fuyi_priority": null
+    },
+    {
+      "pillars": [
+        "庚戌",
+        "己卯",
+        "甲寅",
+        "甲戌"
+      ],
+      "external_share": 0.5116789263130728,
+      "inclusive_share": 0.563,
+      "day_contribution": 54.6,
+      "old_tag": "中和偏旺",
+      "new_tag": "中和偏旺",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "壬辰",
+        "己酉",
+        "甲申",
+        "丁卯"
+      ],
+      "external_share": 0.3746637319638053,
+      "inclusive_share": 0.417,
+      "day_contribution": 29.4,
+      "old_tag": "身弱",
+      "new_tag": "中和偏弱",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "戊寅",
+        "甲寅",
+        "庚寅",
+        "丁丑"
+      ],
+      "external_share": 0.18648079957916883,
+      "inclusive_share": 0.228,
+      "day_contribution": 30.599999999999998,
+      "old_tag": "身弱",
+      "new_tag": "身弱",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "丁亥",
+        "丙午",
+        "辛酉",
+        "庚寅"
+      ],
+      "external_share": 0.3148957122054956,
+      "inclusive_share": 0.355,
+      "day_contribution": 29.4,
+      "old_tag": "身弱",
+      "new_tag": "身弱",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "庚午",
+        "戊子",
+        "己酉",
+        "乙丑"
+      ],
+      "external_share": 0.28267834793491864,
+      "inclusive_share": 0.364,
+      "day_contribution": 51.0,
+      "old_tag": "身弱",
+      "new_tag": "身弱",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "戊子",
+        "甲子",
+        "壬辰",
+        "癸卯"
+      ],
+      "external_share": 0.5024154589371981,
+      "inclusive_share": 0.558,
+      "day_contribution": 78.0,
+      "old_tag": "中和偏旺",
+      "new_tag": "中和偏旺",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "己酉",
+        "甲戌",
+        "辛亥",
+        "己丑"
+      ],
+      "external_share": 0.7295895948677388,
+      "inclusive_share": 0.761,
+      "day_contribution": 73.5,
+      "old_tag": "身旺",
+      "new_tag": "身旺",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "丁亥",
+        "戊申",
+        "甲戌",
+        "辛未"
+      ],
+      "external_share": 0.21131907308377892,
+      "inclusive_share": 0.266,
+      "day_contribution": 42.0,
+      "old_tag": "身弱",
+      "new_tag": "身弱",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "乙丑",
+        "庚辰",
+        "丙子",
+        "丙申"
+      ],
+      "external_share": 0.189741099861482,
+      "inclusive_share": 0.219,
+      "day_contribution": 12.899999999999999,
+      "old_tag": "身弱无根",
+      "new_tag": "身弱无根",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "丙午",
+        "乙未",
+        "戊寅",
+        "己未"
+      ],
+      "external_share": 0.8301121195942338,
+      "inclusive_share": 0.847,
+      "day_contribution": 78.0,
+      "old_tag": "身旺",
+      "new_tag": "身旺",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "己丑",
+        "庚午",
+        "庚寅",
+        "戊子"
+      ],
+      "external_share": 0.5283783323686629,
+      "inclusive_share": 0.554,
+      "day_contribution": 25.2,
+      "old_tag": "中和偏旺",
+      "new_tag": "中和偏旺",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "辛未",
+        "甲午",
+        "甲戌",
+        "丙子"
+      ],
+      "external_share": 0.183988294796023,
+      "inclusive_share": 0.246,
+      "day_contribution": 36.0,
+      "old_tag": "身弱",
+      "new_tag": "身弱",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "甲午",
+        "癸酉",
+        "己丑",
+        "壬申"
+      ],
+      "external_share": 0.26087763243343537,
+      "inclusive_share": 0.335,
+      "day_contribution": 60.0,
+      "old_tag": "身弱",
+      "new_tag": "身弱",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "庚戌",
+        "丙戌",
+        "己卯",
+        "丁卯"
+      ],
+      "external_share": 0.4532224394005877,
+      "inclusive_share": 0.547,
+      "day_contribution": 78.0,
+      "old_tag": "中和偏弱",
+      "new_tag": "中和偏旺",
+      "fuyi_priority": "reduced"
+    },
+    {
+      "pillars": [
+        "壬子",
+        "丙午",
+        "丁卯",
+        "壬子"
+      ],
+      "external_share": 0.4729250056642248,
+      "inclusive_share": 0.49,
+      "day_contribution": 10.920000000000002,
+      "old_tag": "身弱无根",
+      "new_tag": "身弱无根",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "庚子",
+        "戊寅",
+        "丙子",
+        "癸巳"
+      ],
+      "external_share": 0.30867346938775514,
+      "inclusive_share": 0.388,
+      "day_contribution": 69.0,
+      "old_tag": "身弱",
+      "new_tag": "身弱",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "癸巳",
+        "乙丑",
+        "甲辰",
+        "甲戌"
+      ],
+      "external_share": 0.3311407027113749,
+      "inclusive_share": 0.351,
+      "day_contribution": 12.0,
+      "old_tag": "身弱无根",
+      "new_tag": "身弱无根",
+      "fuyi_priority": "normal"
+    },
+    {
+      "pillars": [
+        "壬寅",
+        "庚戌",
+        "乙丑",
+        "丁亥"
+      ],
+      "external_share": 0.3468292066700353,
+      "inclusive_share": 0.389,
+      "day_contribution": 32.55,
+      "old_tag": "身弱",
+      "new_tag": "身弱",
+      "fuyi_priority": "normal"
+    }
+  ]
+}

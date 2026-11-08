@@ -20,6 +20,7 @@
     config.store_root_exempt_from_pull（默认 True）显式可配，便于回测调参。
 """
 from __future__ import annotations
+from .numeric import finite as safe_finite
 
 import math
 
@@ -297,7 +298,7 @@ def _compute_fk(gans, zhis, day_wx, he, root_count, config, store_opened=None, b
 
     V1.2 口径：
       - 天干印比按 root_level 分三档：强根 1.0 / 微根 micro_root_factor / 无根 void_gan_factor；
-      - 克泄耗天干维持满力（虚透折扣只约束帮扶），无根者仅登记在 k_dry_unrooted；
+      - 克泄耗天干默认使用同一根气折扣；legacy开关可恢复满力，无根另登记诊断；
       - 地支被冲且冲支未合化时整支乘 branch_chong_factor（F、K 同步折，避免单边偏弱）；
       - 四库开库升级同步进 F/K（余气档 10 → 30），与 root_energy 保持同一本账。
     """
@@ -341,7 +342,8 @@ def _compute_fk(gans, zhis, day_wx, he, root_count, config, store_opened=None, b
             F += contrib
             f_elements.add(eff_wx)
         elif rel in ("shishen", "guansha", "cai"):
-            contrib = base            # 克泄耗不折虚透（见模块注释与 PRD）
+            bound = (1.0 if lv == 2 else midf if lv == 3 else mrf if lv == 1 else vgf)
+            contrib = base * bound if config.get("symmetric_root_discount", True) else base
             K += contrib
             k_elements.add(eff_wx)
             if lv == 0:
@@ -350,6 +352,7 @@ def _compute_fk(gans, zhis, day_wx, he, root_count, config, store_opened=None, b
         relation_energy[rel] += contrib
         gan_detail.append({"pos": i, "gan": g, "eff_wx": eff_wx, "relation": rel,
                            "root_level": lv, "gan_mag": he["gan_mag"][i],
+                           "root_factor": (contrib/base if base else 0),
                            "contribution": round(contrib, 2)})
 
     # 地支（含藏干分层）
@@ -427,6 +430,10 @@ def _root_energy(roots, zhis, he, config):
 
 
 def _validate_config(config):
+    if 'blade_control_ratio' in config:
+        value=config['blade_control_ratio']
+        if type(value) not in (int,float) or not safe_finite(value) or value<=0:
+            raise ValueError('blade_control_ratio必须是正有限数值')
     enums = {
         "cong_root_gate": {"off", "strict", "tiered"},
         "cong_root_gate_side": {"rootless", "both"},
@@ -445,7 +452,7 @@ def _validate_config(config):
         value = config[key]
         if (isinstance(value, bool) or not isinstance(value, (int, float))
                 or value < low or (high is not None and value > high)
-                or not math.isfinite(value)
+                or not safe_finite(value)
                 or (key in ("cong_threshold", "tiangan_base", "branch_chong_factor") and value == low)):
             raise ValueError("%s超出允许范围" % key)
     if not (config["void_gan_factor"] <= config["micro_root_factor"]
@@ -485,10 +492,34 @@ def _phase_label(day_gan, zhi):
     return None
 
 
-def _balance_tag(ratio_fk, de_ling):
-    bands = [1.1, .9, .7] if de_ling else [1.4, 1.1, .8]
-    return next((name for boundary, name in zip(bands, ["身旺", "中和偏旺", "中和偏弱"])
-                 if ratio_fk >= boundary), "身弱")
+def _at_least(left,right):
+    from math import ulp
+    return left>=right or right-left<=8*max(ulp(left),ulp(right))
+
+def _cong_ranges(F,K,threshold=.85):
+    total=F+K
+    if total<=0:return False,False
+    return _at_least(F,threshold*total),_at_least((1-threshold)*total,F)
+
+def _bands(de_ling):
+    from .fuyi_policy import BALANCE_SHARES
+    from fractions import Fraction
+    return [float(Fraction(str(p))/(1-Fraction(str(p)))) for p in BALANCE_SHARES] if de_ling is None else [1.1,.9,.7] if de_ling else [1.4,1.1,.8]
+
+def _classification_ling(zhis,month_zhi,day_wx,he,config):
+    return None if config.get("seasonal_strength",True) else _de_ling(zhis,month_zhi,day_wx,he,config)
+
+def _balance_tag(ratio_fk,de_ling,F=None,K=None):
+    if de_ling is None and F is not None and K is not None:
+        from .fuyi_policy import balance_band
+        return balance_band(F,K)
+    bands=_bands(de_ling)
+    for boundary,name in zip(bands,['身旺','中和偏旺','中和偏弱']):
+        left,right=(F,boundary*K) if F is not None and K is not None else (ratio_fk,boundary)
+        # 仅容忍浮点运算舍入；不把展示百分比作为判定输入。
+        if _at_least(left,right):
+            return name
+    return '身弱'
 
 
 def _boundary_hints(F, K, tag, de_ling, cong_threshold, weak_candidate=None,
@@ -499,7 +530,7 @@ def _boundary_hints(F, K, tag, de_ling, cong_threshold, weak_candidate=None,
     share_f, share_k = F / total, K / total
     ratio_fk = F / K if K > 0 else 99.0
     fallback = ("虚旺" if void_momentum >= M.Const.VOID_WANG_TRIGGER and share_f >= void_min_share
-                else "身弱无根") if rootless else _balance_tag(ratio_fk, de_ling)
+                else "身弱无根") if rootless else _balance_tag(ratio_fk, de_ling,F,K)
     hints = []
     def add(kind, value, threshold, radius, low, high):
         distance = abs(value - threshold)
@@ -512,7 +543,7 @@ def _boundary_hints(F, K, tag, de_ling, cong_threshold, weak_candidate=None,
                           "current_tag": tag, "adjacent_tag": neighbor,
                           "note": "仅提示固定结构下的邻近规则结论，不改判、不直接切换喜用。"})
     if tag in ("身旺", "中和偏旺", "中和偏弱", "身弱"):
-        thresholds = [1.1, .9, .7] if de_ling else [1.4, 1.1, .8]
+        thresholds = _bands(de_ling)
         for boundary, low, high in zip(thresholds, ["中和偏旺", "中和偏弱", "身弱"],
                                       ["身旺", "中和偏旺", "中和偏弱"]):
             add("balance", ratio_fk, boundary, .05, low, high)
@@ -610,6 +641,8 @@ def compute_wangshuai(chart, config=None):
                    else "独根无伤" if root_count == 1 else "无根")
     reng = _root_energy(roots, zhis, he, config)
     fk = _compute_fk(gans, zhis, day_wx, he, root_count, config, store_opened, broken_branches)
+    from .season_strength import adjust
+    fk=adjust(fk,gans,zhis,day_wx,he,config,_relation,_root_level,{o["branch_index"] for o in store_opened},broken_branches)
     total = fk["F"] + fk["K"]
     ratio_share_f = (fk["F"] / total) if total > 0 else 1.0
     ratio_share_k = (fk["K"] / total) if total > 0 else 1.0
@@ -648,7 +681,8 @@ def compute_wangshuai(chart, config=None):
     cong_info = {"is_cong": False, "is_fake_cong": False,
                  "residual_bi_root": residual_bi_root,
                  "residual_yin_root": residual_yin_root}
-    if ratio_share_k >= cong_threshold:
+    enters_strong,enters_weak=_cong_ranges(fk["F"],fk["K"],cong_threshold)
+    if enters_weak:
         if effective_root_level == 0 and not config["cong_allow_rootless"]:
             why = "配置禁用无根从格"
         else:
@@ -657,17 +691,20 @@ def compute_wangshuai(chart, config=None):
         trace.append({"rule": "cong_weak", "passed": tag is not None, "reason": why})
     else:
         trace.append({"rule": "cong_weak", "passed": False, "reason": "克泄耗占比未达门槛"})
-    if tag is None and ratio_share_f >= cong_threshold:
+    if tag is None and enters_strong:
         # 印旺不等于日主从强：至少需要中气或强根承接生扶。
         supported = effective_root_level in (2, 3)
         residual_k_root = bool(fk["k_elements"] & residual_strong_wx)
         cong_info.update(residual_k_root=residual_k_root,
                          strong_support="实根承扶" if supported else "印比旺但日主缺乏实根",
                          residual_k_elements=sorted(fk["k_elements"] & residual_strong_wx))
-        if supported:
+        potential_k = fk["k_elements"] & _strong_root_gan(zhis, he["branch_hua"], {i for i,z in enumerate(zhis) if z in M.STORE_ZHI})
+        if supported and (residual_k_root or not potential_k):
             tag = "假从强" if residual_k_root else "从强"
-        trace.append({"rule": "cong_strong", "passed": supported,
-                      "reason": "实根承扶；残余克泄耗强根决定真假" if supported else "日主仅微根或无根，不判从强"})
+        elif supported:
+            warnings.append("库中存在潜在克泄耗强根，保守不升真从强")
+        trace.append({"rule": "cong_strong", "passed": tag in ("从强","假从强"),
+                      "reason": "实根承扶；残余克泄耗强根决定真假" if tag in ("从强","假从强") else "潜在库根阻止升格" if supported else "日主仅微根或无根，不判从强"})
     if tag is None and effective_root_level == 0:
         tag = "虚旺" if (void_momentum >= M.Const.VOID_WANG_TRIGGER and
              ratio_share_f >= config["void_wang_min_share_f"]) else "身弱无根"
@@ -675,7 +712,7 @@ def compute_wangshuai(chart, config=None):
         if void_momentum >= M.Const.VOID_WANG_TRIGGER and tag != "虚旺":
             warnings.append("天干虚势达标但生扶占比不足，不判虚旺")
     if tag is None:
-        tag = _balance_tag(ratio_fk, _de_ling(zhis, month_zhi, day_wx, he, config))
+        tag = _balance_tag(ratio_fk, _classification_ling(zhis, month_zhi, day_wx, he, config),fk["F"],fk["K"])
         trace.append({"rule": "balance", "passed": True, "reason": tag})
     is_cong = tag in ("从强", "从弱")
     is_fake_cong = tag in ("假从强", "假从弱")
@@ -714,14 +751,14 @@ def compute_wangshuai(chart, config=None):
         day_root_level=day_root_level,
         thresholds={"cong_threshold": cong_threshold,
                     "de_ling": _de_ling(zhis, month_zhi, day_wx, he, config),
-                    "ratio_fk_bands": ([1.1, 0.9, 0.7]
-                                       if _de_ling(zhis, month_zhi, day_wx, he, config)
-                                       else [1.4, 1.1, 0.8]),
+                    "ratio_fk_bands": _bands(_classification_ling(zhis, month_zhi, day_wx, he, config)),
                     "void_wang_min_share_f": config.get("void_wang_min_share_f"),
                     "micro_root_factor": config.get("micro_root_factor"),
                     "middle_root_factor": config.get("middle_root_factor"),
                     "branch_chong_factor": config.get("branch_chong_factor")})
-    result["climate_energy"] = {w: round(v, 6) for w,v in fk["climate_energy"].items()}
+    from math import fsum
+    result["climate_energy_raw"] = {w:fsum(e['power'] for e in fk['energy_records'] if e['wuxing']==w) for w in M.WUXING_LIST}
+    result["climate_energy"] = {w: round(v, 6) for w,v in result['climate_energy_raw'].items()}
     result["energy_records"] = fk["energy_records"]
     result["relation_energy"] = {key: round(value, 2) for key, value in fk["relation_energy"].items()}
     result["cong_info"]["support_profile"] = (
@@ -779,7 +816,7 @@ def compute_wangshuai(chart, config=None):
         "note": "规则经验系数，非准确率或概率，不宜直接作为融合权重。",
         "cong_margin": round(max(ratio_share_f, ratio_share_k) - cong_threshold, 6),
         "balance_boundary_distance": round(min(abs(ratio_fk - x) for x in
-            ([1.1, .9, .7] if _de_ling(zhis, month_zhi, day_wx, he, config) else [1.4, 1.1, .8])), 6),
+            _bands(_classification_ling(zhis, month_zhi, day_wx, he, config))), 6),
     }
     result["phase_marks"] = [
         {"branch_index": i, "zhi": z, "label": _phase_label(day_gan, z),
@@ -794,15 +831,24 @@ def compute_wangshuai(chart, config=None):
         residual_bi_root, residual_yin_root, zhis, he, config)
     if effective_root_level == 0 and not config["cong_allow_rootless"]:
         weak_candidate = None
+    potential_k = fk["k_elements"] & _strong_root_gan(zhis,he["branch_hua"],{i for i,z in enumerate(zhis) if z in M.STORE_ZHI})
     strong_candidate = (("假从强" if fk["k_elements"] & residual_strong_wx else "从强")
                         if effective_root_level in (2, 3) else None)
     result["boundary_hints"] = _boundary_hints(fk["F"], fk["K"], tag,
-        _de_ling(zhis, month_zhi, day_wx, he, config), cong_threshold,
+        _classification_ling(zhis, month_zhi, day_wx, he, config), cong_threshold,
         weak_candidate, strong_candidate, effective_root_level == 0,
         void_momentum, config["void_wang_min_share_f"])
-    result["rules_version"] = "wangshuai_effective_roots_v1.3.2"
+    if strong_candidate=="从强" and potential_k:
+        result["boundary_hints"]=[h for h in result["boundary_hints"] if h.get("kind")!="cong_strong"]
+    result["cong_range"]=dict(strong_min=cong_threshold,weak_max=round(1-cong_threshold,12),enters_strong=enters_strong,enters_weak=enters_weak,uses="含日干有效力量" if (fk.get("seasonal_assessment") or {}).get("day_stem_policy")=="included_effective" else "旧版配置口径")
+    result["ratio_share_f_exact"]=ratio_share_f
+    from .fuyi_policy import VERSION as fuyi_policy_version
+    result["fuyi_policy_version"]=fuyi_policy_version
+    result["calculation_profile"]=dict(seasonal_strength=config["seasonal_strength"],include_day_stem_requested=config["include_day_stem"],include_day_stem_effective=config["include_day_stem"] and config["seasonal_strength"],note="关闭季节层即回放旧计分行为，日干计分开关仅在季节版生效")
+    result["seasonal_assessment"]=fk.get("seasonal_assessment")
+    result["rules_version"] = "wangshuai_season_v3_day_included" if config.get("seasonal_strength",True) else "wangshuai_effective_roots_v1.3.2"
     def ensure_finite(value):
-        if isinstance(value, float) and not math.isfinite(value):
+        if isinstance(value, float) and not safe_finite(value):
             raise ValueError("旺衰计算产生非有限数值，请检查参数")
         if isinstance(value, dict):
             for item in value.values():
@@ -811,6 +857,8 @@ def compute_wangshuai(chart, config=None):
             for item in value:
                 ensure_finite(item)
     ensure_finite(result)
+    from .ws_identity import seal
+    seal(result, chart, config)
     return result
 
 

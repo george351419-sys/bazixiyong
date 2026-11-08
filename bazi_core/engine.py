@@ -10,10 +10,9 @@
   - 调候维度（tiaohou）：《穷通宝鉴》十干逐月取用，由日干＋月令定，
     输出默认通用序列 / 条件用 / 忌 / 原局透藏 / 另读。
 
-调候模块已上线，但**仍不做三维加权合并**：调候 ≠ 全局用神（徐乐吾「非定以为用也」），
-V1 final_xiyong 仍等于旺衰维度，调候只作为独立维度输出（final_xiyong.tiaohou 摘要），
-供未来「门槛 + 权重修正」式合并消费。格局喜用 Step8 的「调候之病最优先」仍未接入，
-见 geju_xiyong.tiaohou_pending（语义为该层未合并，非模块未实现）。
+普通方向采用季节与交集排序；特殊结构由统一仲裁验真。
+已审定评估器可以提交跨维度路线，经需求、条件、药效、剂量和资源校验后发布。
+默认生产评估依据不足时保持pending。当前规则索引见validation/project_audit_v29.md。
 """
 from __future__ import annotations
 
@@ -21,6 +20,7 @@ from . import metadata as M
 from .wangshuai import compute_wangshuai
 from .geju import compute_geju
 from .tiaohou import compute_tiaohou
+from .input_contracts import normalize_chart
 
 # 旺衰维度原始满分（PRD §7.2）
 BASE_WANGSHUAI_SCORE = 25.0
@@ -135,7 +135,7 @@ def xiyong_for_tag(tag, day_wx, ws=None):
     return out
 
 
-def analyze(chart, config=None, tiaohou_segment=None):
+def analyze(chart, config=None, tiaohou_segment=None, fusion_provider=None):
     """顶层分析入口（旺衰 + 格局 + 调候）。
 
     参数:
@@ -148,6 +148,7 @@ def analyze(chart, config=None, tiaohou_segment=None):
                          用于乙·酉／乙·午／癸·辰等原书分段格；不传则自动推断。
     返回: 结构化结果 dict（旺衰 + 旺衰维度喜用 + 格局 + 独立调候维度）
     """
+    chart,input_validation=normalize_chart(chart)
     ws = compute_wangshuai(chart, config=config)
     day_wx = ws["day_wuxing"]
     tag = ws["tag"]
@@ -156,7 +157,7 @@ def analyze(chart, config=None, tiaohou_segment=None):
     # 格局模块复用已算好的旺衰结果（仅作附加字段与外格门槛，不参与定格）
     geju_out = compute_geju(chart, config=config, ws=ws)
 
-    # 调候维度：独立计算，不参与旺衰／格局，也不改写 final_xiyong
+    # 调候独立计算，随后参与方向融合。
     th_cfg = (config or {}).get("tiaohou") if isinstance(config, dict) else None
     try:
         tiaohou_out = compute_tiaohou(chart, segment=tiaohou_segment, config=th_cfg)
@@ -164,47 +165,90 @@ def analyze(chart, config=None, tiaohou_segment=None):
         tiaohou_out = {"ok": False, "error": str(e), "module": "tiaohou_v1"}
 
     xiyong = xiyong_for_tag(tag, day_wx, ws=ws)
+    from .fuyi_policy import reduced_fuyi
+    if tag not in ('从强','从弱','假从强','假从弱') and reduced_fuyi(ws):
+        xiyong['direction_opposition']=list(xiyong['disliked'])
+        xiyong.update(disliked=[],neutral=list(xiyong['direction_opposition']),strength_of_preference='soft',
+            note='中和区仅保留扶抑方向偏好；反向五行为慎用意见，不是全局忌神。',
+            principle='中和区扶抑降权，以格局和调候取舍为主，扶抑仅作辅助。')
+    else:
+        xiyong['strength_of_preference']='normal'
+
+    from .fuyi_order import fuyi_order
+    xiyong["stem_preferences"] = fuyi_order(ws, xiyong["favored"])
     effective_xiyong = dict(xiyong)
     effective_source = "wangshuai"
     wangshuai_applicable = True
     special_ge = geju_out.get("special_ge")
     geju_overrides_wangshuai = bool(special_ge and "化" in special_ge)
-    if geju_overrides_wangshuai:
-        special_xy = geju_out.get("xiyong_geju", {})
-        special_yong = list(special_xy.get("special_yong_wuxing") or [])
-        special_xi = list(special_xy.get("special_xi_wuxing") or [])
-        special_ji = list(special_xy.get("special_ji_wuxing") or [])
-        effective_xiyong.update(
-            favored=list(dict.fromkeys(special_yong + special_xi)),
-            disliked=list(dict.fromkeys(special_ji)),
-            neutral=[],
-            category="化气顺势",
-            principle="化气格以化神为用、生化为喜、破化为忌。",
-            note=("本盘为%s：最终喜用改取化气格结构；旺衰原始结果仍保留在 "
-                  "xiyong_wangshuai，但暂不参与最终喜用。" % special_ge),
-        )
-        effective_source = "geju_special_ge"
-        wangshuai_applicable = False
+    if tag in ("假从弱", "假从强") and not geju_overrides_wangshuai:
+        ordinary_tag = "身弱" if tag == "假从弱" else "身旺"
+        effective_xiyong = xiyong_for_tag(ordinary_tag, day_wx, ws=ws)
+        effective_source = "ordinary_structure_fallback"
+        effective_xiyong["stem_preferences"] = fuyi_order(dict(ws,tag=ordinary_tag), effective_xiyong["favored"])
+
     effective_ws = round(BASE_WANGSHUAI_SCORE * confidence, 3)
 
     final_note = (
-        "V1 不加权合并：final_xiyong 默认仍等于旺衰维度；格局喜用见 "
-        "geju_xiyong（李厚君师傅笔记口径：有病治病为先 / 无病顺逆取用）。"
-        "调候模块已上线，作为独立维度见 tiaohou（由日干＋月令定，《穷通宝鉴》"
-        "逐月取用）——调候 ≠ 全局用神，不覆盖旺衰／格局维度，此处只附摘要；"
-        "格局喜用 Step8 的「调候之病最优先」尚未合并。三维加权留待后续版本。"
+        "旺衰、格局、调候各自保留原始结果。最终方向由适用的结构规则、方向融合或严格路线仲裁提供；"
+        "未完成的跨维度药效、剂量和承受评估不得视为已验证。"
     )
-    if geju_overrides_wangshuai:
-        final_note += (" 本盘仅因化气格命中而暂停旺衰维度并改用化气格结构，"
-                       "属于专项适用性覆盖，不是三维喜用融合。")
+
+    if tag in ("假从弱", "假从强") and not geju_overrides_wangshuai:
+        final_note = "假从转真条件未满足，普通身弱／身旺方向仅作暂定；顺从方向仅为条件候选，尚未完成跨维度裁决。"
 
     from .arbitration import build_facts, arbitrate
-    arbitration = arbitrate(build_facts(ws, geju_out, tiaohou_out, xiyong),
-                            (config or {}).get("climate_model"))
+    facts=build_facts(ws,geju_out,tiaohou_out,effective_xiyong)
+    if (config or {}).get('fusion_evidence') is not None:
+        from copy import deepcopy
+        facts['fusion_evidence']=deepcopy(config['fusion_evidence'])
+    if fusion_provider is not None:
+        if not callable(fusion_provider): raise ValueError('fusion_provider必须为内部评估函数')
+        if 'fusion_evidence' in facts: raise ValueError('不可同时提供fusion_provider与fusion_evidence')
+        from .scenario_evaluation import prepare_fusion_context
+        facts['fusion_evidence']=fusion_provider(prepare_fusion_context(facts,(config or {}).get('climate_model')))
+    arbitration=arbitrate(facts,(config or {}).get('climate_model'))
+    if (arbitration.get('mode')=='external' and arbitration.get('decision_status')=='pending') or arbitration.get('fact_validation',{}).get('status')=='invalid':
+        effective_xiyong.update(favored=[], disliked=[], neutral=[])
+        effective_source='unresolved_external_conflict' if 'conflict' in arbitration.get('reason_code','') else 'invalid_external_facts'
+        wangshuai_applicable=False
+        final_note=arbitration.get('priority_reason','事实校验未通过，暂停最终裁决。')
+    if arbitration.get('mode') in ('external','integrated') and arbitration.get('decision_status') in ('decided','conditional'):
+        effective_xiyong.update(favored=arbitration['favored'],disliked=arbitration['avoid'],neutral=[])
+        effective_source='arbitration_integrated' if arbitration['mode']=='integrated' else 'arbitration_external'
+        wangshuai_applicable=False
+        final_note=arbitration['priority_reason']
+    from .luck_plans import build_luck_plans
+    luck_plans = build_luck_plans(geju_out, ws["day_gan"])
+    from .direction_fusion import fuse_direction
+    from .fuyi_policy import VERSION as fuyi_policy_version
+    direction_fusion = fuse_direction(ws, geju_out, tiaohou_out, effective_xiyong, arbitration)
+    if direction_fusion:
+        effective_xiyong.update(favored=direction_fusion['favored'],
+            disliked=direction_fusion['avoid'],neutral=direction_fusion['caution'],
+            principle='交集优先；中和区扶抑降权、仅作辅助偏好。' if direction_fusion['fuyi_priority']=='reduced' else '交集优先；冬夏调候>格局>扶抑，春秋格局>扶抑>调候。')
+        effective_source='direction_fusion_heuristic'
+        final_note='季节与交集启发式方向结论；严格路线仲裁仍独立保留，不表示剂量和药效已验证。'
+    # 已裁决路线只有具备天干精度且为增加/保护动作时才能适配，禁止展开五行凑字。
+    adapted_stems=[]
+    if not direction_fusion and arbitration.get('decision_status') in ('decided','conditional'):
+        for position in arbitration.get('positions',[]):
+            gan=position.get('gan')
+            if isinstance(gan,str) and len(gan)==1 and gan in '甲乙丙丁戊己庚辛壬癸':
+                if position.get('action') in ('increase','protect') and gan not in [r['gan'] for r in adapted_stems]:
+                    adapted_stems.append(dict(gan=gan,rank=1,tie_group='selected_route',source='arbitration.positions',action=position['action']))
+    geju_overrides_wangshuai=arbitration.get('structure_kind')=='hua' and arbitration['decision_status']=='decided'
     return {
         "arbitration": arbitration,
+        "direction_fusion": direction_fusion,
+        "luck_plans": luck_plans,
         "ok": True,
-        "engine_version": "wangshuai_v1.3.2+geju_v1+tiaohou_v1",
+        "input_validation": input_validation,
+        "input": chart,
+        "rule_versions": dict(project='project_audit_v29',wangshuai=ws.get('rules_version'),
+            fusion=arbitration['policy_version'],geju='geju_v2_cong_separation',
+            tiaohou='tiaohou_v2_complete_conditions',direction=direction_fusion['version'] if direction_fusion else 'structure_or_strict_policy',fuyi=fuyi_policy_version),
+        "engine_version": "season_v3+direction_v7+geju_v2+tiaohou_v2",
         "tag": tag,
         "confidence": confidence,
         "day_gan": ws["day_gan"],
@@ -220,6 +264,8 @@ def analyze(chart, config=None, tiaohou_segment=None):
         "geju": geju_out,
         "tiaohou": tiaohou_out,
         "score_wangshuai": {
+            "display_only": True,
+            "used_by_arbitration": False,
             "base_ws": BASE_WANGSHUAI_SCORE,
             "confidence": confidence,
             "effective_ws": effective_ws,
@@ -239,8 +285,48 @@ def analyze(chart, config=None, tiaohou_segment=None):
             "favored": effective_xiyong["favored"],
             "disliked": effective_xiyong["disliked"],
             "neutral": effective_xiyong["neutral"],
+            "decision_status": "heuristic" if direction_fusion else arbitration["decision_status"],
+            "decision_scope": "季节交集方向融合（工程启发式）" if direction_fusion else arbitration.get('decision_scope','普通方向暂定，融合未完成'),
+            "primary_gans": direction_fusion['primary_gans'] if direction_fusion else [],
+            "primary_status": direction_fusion['primary_status'] if direction_fusion else 'not_ranked',
+            "primary_wuxings": direction_fusion['primary_wuxings'] if direction_fusion else [],
+            "cutoff_tied_gans": direction_fusion['cutoff_tied_gans'] if direction_fusion else [],
+            "primary_gan": direction_fusion["primary_gan"] if direction_fusion else None,
+            "structure_primary": geju_out["xiyong_geju"].get("structure_primary",[]),
+            "structure_secondary": geju_out["xiyong_geju"].get("structure_secondary",[]),
+            "luck_plans": luck_plans,
+            "fuyi_stem_preferences": effective_xiyong.get("stem_preferences",xiyong["stem_preferences"]),
+            "stem_candidates": direction_fusion["stem_candidates"] if direction_fusion else adapted_stems,
+            "unselected_gans": direction_fusion["unselected_gans"] if direction_fusion else [],
+            "structural_conflicts": direction_fusion['structural_conflicts'] if direction_fusion else [],
+            "caution_sources": ([{"dimension":"fuyi","wuxing":w,"meaning":"扶抑反向意见，未验证为全局忌"} for w in xiyong.get('direction_opposition',xiyong['disliked'])]+[{"dimension":"geju",**c} for c in direction_fusion['structural_conflicts']]) if direction_fusion else [],
+            "tiaohou_avoid_pending_review": direction_fusion["tiaohou_avoid_pending_review"] if direction_fusion else [],
+            "caution": direction_fusion["caution"] if direction_fusion else [],
+            "unselected": direction_fusion["unselected"] if direction_fusion else [],
+            "stem_ranking_status": "ranked" if direction_fusion else "route_selected_unordered" if adapted_stems else "not_resolved_by_structure_or_strict_policy",
+            "stem_ranking_note": "逐干候选已独立排序" if direction_fusion else "已选路线的增加/保护天干；同列不推定优劣" if adapted_stems else "本路径保留经裁决五行；无足够逐干证据时不机械展开阴阳两干。",
+            "favored_gans": direction_fusion["favored_gans"] if direction_fusion else [r["gan"] for r in adapted_stems][:6],
+            "stem_ranking": direction_fusion["stem_ranking"] if direction_fusion else adapted_stems[:6],
+            "element_ranking": direction_fusion["candidates"] if direction_fusion else [],
+            "secondary": direction_fusion["secondary"] if direction_fusion else [],
+            "release_ready": arbitration['release_ready'],
+            "release_scope": arbitration['release_scope'],
+            "action_release_ready": arbitration['action_release_ready'],
+            "recommendation_scope": "validated_route" if arbitration.get('mode')=='integrated' else "direction_only",
+            "actionable": arbitration.get('actionable',False),
+            "positions": arbitration.get('positions',[]),
+            "action_limitations": [] if arbitration.get('mode')=='integrated' else ['dose_assessment','bearing_capacity','repair_route_generation'],
+            "conditional_review_status": arbitration.get('conditional_review_status','not_assessed'),
+            "principle": arbitration['priority_reason'] if effective_source in ('arbitration_external','arbitration_integrated','unresolved_external_conflict','invalid_external_facts') and arbitration.get('priority_reason') else effective_xiyong['principle'],
+            "assessment_level": 'heuristic_direction' if direction_fusion else 'integrated_route' if arbitration.get('mode')=='integrated' else 'confirmed_external_structure' if arbitration['decision_status'] == 'decided' else 'unresolved_conflict' if effective_source == 'unresolved_external_conflict' else 'unresolved_evidence' if effective_source == 'invalid_external_facts' else 'provisional_direction',
+            "conditional_route": dict(favored=xiyong['favored'], requires_reassessment=True, requirements=arbitration.get('conditional_routes',[]))
+                if tag in ('假从弱','假从强') else None,
+            "conditional_favored": xiyong["favored"] if tag in ("假从弱", "假从强") else [],
+            "conditional_disliked": arbitration.get("conditional_avoid", []),
+            "disliked_source": arbitration.get("avoid_source", effective_source),
+            "disliked_scope": "reviewed_avoid_only" if direction_fusion else arbitration.get("avoid_scope", "dimension_default"),
             "tiaohou": {
-                "dimension": "调候（独立维度，未合并）",
+                "dimension": "调候独立原始维度；最终裁决以arbitration为准",
                 "yongshen": tiaohou_out.get("yongshen", []),
                 "zhuyong": tiaohou_out.get("zhuyong"),
                 "no_order": tiaohou_out.get("no_order", False),

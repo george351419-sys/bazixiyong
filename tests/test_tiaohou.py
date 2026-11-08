@@ -163,12 +163,13 @@ def test_input_forms():
 def test_engine_integration():
     out = analyze(chart("庚午 甲申 庚子 壬午"))
     assert out["modules"]["tiaohou"] == "done"
-    assert out["engine_version"].endswith("tiaohou_v1")
+    assert out["rule_versions"]["tiaohou"] == "tiaohou_v2_complete_conditions"
+    assert "direction_v7" in out["engine_version"]
     assert out["tiaohou"]["ok"] is True
     assert out["final_xiyong"]["tiaohou"]["yongshen"] == out["tiaohou"]["yongshen"]
-    # V1 不加权：final_xiyong 仍等于旺衰维度，调候不得混入
-    assert out["final_xiyong"]["favored"] == out["xiyong_wangshuai"]["favored"]
-    assert "不加权" in out["final_xiyong"]["note"]
+    # 方向融合独立输出，原始调候结果不被覆盖
+    assert out["final_xiyong"]["favored"] == out["direction_fusion"]["favored"]
+    assert out["final_xiyong"]["decision_status"] == "heuristic"
     assert out["tiaohou"]["caveat"].find("非定以为用也") >= 0
 
 

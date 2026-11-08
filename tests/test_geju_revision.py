@@ -520,7 +520,7 @@ class Optimization20261106(unittest.TestCase):
     def test_fake_cong_is_explained_without_becoming_external_ge(self):
         for text, ge_name in [('庚戌 戊未 乙辰 戊申', '偏财格'),
                               ('己寅 壬戌 壬卯 甲巳', '七杀格')]:
-            r = G.compute_geju(self.chart(text), {'enable_special_ge': False})
+            r = G.compute_geju(self.chart(text), {'enable_special_ge': False,'include_day_stem':False})
             self.assertEqual(r['ge_category'], '八格')
             self.assertEqual(r['main_ge_name'], ge_name)
             self.assertFalse(r['is_cong'])
@@ -532,7 +532,8 @@ class Optimization20261106(unittest.TestCase):
         r = analyze(self.chart('甲子 戊辰 甲申 己丑'))
         self.assertEqual(r['geju']['main_ge_name'], '化土格（甲己）')
         self.assertEqual(r['xiyong_wangshuai']['favored'], ['水', '木'])
-        self.assertEqual(r['final_xiyong']['effective_source'], 'geju_special_ge')
+        self.assertEqual(r['final_xiyong']['effective_source'], 'arbitration_external')
+        self.assertEqual(r['arbitration']['structure_kind'],'hua')
         self.assertFalse(r['final_xiyong']['wangshuai_applicable'])
         self.assertTrue(r['final_xiyong']['geju_overrides_wangshuai'])
         self.assertEqual(r['final_xiyong']['favored'], ['土', '金'])
@@ -541,12 +542,13 @@ class Optimization20261106(unittest.TestCase):
         self.assertIn('外格由化气/两气成象', r['geju']['cong_context']['note'])
         self.assertIn('不是三维喜用融合', r['final_xiyong']['note'])
 
-    def test_non_hua_special_does_not_override_wangshuai(self):
+    def test_fake_cong_keeps_ordinary_direction_before_confirmation(self):
         from bazi_core.engine import analyze
-        r = analyze(self.chart('庚戌 戊未 乙辰 戊申'))
-        self.assertEqual(r['final_xiyong']['effective_source'], 'wangshuai')
+        r = analyze(self.chart('庚戌 戊未 乙辰 戊申'),config={'include_day_stem':False})
+        self.assertEqual(r['tag'], '假从弱')
+        self.assertEqual(r['final_xiyong']['effective_source'], 'ordinary_structure_fallback')
         self.assertTrue(r['final_xiyong']['wangshuai_applicable'])
-        self.assertEqual(r['final_xiyong']['favored'], r['xiyong_wangshuai']['favored'])
+        self.assertEqual(r['final_xiyong']['favored'], ['水', '木'])
 
     def test_root_semantics_are_exposed(self):
         from bazi_core.engine import analyze

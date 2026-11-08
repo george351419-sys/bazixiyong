@@ -1,0 +1,7 @@
+{
+  "sample_count": 360,
+  "statistics": {},
+  "affected_cases": {},
+  "examples": {},
+  "note": "记录数与盘数分列；诊断字段不一致不自动表示排序错误；不作为命理准确率。"
+}

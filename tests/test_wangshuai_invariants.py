@@ -88,14 +88,14 @@ def run():
         for b in bd:
             if not (0.5 - 1e-9 <= b["chong_factor"] <= 1.0 + 1e-9):
                 bad(i, "i12 冲折系数越界 %s %s" % (s, b["chong_factor"]))
-        # i13 克泄耗天干满力：k_dry_unrooted 只做标记，对应天干贡献必须等于 base
+        # i13 无根克泄耗与生扶使用同一0.2折扣
         gd = {x["pos"]: x for x in r["debug"]["gan_detail"]}
         for k in r["debug"]["k_dry_unrooted"]:
             g = gd.get(k["pos"])
             if g is None or g["root_level"] != 0:
                 bad(i, "i13 K 干标记与明细不一致 %s pos=%s" % (s, k["pos"]))
-            elif abs(g["contribution"] - k["base"]) > 1e-6:
-                bad(i, "i13 K 干被折力 %s pos=%s %.2f/%.2f"
+            elif abs(g["contribution"] - k["base"]*.2*g.get("season_factor",1)) > 1e-6:
+                bad(i, "i13 K 干折扣不一致 %s pos=%s %.2f/%.2f"
                     % (s, k["pos"], g["contribution"], k["base"]))
         # i14 结果可 JSON 序列化
         try:

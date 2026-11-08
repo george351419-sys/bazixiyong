@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "dataset": "tests/fixtures/calendar_360.json",
+  "dataset_sha256": "495461c26d779beac136767c31c8daebaa055854415c24fe740f890caa235c5c",
+  "case_count": 360,
+  "provenance": {
+    "default": "implementation_snapshot",
+    "independent_gold_standard": false,
+    "baseline_fields": [
+      "baseline",
+      "wangshuai_baseline"
+    ],
+    "review_status": "behavioral_snapshot_not_domain_validation"
+  },
+  "thresholds": {
+    "pending_rate_max": 0.1,
+    "conflict_coverage_min": 0.95,
+    "direction_release_min_count": 1,
+    "action_release_min_count": 1
+  },
+  "policy_constructed_cases": {
+    "required_groups": [
+      "alternative",
+      "urgent_geju",
+      "rescue_guard",
+      "mild_geju",
+      "urgent_fuyi",
+      "fake_default"
+    ],
+    "source": "synthetic_contract_cases",
+    "domain_gold_standard": false
+  },
+  "note": "冻结现有360盘分母；历史600盘未提供逐盘数据，不冒充已纳入。新增样本需显式审核清单与哈希。",
+  "policy_cases_sha256": "bde94e2d9d302f15542aa786c11d27ee00298cdfb1ac0c6fcba9b91f892c6e30",
+  "additional_contract_suites": [
+    {
+      "path": "tests/test_fusion_audit_fixes.py",
+      "module": "tests.test_fusion_audit_fixes",
+      "sha256": "da55bc77272754aa5951ba1bd16946b8bfdd88e812df2adb8fc0dcc9862b4900"
+    },
+    {
+      "path": "tests/test_project_audit.py",
+      "module": "tests.test_project_audit",
+      "sha256": "71609855c9aedec5fec25fe40c1c4ee209f7c14193971f66075f4ef8ad27e555"
+    },
+    {
+      "path": "tests/test_project_audit_v23.py",
+      "module": "tests.test_project_audit_v23",
+      "sha256": "37bbc80761467bd531e4d673ccad489082d351425cf7049550d3588ed7d20aae"
+    },
+    {
+      "path": "tests/test_project_audit_v24.py",
+      "module": "tests.test_project_audit_v24",
+      "sha256": "99e9fc73fd785d56a9cc7a76489f811cf8c416c7ea616de8de6675f7295c0ba6"
+    },
+    {
+      "path": "tests/test_project_audit_v25.py",
+      "module": "tests.test_project_audit_v25",
+      "sha256": "ad51fc555eba5d4000691146b4d13814d5a1e1dce71fc7704c75c2e94bea744a"
+    },
+    {
+      "path": "tests/test_project_audit_v26.py",
+      "module": "tests.test_project_audit_v26",
+      "sha256": "2e3ed6e6a967efb21af1a973951d9746f870f2fb7143da8fdc1331ee25dddeeb"
+    },
+    {
+      "path": "tests/test_project_audit_v27.py",
+      "module": "tests.test_project_audit_v27",
+      "sha256": "65ad2e15f704a3ff9ee36c26f24cf8a3577c9a9121964b073e65284c88d97a57"
+    },
+    {
+      "path": "tests/test_project_audit_v28.py",
+      "module": "tests.test_project_audit_v28",
+      "sha256": "869f049dfe40e3d8b9a102a0d3528d46b411910a83cb31e1562593f4d2925e80"
+    },
+    {
+      "path": "tests/test_project_audit_v29.py",
+      "module": "tests.test_project_audit_v29",
+      "sha256": "9f849ef1bc8021c217b8fa0ecdd2f48f43cc5e48e1d7d79c4ae7fe12aa062cda"
+    },
+    {
+      "path": "tests/test_project_audit_v30.py",
+      "module": "tests.test_project_audit_v30",
+      "sha256": "8073d8d94faacd443d7987426ac8adb478feea5d1bc928710a8034b0e632ee00"
+    }
+  ],
+  "contract_revision": "v29: snapshot-checked scenario helpers, raw energy accounting with bounded numerical normalization, source-bound maintenance evidence resolution",
+  "independent_dataset": null
+}

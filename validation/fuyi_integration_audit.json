@@ -1,0 +1,12 @@
+{
+  "count": 360,
+  "statistics": {
+    "balanced": 103,
+    "balanced_hard_disliked": 0,
+    "conditional_promoted": 0,
+    "unhandled_drug_gap": 0
+  },
+  "examples": {},
+  "constructed_conditional_bypass": false,
+  "note": "构造复现与真实冻结四柱试跑分开统计，不作准确率。"
+}

@@ -423,6 +423,7 @@ def _detect_bing(ctx):
             and "阳刃" in (ctx["ge_name"] or ""):
         add("阳刃无制", ["劫财"], "坏格",
             "笔记：羊刃以官杀为制，有制才能成格，否则下等格局")
+        main[-1]['blade_control_ratio'] = ctx.get('blade_control_ratio', 1.0)
 
     # ---------- 路线 / 定格联动 ----------
     # 七杀/伤官双路线互斥：已在定格层判「真破格·浊而无去」，此处补录为坏格病，
@@ -544,7 +545,7 @@ def compute_xiyong_geju(ctx):
     tag = ctx.get("wangshuai_tag") or ""
     if tag in ("身弱", "中和偏弱", "身弱无根"):
         if ctx["ge_ss"] in ("正财", "偏财"):
-            base = "身弱不担财，扶抑维度喜印（不可取比劫）"
+            base = "扶抑方向喜印比；比劫可能夺财，须在格局冲突与承受能力评估中另行裁决"
         elif tag == "身弱无根":
             base = "身弱无根，扶抑维度更需印比生扶"
         else:
@@ -707,6 +708,8 @@ def compute_xiyong_geju(ctx):
             fav = [target, M.SHENG[target]]
         elif "专旺" in special:
             fav = [day_wx, M.SHENG[day_wx], next(w for w in M.WUXING_LIST if M.SHENG[w] == day_wx)]
+        elif "从强" in special:
+            fav = [day_wx, next(w for w in M.WUXING_LIST if M.SHENG[w] == day_wx)]
         elif "从财" in special:
             fav = [M.KE[day_wx], M.SHENG[day_wx]]
         elif "从杀" in special:
@@ -737,6 +740,10 @@ def compute_xiyong_geju(ctx):
         elif "从儿" in special:
             core = [next(w for w in M.WUXING_LIST if M.SHENG[w]==day_wx)]
             conditional = [(M.KE_OF[day_wx], "与食伤交战且无财通关时为忌")]
+        elif "从弱" in special:
+            core = [day_wx, next(w for w in M.WUXING_LIST if M.SHENG[w] == day_wx)]
+        elif "从强" in special:
+            core = [M.SHENG[day_wx], M.KE[day_wx], M.KE_OF[day_wx]]
         if core:
             ji = [w+"（破势忌神）" for w in core]
         for w,condition in conditional:
@@ -830,7 +837,19 @@ def compute_xiyong_geju(ctx):
     trace.append('Step8：最终汇总 未解决=%s；实际使用原局药=%s；全部原局自有平衡=%s' % (has_unresolved,used_original_drug,self_balanced))
     trace.extend(validation + route_resolution)
 
+    # 结构取用与治病药分开：有药未治愈不等于结构没有用神。
+    structure_primary=[]
+    structure_secondary=[]
+    if ctx.get('ge_category')=='禄刃':
+        structure_primary=[dict(gan=t[0],shishen=_parse_ss(t),role='结构主用',source='Step3禄刃取相')
+                           for t in ctx.get('xiang_shen_list',[]) if t and t[0] in M.GAN_LIST]
+        if any(r['shishen']=='食神' for r in structure_primary):
+            structure_secondary=[dict(gan=r['gan'],shishen=r['ss'],role='结构第二用',source='食神生财',
+                                      visibility='透' if r['tou'] else '藏')
+                                 for r in treatment_records(original_ctx['occ'],original_ctx['he']) if r['ss'] in ('正财','偏财') and r['effective']>0]
     return {
+        "structure_primary": structure_primary,
+        "structure_secondary": structure_secondary,
         "conditional_yong_shen": conditional_yong,
         "unconditional_selected_records": [r for r in resolved["selected"] if r["id"] not in conditional_ids],
         "has_unresolved_bing": has_unresolved,
@@ -888,12 +907,6 @@ def compute_xiyong_geju(ctx):
 
 def build_relation_diseases(ctx, blockers=(), only_blockers=False):
     """定格和喜用共同从实际格局、路线及透干关系生成病与治法。"""
-    cached=ctx.get('he',{}).get('_disease_graph')
-    signature=(ctx.get('ge_ss'),ctx.get('route_label'))
-    if cached and cached['signature']==signature:
-        main,light,log,rules=deepcopy(cached['data'])
-        if only_blockers: main=[b for b in main if set(b['bing_ss']) & set(blockers)]
-        return main,light,log,rules
     detect_ctx=ctx if ctx.get('_effective_occ') else dict(ctx,occ=effective_occ(ctx['occ'],ctx['he']))
     main,light,log=_detect_bing(detect_ctx)
     rules=dict(BING_YAO)
@@ -910,6 +923,5 @@ def build_relation_diseases(ctx, blockers=(), only_blockers=False):
     for disease in main:
         disease['affects_ge']=disease['name']=='阳刃无制' or bool(set(disease['bing_ss']) & set(blockers))
         disease['scope']='本格成破病' if disease['affects_ge'] else '全局附加病'
-    ctx['he']['_disease_graph']=dict(signature=signature,data=deepcopy((main,light,log,rules)))
     if only_blockers: main=[b for b in main if set(b['bing_ss']) & set(blockers)]
     return main,light,log,rules

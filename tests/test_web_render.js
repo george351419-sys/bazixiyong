@@ -16,7 +16,25 @@ const outputs = JSON.parse(fs.readFileSync(0, 'utf8'));
     nodes.go.listener();
     await new Promise(resolve => setImmediate(resolve));
     const html = nodes.result.innerHTML;
+    if (output.final_xiyong.primary_status === 'tied') {
+      assert(html.includes('方向并列首选：' + output.final_xiyong.primary_gans.join('≈')), html);
+      assert(!html.includes('方向首用：'), html);
+    }
+    if ((output.final_xiyong.cutoff_tied_gans || []).length) {
+      assert(html.includes('同分未展示字：' + output.final_xiyong.cutoff_tied_gans.join('、') + '</div>'), html);
+    }
     assert(html.includes('当前根状态'), html);
+    assert(html.includes('当前取用方向'), html);
+    assert(html.includes(output.final_xiyong.effective_source), html);
+    assert(html.includes(output.final_xiyong.principle.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')), html);
+    for (const position of output.final_xiyong.positions || []) {
+      if (position.dose_plan) {
+        assert(html.includes('投用：' + position.dose_plan.amount + ' ' + position.dose_plan.unit), html);
+        assert(html.includes('上限：' + position.dose_plan.max_amount), html);
+        assert(html.includes(position.application_id), html);
+      }
+    }
+    assert(html.includes('原始旺衰维度取用原则'), html);
     assert(html.includes('剩余有效根 ' + output.wangshuai.root_state.effective_count));
     assert(html.includes('<details><summary>结构根记录</summary>'));
     assert(html.indexOf('剩余有效根') < html.indexOf('<summary>结构根记录'));

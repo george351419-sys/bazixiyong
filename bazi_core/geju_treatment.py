@@ -94,7 +94,12 @@ def _allocate_ordered(occ,he,diseases,selected,rules,ge_ss=None):
         if b['name']=='阳刃无制':
             from .geju_rules import blade_metrics
             blade,control=blade_metrics(occ,he)
-            evidence=[dict(target_id='structure:阳刃无制',blade_power=blade,control_power=control,remaining=max(0,blade-control))]
+            demand=blade*b.get('blade_control_ratio',1.0)
+            relief=min(demand,control)
+            evidence=[dict(target_id='structure:阳刃无制',blade_power=blade,control_power=control,
+                initial_demand=demand,relief_realized=relief,remaining=max(0,demand-relief),
+                execution_status='realized',demand_method='制刃',
+                demand_basis='blade_metrics × blade_control_ratio')]
             statuses.append(dict(name=b['name'],status=State.CORRESPONDING if control>0 else State.NO_DRUG,evidence=evidence,strength_check='未通过',reason='已透官杀制力不足，需补足制刃力量' if control>0 else '无有效官杀制刃'))
             continue
         targets=[r for r in stems if r['ss'] in b['bing_ss'] and ('target_ids' not in b or r['id'] in b['target_ids'])]

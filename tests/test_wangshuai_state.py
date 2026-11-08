@@ -13,7 +13,8 @@ class EffectiveRootTests(unittest.TestCase):
         r = W.compute_wangshuai(chart('庚亥 乙卯 乙午 壬未'))
         stem = next(g for g in r['debug']['gan_detail'] if g['pos'] == 1)
         self.assertEqual(stem['root_level'], 2)
-        self.assertEqual(stem['contribution'], 42)
+        self.assertEqual(stem['before_season'], 42)
+        self.assertAlmostEqual(stem['contribution'],42*stem['season_factor'])
 
     def test_transformation_removes_old_root(self):
         self.assertEqual(W._root_level(['亥'], ['木'], '水', '壬'), 0)
@@ -253,7 +254,7 @@ class EffectiveRootTests(unittest.TestCase):
         import json
         r = W.compute_wangshuai(chart('庚卯 庚酉 甲卯 庚酉'), {'tiangan_base': 1000000})
         json.dumps(r, allow_nan=False)
-        self.assertEqual(r['rules_version'], 'wangshuai_effective_roots_v1.3.2')
+        self.assertEqual(r['rules_version'], 'wangshuai_season_v3_day_included')
 
     def test_direct_heju_rejects_non_strict_mode(self):
         with self.assertRaises(ValueError):
