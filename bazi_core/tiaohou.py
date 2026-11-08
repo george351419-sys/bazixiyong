@@ -22,8 +22,8 @@
 诚实边界：
   - 底表全部转录自网络整理本，**未核纸本影印**；
   - `ji_gans` / `ji_phrases` 为从备注、原句机械抽取，需人工复核；
-  - 条件用的触发判定只覆盖可结构化几类（夜生、节气分段、支成某局、天干多见、透干），
-    其余一律 `None`（无法自动判定），不臆断。
+  - 条件用只有完整结构化表达式才自动触发；透干等子匹配仅作诊断。
+    未覆盖的柱位、数量、并列语义保留None，不用部分命中推定整句。
 """
 from __future__ import annotations
 
@@ -87,11 +87,12 @@ def _coerce_chart(chart):
             gans = [chart[k]["gan"] for k in ("year", "month", "day", "hour")]
             zhis = [chart[k]["zhi"] for k in ("year", "month", "day", "hour")]
         meta = {k: chart.get(k) for k in
-                ("solar_term_day", "jie_name", "tiaohou_segment", "night")}
+                ("solar_term_day", "jie_name", "current_jieqi_name", "tiaohou_segment", "night")}
         si = chart.get("solar_term_info")
         if isinstance(si, dict):
-            meta.setdefault("solar_term_day", si.get("day"))
-            meta.setdefault("jie_name", si.get("jie_name"))
+            for key,source in [('solar_term_day','day'),('jie_name','jie_name'),
+                               ('current_jieqi_name','current_jieqi_name')]:
+                if meta.get(key) is None: meta[key]=si.get(source)
     else:
         raise ValueError("chart 需为 dict 或四柱字符串")
 
@@ -119,13 +120,14 @@ def _norm_segment(segment):
     return SEG_ALIAS.get(s.lower(), SEG_ALIAS.get(s, s))
 
 
-def _infer_segment(jie_name, solar_term_day, half_day):
+def _infer_segment(jie_name, solar_term_day, half_day, current_jieqi_name=None):
     """由节气名 / 节气后天数推断分段标签。
 
     返回 (label, basis)；无法推断返回 (None, None)。
     """
-    if jie_name:
-        j = str(jie_name)
+    # current_jieqi_name 是含中气的实际区间；jie_name 仅为月令起点。
+    if current_jieqi_name or (jie_name and (solar_term_day is None or jie_name in ('秋分','夏至','谷雨'))):
+        j = str(current_jieqi_name or jie_name)
         jie_map = {"白露": "段A", "秋分": "段B", "清明": "清明后",
                    "谷雨": "谷雨后", "夏至": "下半月", "芒种": "上半月",
                    "小暑": "上半月"}
@@ -143,7 +145,7 @@ def _infer_segment(jie_name, solar_term_day, half_day):
 
 
 def select_row(day_gan, month_zhi, *, segment=None, solar_term_day=None,
-               jie_name=None, half_day=DEFAULT_HALF_MONTH_DAY):
+               jie_name=None, half_day=DEFAULT_HALF_MONTH_DAY, current_jieqi_name=None):
     """定位 (日干, 月支) 的定本行，并处理节气／上下半月分段。
 
     返回 (row, segment_info)。segment_info 含 status / basis / candidates / applied。
@@ -153,7 +155,7 @@ def select_row(day_gan, month_zhi, *, segment=None, solar_term_day=None,
         raise ValueError("底表无此格：%s 日 · %s 月" % (day_gan, month_zhi))
 
     explicit = _norm_segment(segment)
-    inferred, basis = _infer_segment(jie_name, solar_term_day, half_day)
+    inferred, basis = _infer_segment(jie_name, solar_term_day, half_day, current_jieqi_name)
     wanted = explicit or inferred
 
     info = {
@@ -247,7 +249,7 @@ def _branch_groups(zhis, wx):
     return hits
 
 
-def _eval_condition(cond, ctx):
+def _condition_diagnostics(cond, ctx):
     """对一条条件用的触发条件做可结构化子判定。
 
     返回 checks 列表；auto_triggered 保守判定：
@@ -302,7 +304,7 @@ def _eval_condition(cond, ctx):
                            "detail": "原局天干出现 %d 次" % n,
                            "basis": "工程近似：原书「某多／一派／重重」按天干出现 ≥2 次计"})
 
-    for pat in (r"([甲乙丙丁戊己庚辛壬癸])透", r"见([甲乙丙丁戊己庚辛壬癸])",
+    for pat in (r"([甲乙丙丁戊己庚辛壬癸])透", r"(?<!不)见([甲乙丙丁戊己庚辛壬癸])",
                 r"得([甲乙丙丁戊己庚辛壬癸])", r"([甲乙丙丁戊己庚辛壬癸])出干"):
         for g in re.findall(pat, cond):
             tou = g in gans
@@ -342,6 +344,56 @@ def _eval_condition(cond, ctx):
     return checks, auto
 
 
+def _eval_condition(cond, ctx):
+    """仅完整表达式可裁决；正则子匹配只用于诊断，不代表整句成立。"""
+    checks,_=_condition_diagnostics(cond,ctx)
+    gan='[甲乙丙丁戊己庚辛壬癸]'
+    # 已审核的原文：左边是前提，右边是用药/评价，不当作第二个前提。
+    known={
+        '无壬水，癸亦姑用': '无壬',
+        '见甲申时，名藤萝系甲': '时柱甲申',
+        '四柱多壬，不见戊制为病': '壬多且不见戊',
+    }
+    expression=known.get(cond,cond.strip())
+    def parse(text):
+        for word,op in [('或','any'),('且','all')]:
+            if word in text:
+                args=[parse(s) for s in text.split(word)]
+                return dict(op=op,args=args) if all(a is not None for a in args) else None
+        m=re.fullmatch('(无|不见|乏)('+gan+')',text)
+        if m: return dict(op='absent',gan=m[2])
+        m=re.fullmatch('(?:见|得)('+gan+')',text) or re.fullmatch('('+gan+')透',text)
+        if m: return dict(op='present',gan=m[1])
+        m=re.fullmatch('('+gan+')(?:多|叠叠|透重重)',text)
+        if m: return dict(op='count_at_least',gan=m[1],count=2)
+        m=re.fullmatch('([年月日时])柱('+gan+'[子丑寅卯辰巳午未申酉戌亥])',text)
+        if m: return dict(op='pillar',index='年月日时'.index(m[1]),value=m[2])
+        if text in ('夜生','日生'): return dict(op='night',value=text=='夜生')
+        return None
+    def evaluate(expr):
+        op=expr['op']
+        if op in ('all','any'):
+            values=[evaluate(a) for a in expr['args']]
+            return all(values) if op=='all' else any(values)
+        if op=='absent': return expr['gan'] not in ctx['gans']
+        if op=='present': return expr['gan'] in ctx['gans']
+        if op=='count_at_least': return ctx['gans'].count(expr['gan'])>=expr['count']
+        if op=='pillar':
+            i=expr['index'];return ctx['gans'][i]+ctx['zhis'][i]==expr['value']
+        night=ctx.get('night')
+        if night is None: night=ctx['zhis'][3] in NIGHT_ZHI
+        return night==expr['value']
+    expr=parse(expression)
+    if expr is None:
+        checks.append(dict(kind='完整条件待判',text=cond,result=None,
+            basis='尚未完整结构化，子条件不能替代整句，需人工审核'))
+        return checks,None
+    result=evaluate(expr)
+    checks.append(dict(kind='完整条件表达式',text=cond,expression=expr,result=result,
+                       basis='完整语义匹配；数量和夜生沿用已注明的工程约定'))
+    return checks,result
+
+
 # ---------------------------------------------------------------- 主入口
 def compute_tiaohou(chart, *, segment=None, config=None):
     """输入八字 → 调候维度用神喜忌（结构化结果）。
@@ -357,10 +409,19 @@ def compute_tiaohou(chart, *, segment=None, config=None):
     """
     cfg = {"half_month_day": DEFAULT_HALF_MONTH_DAY,
            "auto_condition_eval": True, "night": None}
+    if config is not None and not isinstance(config,dict): raise ValueError('调候config必须为字典')
     if config:
         cfg.update(config)
+    if type(cfg['half_month_day']) is not int or not 1<=cfg['half_month_day']<=31:
+        raise ValueError('half_month_day必须为1至31的整数')
+    if type(cfg['auto_condition_eval']) is not bool or (cfg['night'] is not None and type(cfg['night']) is not bool):
+        raise ValueError('调候开关与night必须为布尔值')
 
     gans, zhis, meta = _coerce_chart(chart)
+    from .input_contracts import integer,boolean
+    if meta.get('solar_term_day') is not None:
+        meta['solar_term_day']=integer(meta['solar_term_day'],'solar_term_day',0,40)
+    if meta.get('night') is not None: boolean(meta['night'],'night')
     day_gan, month_zhi = gans[2], zhis[1]
     half_day = int(cfg["half_month_day"])
     seg = segment or meta.get("tiaohou_segment")
@@ -369,7 +430,8 @@ def compute_tiaohou(chart, *, segment=None, config=None):
 
     row, seg_info = select_row(day_gan, month_zhi, segment=seg,
                                solar_term_day=solar_term_day,
-                               jie_name=jie_name, half_day=half_day)
+                               jie_name=jie_name, half_day=half_day,
+                               current_jieqi_name=meta.get('current_jieqi_name'))
 
     night = cfg.get("night")
     if night is None:

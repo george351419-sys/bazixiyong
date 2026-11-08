@@ -1,4 +1,2 @@
-# 依赖原以 .vendor/ 方式本地挂载（含 macOS 专属 .dylibs，不可跨平台）。
-# 改为通过 pip 安装，版本与 .vendor 中锁定版本一致：
+# 纯历法依赖；网页与生辰分析不依赖Pillow/绘图二进制或外部脚本。
 lunar_python==1.4.9
-pillow==13.0.0

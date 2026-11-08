@@ -106,8 +106,7 @@ class ArbitrationTests(unittest.TestCase):
     def test_route_unknown_and_duplicates(self):
         args=dict(severity='none',conflict_fuyi=False,conflict_geju=False)
         self.assertEqual(evaluate_policies(**args,routes=[dict(route_id='x')])['decision_status'],'pending')
-        with self.assertRaises(ValueError):
-            evaluate_policies(**args,routes=[dict(route_id='x'),dict(route_id='x')])
+        self.assertEqual(evaluate_policies(**args,routes=[dict(route_id='x'),dict(route_id='x')])['reason_code'],'invalid_route_input')
 
     def test_fake_structure_can_treat_climate(self):
         result=evaluate_policies('urgent',conflict_geju=False,conflict_fuyi=True,
@@ -452,7 +451,7 @@ class ArbitrationTests(unittest.TestCase):
     def test_coverage_does_not_claim_complete(self):
         r=analyze(dict(gans=list('甲癸甲丙'),zhis=list('子丑午寅')))['arbitration']
         self.assertEqual(r['assessment_coverage']['fuyi'],'not_implemented')
-        self.assertEqual(r['route_generation_coverage']['deficit_repair'],'not_implemented')
+        self.assertEqual(r['route_generation_coverage']['deficit_repair'],'intent_generated_effects_pending')
         self.assertFalse(r['release_ready'])
 
     def test_every_source_action_has_mapping_result(self):
@@ -492,6 +491,151 @@ class ArbitrationTests(unittest.TestCase):
         result=evaluate_policies('urgent',conflict_geju=False,conflict_fuyi=False,routes=[r])
         self.assertEqual(result['route_evaluation'][0]['result'],'rejected')
         self.assertIn('restriction_still_active:a',result['route_evaluation'][0]['failed_rules'])
+
+    def test_structure_candidate_matches_validator_contract(self):
+        output=analyze(dict(gans=list('甲戊丁戊'),zhis=list('子辰亥申')))['arbitration']
+        evaluation=output['policy_evaluation']['route_evaluation'][0]
+        self.assertNotIn('action_evidence',evaluation['missing_evidence'])
+        self.assertTrue(evaluation['structural_results'])
+        self.assertTrue(all(g['source_verified'] for g in evaluation['structural_results']))
+        self.assertTrue(any(m.startswith('structure_dependency:') for m in evaluation['missing_evidence']))
+        self.assertEqual(evaluation['treatment_status'],'unknown')
+    def test_external_wuxing_candidate_keeps_precision(self):
+        output=analyze(dict(gans=list('丙庚辛癸'),zhis=list('午子亥巳')))['arbitration']
+        candidate=output['routes'][0]
+        self.assertEqual(candidate['origin'],'geju_external_wuxing')
+        self.assertTrue(all(a['gan'] is None and a['precision']=='wuxing' for a in candidate['actions']))
+        evaluation=output['policy_evaluation']['route_evaluation'][0]
+        self.assertNotIn('action_evidence',evaluation['missing_evidence'])
+        self.assertTrue(all(g['source_verified'] for g in evaluation['structural_results']))
+
+    def test_true_cong_final_entry_uses_unified_verdict(self):
+        r=analyze(dict(gans=list('丙庚辛癸'),zhis=list('午子亥巳')))
+        self.assertEqual(r['arbitration']['mode'],'external')
+        self.assertEqual(r['arbitration']['decision_status'],'decided')
+        self.assertEqual(r['final_xiyong']['effective_source'],'arbitration_external')
+        self.assertEqual(r['final_xiyong']['favored'],['火','水'])
+        self.assertTrue(all(p['gan'] is None for p in r['arbitration']['positions']))
+
+    def test_cong_er_avoid_uses_subtype_and_preserves_conditions(self):
+        # 构造接口输入，验证分支合同，不作为历法金标准。
+        r=analyze(dict(gans=list('癸丁甲乙'),zhis=list('巳巳戌巳')))
+        final=r['final_xiyong']
+        self.assertEqual(final['favored'],['火','土'])
+        self.assertEqual(final['disliked'],['水'])
+        self.assertEqual(final['disliked_scope'],'unconditional')
+        conditional=final['conditional_disliked'][0]
+        self.assertEqual(conditional['wuxing'],'金')
+        self.assertEqual(conditional['decision_status'],'not_triggered')
+        self.assertTrue(conditional['condition'])
+        self.assertNotIn('金',final['disliked'])
+
+    def test_true_cong_rejects_missing_or_inconsistent_root_contract(self):
+        from copy import deepcopy
+        from bazi_core.external_arbitration import true_cong_verdict
+        r=analyze(dict(gans=list('丙庚辛癸'),zhis=list('午子亥巳')))
+        facts=build_facts(r['wangshuai'],r['geju'],{}, {})
+        self.assertIsNotNone(true_cong_verdict(facts))
+        missing=deepcopy(facts)
+        del missing['ws']['cong_info']['root_evidence']
+        self.assertEqual(true_cong_verdict(missing)['reason_code'],'true_cong_evidence_missing')
+        inconsistent=deepcopy(facts)
+        inconsistent['ws']['cong_info']['root_evidence'].append(
+            dict(branch_index=0,root_type='本气',broken=False))
+        self.assertEqual(true_cong_verdict(inconsistent)['reason_code'],'true_cong_evidence_conflict')
+        self.assertFalse(r['arbitration']['policy_evaluation']['diagnostic_affects_decision'])
+        conditional=deepcopy(facts)
+        conditional['geju']['xiyong_geju']['conditional_ji_shen']=[
+            dict(wuxing='木',condition='印比有根成势时',triggered=None)]
+        verdict=true_cong_verdict(conditional)
+        self.assertEqual(verdict['conditional_avoid'][0]['decision_status'],'pending')
+        self.assertNotIn('decision_status',conditional['geju']['xiyong_geju']['conditional_ji_shen'][0])
+        conditional['geju']['xiyong_geju']['conditional_ji_shen'][0]['triggered']=True
+        verdict=true_cong_verdict(conditional)
+        self.assertEqual(verdict['conditional_avoid'][0]['decision_status'],'triggered')
+        self.assertNotIn('木',verdict['avoid'])
+
+
+    def test_fake_cong_uses_ordinary_main_direction(self):
+        r=analyze(dict(gans=list('乙丁壬乙'),zhis=list('巳亥辰巳')))
+        self.assertEqual(r['tag'],'假从弱')
+        self.assertEqual(r['final_xiyong']['effective_source'],'ordinary_structure_fallback')
+        self.assertEqual(r['final_xiyong']['favored'],['金','水'])
+        self.assertEqual(r['final_xiyong']['conditional_favored'],['木','火','土'])
+        self.assertEqual(r['final_xiyong']['decision_status'],'pending')
+        self.assertEqual(r['final_xiyong']['favored'],r['arbitration']['dimension_results']['fuyi']['favored'])
+        self.assertEqual(r['final_xiyong']['assessment_level'],'provisional_direction')
+        self.assertIn('身弱',r['final_xiyong']['principle'])
+        self.assertTrue(r['arbitration']['conditional_routes'][0]['requires_reassessment'])
+
+    def test_triggered_avoid_conflict_blocks_external_release(self):
+        from bazi_core.arbitration import arbitrate
+        r=analyze(dict(gans=list('癸丁甲乙'),zhis=list('巳巳戌巳')))
+        facts=build_facts(r['wangshuai'],r['geju'],r['tiaohou'],r['xiyong_wangshuai'])
+        facts['geju']['xiyong_geju']['conditional_ji_shen']=[
+            dict(wuxing='火',condition='构造已触发冲突',triggered=True)]
+        facts=build_facts(facts['ws'],facts['geju'],facts['tiaohou'],facts['fuyi'])
+        a=arbitrate(facts)
+        self.assertEqual(a['reason_code'],'triggered_avoid_conflict')
+        self.assertEqual(a['decision_status'],'pending')
+        self.assertFalse(a['release_ready'])
+        self.assertEqual(a['favored'],[])
+        self.assertIn('resolve_triggered_avoid:火',a['missing_evidence'])
+
+    def test_identity_tracks_mutated_facts_and_conditional_completion(self):
+        from bazi_core.assessment_identity import assessment_identity
+        from bazi_core.external_arbitration import true_cong_verdict
+        r=analyze(dict(gans=list('癸丁甲乙'),zhis=list('巳巳戌巳')))
+        f=build_facts(r['wangshuai'],r['geju'],r['tiaohou'],r['xiyong_wangshuai'])
+        before=assessment_identity(f,None,'test')
+        f['geju']['xiyong_geju']['conditional_ji_shen']=[dict(wuxing='金',condition='条件待核',triggered=None)]
+        self.assertIsNone(assessment_identity(f,None,'test'))
+        f=build_facts(f['ws'],f['geju'],f['tiaohou'],f['fuyi'])
+        self.assertNotEqual(before,assessment_identity(f,None,'test'))
+        v=true_cong_verdict(f)
+        self.assertEqual(v['decision_status'],'decided')
+        self.assertEqual(v['conditional_review_status'],'pending')
+        self.assertFalse(v['release_ready'])
+
+    def test_release_contract_and_missing_root_classification(self):
+        from bazi_core.arbitration import arbitrate
+        from bazi_core.assessment_identity import assessment_identity
+        r=analyze(dict(gans=list('癸丁甲乙'),zhis=list('巳巳戌巳')))
+        f=build_facts(r['wangshuai'],r['geju'],r['tiaohou'],r['xiyong_wangshuai'])
+        original=assessment_identity(f,None,'test')
+        f['candidate_routes']=[]
+        self.assertEqual(original,assessment_identity(f,None,'test'))
+        del f['ws']['cong_info']['root_evidence']
+        self.assertEqual(arbitrate(f)['reason_code'],'fact_snapshot_stale_or_invalid')
+        f=build_facts(f['ws'],f['geju'],f['tiaohou'],f['fuyi'])
+        a=arbitrate(f)
+        self.assertEqual(a['decision_progress']['special_structure'],'evidence_insufficient')
+        self.assertEqual(a['conditional_review_status'],'not_assessed')
+        self.assertFalse(a['release_ready'])
+        r=analyze(dict(gans=list('癸丁甲乙'),zhis=list('巳巳戌巳')))
+        f=build_facts(r['wangshuai'],r['geju'],r['tiaohou'],r['xiyong_wangshuai'])
+        a=arbitrate(f,dict(nonserializable=object()))
+        self.assertEqual(a['reason_code'],'assessment_identity_invalid')
+        self.assertEqual(a['decision_status'],'pending')
+        self.assertFalse(a['release_ready'])
+        self.assertEqual(a['favored'],[])
+
+    def test_fact_consistency_and_invalid_external_selection(self):
+        from bazi_core.arbitration import arbitrate
+        r=analyze(dict(gans=list('癸丁甲乙'),zhis=list('巳巳戌巳')))
+        f=build_facts(r['wangshuai'],r['geju'],r['tiaohou'],r['xiyong_wangshuai'])
+        f['element_energy']={w:0 for w in f['element_energy']}
+        a=arbitrate(f)
+        self.assertEqual(a['reason_code'],'energy_source_mismatch')
+        self.assertFalse(a['release_ready'])
+        self.assertEqual(a['fact_validation']['status'],'invalid')
+        f['geju']['xiyong_geju']['special_ji_wuxing']=None
+        f=build_facts(f['ws'],f['geju'],f['tiaohou'],f['fuyi'])
+        a=arbitrate(f)
+        self.assertEqual(a['mode'],'external')
+        self.assertEqual(a['reason_code'],'true_cong_invalid_selection')
+        self.assertFalse(a['release_ready'])
+        self.assertFalse(r['final_xiyong']['actionable'])
 
     def test_energy_mapping_and_no_mutation(self):
         ws=dict(day_wuxing='木',climate_energy=dict(木=1,水=2,火=3,土=4,金=5))

@@ -1,9 +1,10 @@
 """有限条件表达式；禁止执行字符串代码，缺事实按三态 unknown 处理。"""
+from .numeric import finite as safe_finite
 from math import isfinite
 
 
 def scalar(value):
-    return value is None or type(value) in (str, bool) or (type(value) in (int,float) and isfinite(value))
+    return value is None or type(value) in (str, bool) or (type(value) in (int,float) and safe_finite(value))
 
 
 def valid_condition(expr, depth=0):

@@ -10,7 +10,16 @@ COMMANDS=[
     [sys.executable,'tests/test_wangshuai.py'],
     [sys.executable,'tests/test_wangshuai_invariants.py'],
     [sys.executable,'tests/test_tiaohou.py'],
-    [sys.executable,'-m','unittest','tests/test_arbitration.py','tests/test_wangshuai_state.py','tests/test_wangshuai_review.py','tests/test_web_render.py','tests/test_geju_revision.py','tests/test_calendar_regression.py','-q'],
+    [sys.executable,'-m','unittest','tests.test_project_audit','-q'],
+    [sys.executable,'-m','unittest','tests.test_project_audit_v23','-q'],
+    [sys.executable,'-m','unittest','tests.test_project_audit_v24','-q'],
+    [sys.executable,'-m','unittest','tests.test_project_audit_v25','-q'],
+    [sys.executable,'-m','unittest','tests.test_project_audit_v26','-q'],
+    [sys.executable,'-m','unittest','tests.test_project_audit_v27','-q'],
+    [sys.executable,'-m','unittest','tests.test_project_audit_v28','-q'],
+    [sys.executable,'-m','unittest','tests.test_project_audit_v29','-q'],
+    [sys.executable,'-m','unittest','tests.test_project_audit_v30','-q'],
+    [sys.executable,'-m','unittest','tests/test_arbitration.py','tests/test_fusion_completion.py','tests/test_fusion_audit_fixes.py','tests/test_wangshuai_state.py','tests/test_wangshuai_review.py','tests/test_web_render.py','tests/test_geju_revision.py','tests/test_calendar_regression.py','-q'],
 ]
 if shutil.which('node'):
     COMMANDS.append(['node','--check','web/app.js'])

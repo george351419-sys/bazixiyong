@@ -239,7 +239,7 @@ def case_special_ge():
     sp, _ = G._screen_special_ge(gans, zhis, "乙", "木", he,
                                  dict(base, tag="从强",
                                       cong_info={"is_cong": True}), {}, [])
-    check("真从强→专旺", sp is not None and "曲直" in sp, str(sp))
+    check("真从强保留分类，不自动升为专旺", sp == "从强格", str(sp))
     # 化气格门槛①：日主【未参与】五合（他柱之合）→ 不得判化气格。
     # 旧版只查全局有无成功五合，把「甲子 己辰 乙丑 庚申」（日主乙）误判化土格。
     g2, z2 = ["甲", "己", "乙", "庚"], ["子", "辰", "丑", "申"]

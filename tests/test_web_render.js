@@ -17,6 +17,17 @@ const outputs = JSON.parse(fs.readFileSync(0, 'utf8'));
     await new Promise(resolve => setImmediate(resolve));
     const html = nodes.result.innerHTML;
     assert(html.includes('当前根状态'), html);
+    assert(html.includes('当前取用方向'), html);
+    assert(html.includes(output.final_xiyong.effective_source), html);
+    assert(html.includes(output.final_xiyong.principle), html);
+    for (const position of output.final_xiyong.positions || []) {
+      if (position.dose_plan) {
+        assert(html.includes('投用：' + position.dose_plan.amount + ' ' + position.dose_plan.unit), html);
+        assert(html.includes('上限：' + position.dose_plan.max_amount), html);
+        assert(html.includes(position.application_id), html);
+      }
+    }
+    assert(html.includes('原始旺衰维度取用原则'), html);
     assert(html.includes('剩余有效根 ' + output.wangshuai.root_state.effective_count));
     assert(html.includes('<details><summary>结构根记录</summary>'));
     assert(html.indexOf('剩余有效根') < html.indexOf('<summary>结构根记录'));

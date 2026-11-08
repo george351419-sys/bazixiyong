@@ -7,8 +7,9 @@
   POST /api/analyze   八字旺衰 + 旺衰维度喜用 + 子平格局 + 格局维度喜用 + 调候维度
 
 payload 可选字段：
-  solar_term_day      节气后第几天（人元司令取格；不传则排盘模式自动推算）
-  enable_special_ge   真破格时是否启用外格兜底筛查（默认 true）
+  solar_term_day      节气后第几天（司令参考/调候近似分段，不参与取格）
+  enable_special_ge   是否启用外格前置筛查（默认 true）
+  input_kind          real_chart（默认）或显式rule_case（规则构造案例）
   tiaohou_segment     调候节气分段（段A/段B/上半月/下半月/清明后/谷雨后），不传自动推断
 
 启动：
@@ -31,6 +32,7 @@ sys.path.insert(0, PROJECT_ROOT)
 
 from bazi_core.paipan import analyze_birth  # noqa: E402
 from bazi_core.engine import analyze  # noqa: E402
+from bazi_core.input_contracts import normalize_chart, integer, boolean, finite_number
 
 
 def _parse_chart(s):
@@ -48,19 +50,34 @@ def _parse_chart(s):
 
 def do_analyze(payload):
     """根据 payload 调引擎，返回结果 dict。"""
+    try:
+        if not isinstance(payload,dict): raise ValueError('请求需为JSON对象')
+        for key in ('enable_special_ge','truesun','lunar','leap','eot'):
+            if key in payload: boolean(payload[key],key)
+        if payload.get('lon') is not None: finite_number(payload['lon'],'lon',-180,180)
+        if 'chart' in payload and payload['chart'] not in (None,'') and not isinstance(payload['chart'],(str,dict)):
+            raise ValueError('chart需为字符串或四柱对象')
+        return _do_analyze(payload)
+    except (ValueError,TypeError,KeyError) as exc:
+        return dict(ok=False,error=str(exc),stage='input')
+
+
+def _do_analyze(payload):
     config = None
     if "enable_special_ge" in payload:
-        config = {"enable_special_ge": bool(payload["enable_special_ge"])}
+        config = {"enable_special_ge": payload["enable_special_ge"]}
     raw_day = payload.get("solar_term_day")
     try:
-        std = int(raw_day) if raw_day not in (None, "") else None
+        std = integer(raw_day,'solar_term_day',0,40) if raw_day not in (None, "") else None
     except (TypeError, ValueError):
         return {"ok": False, "error": "solar_term_day 需为整数", "stage": "input"}
 
     chart = payload.get("chart")
-    if chart and isinstance(chart, str):
+    if chart:
         try:
-            c = _parse_chart(chart)
+            c = _parse_chart(chart) if isinstance(chart,str) else dict(chart)
+            c['input_kind']=payload.get('input_kind','real_chart')
+            c,_=normalize_chart(c,default_kind='real_chart')
         except ValueError as e:
             return {"ok": False, "error": str(e), "stage": "input"}
         if std is not None:
@@ -73,11 +90,12 @@ def do_analyze(payload):
     out = analyze_birth(
         birth=payload.get("birth"),
         y=payload.get("y"), m=payload.get("m"), d=payload.get("d"),
-        h=payload.get("h"), minute=payload.get("minute", 0),
+        h=payload.get("h"), minute=payload.get("minute", 0), second=payload.get("second",0),
         sex=payload.get("sex", "male"),
-        lon=payload.get("lon"), truesun=bool(payload.get("truesun", False)),
-        lunar=bool(payload.get("lunar", False)),
-        leap=bool(payload.get("leap", False)),
+        lon=payload.get("lon"), truesun=payload.get("truesun", False),
+        lunar=payload.get("lunar", False),
+        leap=payload.get("leap", False),calendar=payload.get('calendar'),
+        sect=payload.get('sect'),eot=payload.get('eot',False),
         config=config, solar_term_day=std,
         tiaohou_segment=payload.get("tiaohou_segment"),
     )
@@ -109,7 +127,7 @@ class Handler(BaseHTTPRequestHandler):
         # 静态资源
         rel = path.lstrip("/")
         full = os.path.normpath(os.path.join(ROOT, rel))
-        if not full.startswith(ROOT) or not os.path.isfile(full):
+        if os.path.commonpath([ROOT,full])!=ROOT or not os.path.isfile(full):
             return self._send(404, {"ok": False, "error": "not found"})
         ctype = "text/javascript; charset=utf-8" if full.endswith(".js") else \
                 ("text/css; charset=utf-8" if full.endswith(".css") else
@@ -137,7 +155,7 @@ class Handler(BaseHTTPRequestHandler):
             out = do_analyze(payload)
         except Exception as e:
             return self._send(500, {"ok": False, "error": "分析异常：%s" % e})
-        return self._send(200, out)
+        return self._send(200 if out.get('ok') else 400, out)
 
 
 def main():

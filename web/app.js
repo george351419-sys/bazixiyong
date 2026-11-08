@@ -50,6 +50,8 @@
             '<span class="pill tag">旺衰：' + esc(out.tag) + "</span>" +
             '<span class="pill conf">规则置信系数 ' + esc(out.confidence) + "</span></div>";
 
+    for (const warning of out.paipan_warnings || []) html += '<div class="note">' + esc(warning) + '</div>';
+
     // F / K 能量条
     const F = ws.F || 0, K = ws.K || 0;
     const tot = (F + K) || 1;
@@ -88,6 +90,31 @@
     html += "</div>";
     if ((ws.boundary_hints || []).length) html += '<div class="note">接近判定边界：' + ws.boundary_hints.map(h => esc(h.current_tag + ' ↔ ' + h.adjacent_tag)).join('；') + '。仅作复核提示，不自动改判或切换喜用。</div>';
 
+    const finalXY = out.final_xiyong || {};
+    if ((out.input_validation || {}).input_kind === 'rule_case') html += '<div class="note">规则构造案例：不表示存在对应出生日期。</div>';
+    html += '<div class="block"><div class="label">当前取用方向</div>' +
+      '<div>' + (finalXY.favored || []).map(w => chip(w)).join('') + '</div>' +
+      '<div>忌神：' + (finalXY.disliked || []).map(w => chip(w)).join('') + '</div>' +
+      '<div>来源：' + esc(finalXY.effective_source || '待核查') + '；融合状态：' + esc(finalXY.decision_status || 'pending') + '</div>' +
+      '<div>裁决范围：' + esc(finalXY.decision_scope || '待核查') + '；条件核查：' + esc(finalXY.conditional_review_status || 'not_assessed') + '</div>' +
+      '<div>当前依据：' + esc(finalXY.principle || '') + '</div>' +
+      '<div class="note">' + esc(finalXY.note || '') + '</div>';
+    if (finalXY.recommendation_scope === 'direction_only') html += '<div class="note">当前为喜用方向；具体加强、保护或限制措施尚待剂量与承受能力评估。</div>';
+    html += '<div>方向结论：' + (finalXY.release_ready ? '已通过当前范围核查' : '尚未通过完整核查') + '；行动建议：' + (finalXY.action_release_ready ? '已通过路线验证' : '暂不可执行') + '</div>';
+    for (const requirement of (finalXY.conditional_route || {}).requirements || []) {
+      for (const prerequisite of requirement.prerequisites || []) html += '<div class="note">转真待核：' + esc(prerequisite.reason) + '；' + esc(prerequisite.resolution) + '</div>';
+    }
+    for (const position of finalXY.positions || []) {
+      if (finalXY.recommendation_scope === 'validated_route') html += '<div>路线作用：' + esc(position.gan || position.wx) + '；' + esc(position.action) + '</div>';
+      if (position.dose_plan) html += '<div>投用：' + esc(position.dose_plan.amount) + ' ' + esc(position.dose_plan.unit) + '；上限：' + esc(position.dose_plan.max_amount) + '；投用编号：' + esc(position.application_id) + '</div>';
+      if (position.condition_expr) html += '<div>执行条件：' + esc(JSON.stringify(position.condition_expr)) + '</div>';
+    }
+    for (const item of finalXY.conditional_disliked || []) {
+      html += '<div>条件忌：' + esc(item.wuxing) + '；' + esc(item.condition) + '；' + esc(item.decision_status || 'pending') + '</div>';
+    }
+    if ((finalXY.conditional_favored || []).length) html += '<div>顺从条件候选：' + finalXY.conditional_favored.map(w => chip(w)).join('') + '（需重新验真）</div>';
+    html += '</div>';
+
     // 喜用维度
     if (xy.conditional || xy.requires_review) html += '<div class="note">本盘喜用为条件候选，需结合以下残余根证据复核。</div>';
     html += '<div class="block"><div class="label">旺衰维度喜用（' + esc(xy.category || "—") + "）</div>" +
@@ -100,7 +127,7 @@
     }
     html += "</div>";
 
-    html += '<div class="block"><div class="label">取用原则</div><div>' + esc(xy.principle || "") + "</div></div>";
+    html += '<div class="block"><div class="label">原始旺衰维度取用原则</div><div>' + esc(xy.principle || "") + "</div></div>";
     if (xy.note) html += '<div class="note">' + esc(xy.note) + "</div>";
 
     // 合局 / 开库 备注
@@ -281,7 +308,7 @@
     const mods = out.modules || {};
     html += '<div class="meta" style="margin-top:14px">三维框架：旺衰=' + esc(mods.wangshuai) +
             "，格局=" + esc(mods.geju) + "，调候=" + esc(mods.tiaohou) +
-            "（V1 不加权合并）。旺衰有效权重 effective_ws = 25 × " +
+            "（不加权合并）。旺衰兼容展示分（不作融合权重）effective_ws = 25 × " +
             esc(out.confidence) + " = " + esc(out.score_wangshuai && out.score_wangshuai.effective_ws) + "</div>";
 
     box.innerHTML = html;
@@ -294,11 +321,15 @@
     const chart = $("chart").value.trim();
     let payload = {};
     const std = $("solarTermDay").value.trim();
-    if (std !== "") payload.solar_term_day = parseInt(std, 10);
+    if (std !== "") {
+      if (!/^\d+$/.test(std) || Number(std) > 40) { err.textContent = '节气天数需为0至40的整数'; return; }
+      payload.solar_term_day = Number(std);
+    }
     const thSeg = $("tiaohouSegment").value.trim();
     if (thSeg) payload.tiaohou_segment = thSeg;
     if (chart) {
       payload.chart = chart;
+      payload.input_kind = $('ruleCase').checked ? 'rule_case' : 'real_chart';
     } else {
       payload = Object.assign(payload, {
         birth: $("birth").value.trim(),

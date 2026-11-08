@@ -30,6 +30,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from bazi_core.paipan import analyze_birth
 from bazi_core.engine import analyze
 from bazi_core.tiaohou import format_tiaohou
+from bazi_core.input_contracts import normalize_chart
 
 
 def _parse_chart(s):
@@ -75,6 +76,20 @@ def _pretty(out, show_trace=False):
                     ("   ratio=%.2f" % ws["ratio"]) if ws.get("ratio") is not None else ""))
     if ws.get("warning"):
         lines.append("备注：" + "；".join(ws["warning"]))
+    lines.append("-" * 40)
+    final=out.get('final_xiyong',{})
+    lines.append('当前取用方向：%s；忌：%s' % (' '.join(final.get('favored',[])) or '待判',' '.join(final.get('disliked',[])) or '未定'))
+    lines.append('裁决：%s；范围：%s；方向发布：%s；行动发布：%s' %
+        (final.get('decision_status'),final.get('decision_scope'),final.get('release_ready'),final.get('action_release_ready')))
+    lines.append('当前依据：'+final.get('principle',''))
+    lines.append(final.get('note',''))
+    if out.get('input_validation',{}).get('input_kind')=='rule_case': lines.append('输入为规则构造案例，不表示存在对应出生日期。')
+    for p in final.get('positions',[]):
+        lines.append('路线作用：%s %s；目标：%s' % (p.get('gan') or p.get('wx'),p.get('action'),p.get('target_id','方向')))
+        if p.get('dose_plan'):
+            plan=p['dose_plan'];lines.append('  投用：%s %s；上限：%s；投用ID：%s' %
+                (plan['amount'],plan['unit'],plan['max_amount'],p.get('application_id')))
+        if p.get('condition_expr'): lines.append('  条件：'+json.dumps(p['condition_expr'],ensure_ascii=False))
     lines.append("-" * 40)
     lines.append("喜用维度（旺衰）：%s" % xy["category"])
     lines.append("  喜用五行：%s" % " ".join(xy["favored"]))
@@ -142,7 +157,7 @@ def _pretty(out, show_trace=False):
     lines.append("-" * 40)
     lines.append("三维框架：旺衰=%s，格局=%s，调候=%s（V1 不加权合并）"
                  % (mods.get("wangshuai"), mods.get("geju"), mods.get("tiaohou")))
-    lines.append("旺衰有效权重 effective_ws = 25 × %.2f = %.2f"
+    lines.append("旺衰兼容展示分（不作融合权重） effective_ws = 25 × %.2f = %.2f"
                  % (out["confidence"], out["score_wangshuai"]["effective_ws"]))
     return "\n".join(lines)
 
@@ -155,16 +170,20 @@ def main():
     ap.add_argument("--d", type=int, help="日")
     ap.add_argument("--h", type=int, help="时（24 小时制）")
     ap.add_argument("--minute", type=int, default=0, help="分钟")
+    ap.add_argument("--second", type=int, default=0, help="秒")
     ap.add_argument("--sex", default="male", choices=["male", "female"], help="性别")
     ap.add_argument("--lon", type=float, default=None, help="出生地经度（度），配合 --truesun")
     ap.add_argument("--truesun", action="store_true", help="启用真太阳时 + 夏令时回拨")
     ap.add_argument("--lunar", action="store_true", help="--y/--m/--d/--h 为农历")
     ap.add_argument("--leap", action="store_true", help="农历闰月")
     ap.add_argument("--chart", help="直接给四柱，如 '庚午 辛巳 癸巳 乙卯'（跳过排盘）")
+    ap.add_argument('--rule-case',action='store_true',help='显式允许不满足历法一致性的规则构造案例')
+    ap.add_argument('--sect',type=int,choices=[1,2],default=2,help='晚子时日柱约定，默认2')
+    ap.add_argument('--eot',action='store_true',help='经度校正另加均时差，需--truesun及--lon')
     ap.add_argument("--solar-term-day", type=int, default=None,
-                    help="节气后第几天（人元司令取格用；不指定则排盘模式自动推算）")
+                    help="节气后第几天（司令参考/调候近似分段；不参与取格）")
     ap.add_argument("--trace", action="store_true", help="打印格局判定链路日志")
-    ap.add_argument("--no-special-ge", action="store_true", help="关闭真破格时的外格兜底筛查")
+    ap.add_argument("--no-special-ge", action="store_true", help="关闭外格前置筛查")
     ap.add_argument("--tiaohou-segment", default=None,
                     help="调候节气分段，如 段A/段B/上半月/下半月/清明后/谷雨后；不传自动推断")
     ap.add_argument("--json", action="store_true", help="输出原始 JSON")
@@ -175,18 +194,21 @@ def main():
     if args.chart:
         try:
             chart = _parse_chart(args.chart)
+            chart['input_kind']='rule_case' if args.rule_case else 'real_chart'
+            chart,_=normalize_chart(chart,default_kind='real_chart')
         except ValueError as e:
             print("参数错误：%s" % e); sys.exit(2)
         if args.solar_term_day is not None:
             chart["solar_term_day"] = args.solar_term_day
-        out = analyze(chart, config=config, tiaohou_segment=args.tiaohou_segment)
+        try: out = analyze(chart, config=config, tiaohou_segment=args.tiaohou_segment)
+        except ValueError as exc: print('参数错误：'+str(exc));sys.exit(2)
         out["input"] = chart
     elif args.birth or (None not in (args.y, args.m, args.d, args.h)):
         out = analyze_birth(birth=args.birth, y=args.y, m=args.m, d=args.d, h=args.h,
-                            minute=args.minute, sex=args.sex, lon=args.lon,
+                            minute=args.minute, second=args.second, sex=args.sex, lon=args.lon,
                             truesun=args.truesun, lunar=args.lunar, leap=args.leap,
                             config=config, solar_term_day=args.solar_term_day,
-                            tiaohou_segment=args.tiaohou_segment)
+                            tiaohou_segment=args.tiaohou_segment,sect=args.sect,eot=args.eot)
     else:
         ap.print_help()
         print("\n需提供 --birth / --y --m --d --h / --chart 之一。")

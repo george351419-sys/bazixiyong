@@ -20,6 +20,7 @@
     config.store_root_exempt_from_pull（默认 True）显式可配，便于回测调参。
 """
 from __future__ import annotations
+from .numeric import finite as safe_finite
 
 import math
 
@@ -427,6 +428,10 @@ def _root_energy(roots, zhis, he, config):
 
 
 def _validate_config(config):
+    if 'blade_control_ratio' in config:
+        value=config['blade_control_ratio']
+        if type(value) not in (int,float) or not safe_finite(value) or value<=0:
+            raise ValueError('blade_control_ratio必须是正有限数值')
     enums = {
         "cong_root_gate": {"off", "strict", "tiered"},
         "cong_root_gate_side": {"rootless", "both"},
@@ -445,7 +450,7 @@ def _validate_config(config):
         value = config[key]
         if (isinstance(value, bool) or not isinstance(value, (int, float))
                 or value < low or (high is not None and value > high)
-                or not math.isfinite(value)
+                or not safe_finite(value)
                 or (key in ("cong_threshold", "tiangan_base", "branch_chong_factor") and value == low)):
             raise ValueError("%s超出允许范围" % key)
     if not (config["void_gan_factor"] <= config["micro_root_factor"]
@@ -721,7 +726,9 @@ def compute_wangshuai(chart, config=None):
                     "micro_root_factor": config.get("micro_root_factor"),
                     "middle_root_factor": config.get("middle_root_factor"),
                     "branch_chong_factor": config.get("branch_chong_factor")})
-    result["climate_energy"] = {w: round(v, 6) for w,v in fk["climate_energy"].items()}
+    from math import fsum
+    result["climate_energy_raw"] = {w:fsum(e['power'] for e in fk['energy_records'] if e['wuxing']==w) for w in M.WUXING_LIST}
+    result["climate_energy"] = {w: round(v, 6) for w,v in result['climate_energy_raw'].items()}
     result["energy_records"] = fk["energy_records"]
     result["relation_energy"] = {key: round(value, 2) for key, value in fk["relation_energy"].items()}
     result["cong_info"]["support_profile"] = (
@@ -802,7 +809,7 @@ def compute_wangshuai(chart, config=None):
         void_momentum, config["void_wang_min_share_f"])
     result["rules_version"] = "wangshuai_effective_roots_v1.3.2"
     def ensure_finite(value):
-        if isinstance(value, float) and not math.isfinite(value):
+        if isinstance(value, float) and not safe_finite(value):
             raise ValueError("旺衰计算产生非有限数值，请检查参数")
         if isinstance(value, dict):
             for item in value.values():
@@ -811,6 +818,8 @@ def compute_wangshuai(chart, config=None):
             for item in value:
                 ensure_finite(item)
     ensure_finite(result)
+    from .ws_identity import seal
+    seal(result, chart, config)
     return result
 
 
